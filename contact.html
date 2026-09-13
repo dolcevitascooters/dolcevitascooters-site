@@ -991,67 +991,62 @@ main {
    MOBILE TOGGLE
    ========================================================= */
 
-.mobile-toggle {
-
-    display: none;
-
-    width: 42px;
-    height: 42px;
-
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
+.mobile-toggle-lines {
+    position: relative;
+    width: 21px;
+    height: 15px;
 }
 
+.mobile-toggle-lines::before,
+.mobile-toggle-lines::after,
 .mobile-toggle-lines {
-
-    position: relative;
-
-    width: 21px;
-    height: 12px;
+    background: var(--dv-blue);
 }
 
 .mobile-toggle-lines::before,
 .mobile-toggle-lines::after {
-
     content: "";
-
     position: absolute;
-
     left: 0;
 
     width: 100%;
     height: 1px;
 
-    background: var(--dv-blue);
-
     transition:
         top .35s var(--dv-ease),
-        transform .35s var(--dv-ease);
+        transform .35s var(--dv-ease),
+        opacity .25s ease;
 }
 
 .mobile-toggle-lines::before {
-    top: 2px;
+    top: 0;
 }
 
 .mobile-toggle-lines::after {
-    top: 9px;
+    top: 14px;
 }
 
-.mobile-toggle.active
-.mobile-toggle-lines::before {
+/* Sọc giữa */
+.mobile-toggle-lines {
+    background:
+        linear-gradient(
+            var(--dv-blue),
+            var(--dv-blue)
+        ) center 7px / 100% 1px no-repeat;
+}
 
-    top: 6px;
+/* OPEN — chuyển thành X */
+.mobile-toggle.active .mobile-toggle-lines {
+    background: none;
+}
 
+.mobile-toggle.active .mobile-toggle-lines::before {
+    top: 7px;
     transform: rotate(45deg);
 }
 
-.mobile-toggle.active
-.mobile-toggle-lines::after {
-
-    top: 6px;
-
+.mobile-toggle.active .mobile-toggle-lines::after {
+    top: 7px;
     transform: rotate(-45deg);
 }
 
@@ -2487,9 +2482,10 @@ main {
     }
 
     .mobile-link {
-
-        font-size: 39px;
-    }
+    font-size: 28px;
+    line-height: 1.05;
+    letter-spacing: -.04em;
+}
 
     .mobile-bottom {
 
@@ -2755,6 +2751,18 @@ main {
                     Shipping
                     <span class="mobile-link-number">
                         05
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="https://www.dolcevitascooters.com/contact.html"
+                    class="mobile-link"
+                >
+                    Contact Us
+                    <span class="mobile-link-number">
+                        06
                     </span>
                 </a>
             </li>
