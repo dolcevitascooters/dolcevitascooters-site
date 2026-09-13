@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-labelledby="title desc">
+  <title id="title">Dolce Vita Scooters DV Monogram</title>
+  <desc id="desc">A refined petrol-blue DV monogram inside a double oval badge.</desc>
+
+  <g fill="none" stroke="#173f47">
+    <rect x="28" y="16" width="184" height="288" rx="92" stroke-width="3"/>
+    <rect x="36" y="24" width="168" height="272" rx="84" stroke-width="1.5"/>
+  </g>
+
+  <!-- DV monogram -->
+  <g fill="#173f47">
+    <!-- D -->
+    <path d="M72 91h45c31 0 49 18 49 47s-18 47-49 47H72v-8h9V99h-9zm29 8v78h14c21 0 32-13 32-39s-11-39-32-39z"/>
+
+    <!-- V -->
+    <path d="M112 145h30v7h-8l22 49 21-49h-8v-7h29v7h-8l-30 72h-10l-31-72h-7z"/>
+  </g>
+</svg>
