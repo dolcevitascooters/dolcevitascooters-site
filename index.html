@@ -4,8 +4,10 @@
 
    
 
+    <head>
+
     <!-- =========================================================
-         CORE DOCUMENT / SEO
+         CORE
     ========================================================== -->
 
     <meta charset="UTF-8">
@@ -26,6 +28,11 @@
     >
 
     <meta
+        name="bingbot"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    >
+
+    <meta
         name="author"
         content="Dolce Vita Scooters"
     >
@@ -37,7 +44,7 @@
 
     <meta
         name="description"
-        content="Collector-grade vintage Vespa and Lambretta scooters professionally restored in Vietnam. Discover rare classic Italian scooters with documented restoration, authentic character, and worldwide door-to-door delivery."
+        content="Collector-grade vintage Vespa and Lambretta scooters restored in Vietnam with original frames and engines, documented provenance, authentic character and worldwide door-to-door delivery."
     >
 
     <title>
@@ -56,7 +63,7 @@
 
 
     <!-- =========================================================
-         LANGUAGE
+         LANGUAGE / INTERNATIONAL
     ========================================================== -->
 
     <link
@@ -93,7 +100,7 @@
 
     <meta
         property="og:description"
-        content="Rare and beautifully restored vintage Vespa and Lambretta scooters from Vietnam, prepared for collectors and delivered door-to-door worldwide."
+        content="Authentic vintage Vespa and Lambretta scooters restored in Vietnam, preserving original character, documented provenance and the machines' history. Worldwide door-to-door delivery."
     >
 
     <meta
@@ -112,8 +119,8 @@
     >
 
     <meta
-        property="og:image:alt"
-        content="Collector-grade restored vintage Vespa and Lambretta scooters by Dolce Vita Scooters"
+        property="og:image:secure_url"
+        content="https://www.dolcevitascooters.com/img/og-image.jpg"
     >
 
     <meta
@@ -131,9 +138,14 @@
         content="630"
     >
 
+    <meta
+        property="og:image:alt"
+        content="Collector-grade restored vintage Vespa and Lambretta scooters by Dolce Vita Scooters"
+    >
+
 
     <!-- =========================================================
-         TWITTER / X
+         X / TWITTER
     ========================================================== -->
 
     <meta
@@ -148,7 +160,7 @@
 
     <meta
         name="twitter:description"
-        content="Rare vintage Vespa and Lambretta scooters restored in Vietnam for collectors worldwide."
+        content="Authentic vintage Vespa and Lambretta scooters restored in Vietnam with documented provenance and worldwide door-to-door delivery."
     >
 
     <meta
@@ -163,7 +175,7 @@
 
 
     <!-- =========================================================
-         THEME / MOBILE
+         BRAND / MOBILE
     ========================================================== -->
 
     <meta
@@ -199,7 +211,7 @@
 
 
     <!-- =========================================================
-         PERFORMANCE / FONTS
+         PERFORMANCE
     ========================================================== -->
 
     <link
@@ -220,13 +232,13 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     >
 
 
     <!-- =========================================================
-         ORGANIZATION / BRAND ENTITY
+         ORGANIZATION ENTITY
     ========================================================== -->
 
     <script type="application/ld+json">
@@ -248,12 +260,14 @@
 
         "image": {
             "@type": "ImageObject",
+            "@id": "https://www.dolcevitascooters.com/#image",
             "url": "https://www.dolcevitascooters.com/img/og-image.jpg",
+            "contentUrl": "https://www.dolcevitascooters.com/img/og-image.jpg",
             "width": 1200,
             "height": 630
         },
 
-        "description": "Dolce Vita Scooters specializes in collector-grade restoration and international delivery of vintage Vespa and Lambretta scooters from Vietnam.",
+        "description": "Dolce Vita Scooters is an Italian scooter atelier specializing in authentic vintage Vespa and Lambretta scooters restored in Vietnam for collectors worldwide.",
 
         "email": [
             "sales@dolcevitascooters.com",
@@ -281,15 +295,19 @@
             "Lambretta restoration",
             "Vintage scooter collecting",
             "Collector-grade scooter restoration",
-            "Classic scooter provenance",
-            "International scooter shipping"
+            "Original Vespa frames",
+            "Original Lambretta frames",
+            "Vintage scooter provenance",
+            "Classic Italian scooter preservation",
+            "International scooter shipping",
+            "Worldwide scooter export"
         ]
     }
     </script>
 
 
     <!-- =========================================================
-         LOCAL BUSINESS / SERVICE ENTITY
+         LOCAL BUSINESS / ATELIER ENTITY
     ========================================================== -->
 
     <script type="application/ld+json">
@@ -304,7 +322,7 @@
 
         "image": "https://www.dolcevitascooters.com/img/og-image.jpg",
 
-        "description": "Collector-grade vintage Vespa and Lambretta scooters restored in Vietnam and delivered worldwide.",
+        "description": "Italian scooter atelier in Vietnam specializing in the restoration and worldwide delivery of vintage Vespa and Lambretta scooters.",
 
         "email": "sales@dolcevitascooters.com",
 
@@ -321,7 +339,11 @@
             "name": "Worldwide"
         },
 
-        "priceRange": "$$$$"
+        "priceRange": "$$$$",
+
+        "parentOrganization": {
+            "@id": "https://www.dolcevitascooters.com/#organization"
+        }
     }
     </script>
 
@@ -340,7 +362,12 @@
 
         "name": "Dolce Vita Scooters",
 
-        "description": "Collector-grade vintage Vespa and Lambretta scooters restored in Vietnam for collectors worldwide.",
+        "alternateName": [
+            "Dolce Vita Scooters Vietnam",
+            "Dolce Vita Italian Scooter Atelier"
+        ],
+
+        "description": "Collector-grade vintage Vespa and Lambretta scooters restored in Vietnam and delivered worldwide.",
 
         "publisher": {
             "@id": "https://www.dolcevitascooters.com/#organization"
@@ -352,7 +379,7 @@
 
 
     <!-- =========================================================
-         WEBPAGE ENTITY
+         HOMEPAGE / WEBPAGE ENTITY
     ========================================================== -->
 
     <script type="application/ld+json">
@@ -365,9 +392,9 @@
 
         "name": "Collector-Grade Vintage Vespa & Lambretta Scooters",
 
-        "headline": "Collector-Grade Vintage Vespa & Lambretta Scooters",
+        "headline": "Vintage Italian Scooters, Preserved for the Road.",
 
-        "description": "Collector-grade vintage Vespa and Lambretta scooters professionally restored in Vietnam, with authentic character, documented restoration, and worldwide delivery.",
+        "description": "Authentic vintage Vespa and Lambretta scooters restored in Vietnam with original frames and engines, documented provenance and worldwide door-to-door delivery.",
 
         "isPartOf": {
             "@id": "https://www.dolcevitascooters.com/#website"
@@ -385,14 +412,58 @@
 
         "primaryImageOfPage": {
             "@type": "ImageObject",
+            "@id": "https://www.dolcevitascooters.com/#image",
             "url": "https://www.dolcevitascooters.com/img/og-image.jpg"
+        },
+
+        "mainEntity": {
+            "@id": "https://www.dolcevitascooters.com/#organization"
         }
     }
     </script>
 
 
     <!-- =========================================================
-         BREADCRUMB / SITE ARCHITECTURE
+         HOMEPAGE CONTENT / COLLECTION ENTITY
+    ========================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "@id": "https://www.dolcevitascooters.com/#collection",
+
+        "name": "Vintage Vespa & Lambretta Collection",
+
+        "description": "Selected vintage Italian Vespa and Lambretta scooters available through Dolce Vita Scooters.",
+
+        "url": "https://www.dolcevitascooters.com/",
+
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+
+        "numberOfItems": 2,
+
+        "itemListElement": [
+
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Vintage Piaggio Vespa"
+            },
+
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Vintage Innocenti Lambretta"
+            }
+
+        ]
+    }
+    </script>
+
+
+    <!-- =========================================================
+         BREADCRUMB
     ========================================================== -->
 
     <script type="application/ld+json">
@@ -411,6 +482,9 @@
         ]
     }
     </script>
+
+
+</head>
 
 
 
