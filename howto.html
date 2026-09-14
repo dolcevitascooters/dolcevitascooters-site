@@ -1118,14 +1118,2072 @@ main {
 
 
 
+.howto-opening {
+    padding: 38px var(--dv-gutter) 75px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.howto-opening-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-opening-index {
+    color: var(--dv-red);
+}
+
+.howto-opening-main {
+    display: grid;
+    grid-template-columns:
+        minmax(110px, .18fr)
+        minmax(0, 1.1fr)
+        minmax(260px, .72fr);
+    gap: 45px;
+    padding: 70px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-opening-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 9px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-opening-rule {
+    width: 28px;
+    height: 1px;
+    margin-top: 5px;
+    flex: 0 0 auto;
+    background: var(--dv-red);
+}
+
+.howto-opening-heading h1 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(58px, 7.2vw, 108px);
+    font-weight: 400;
+    line-height: .85;
+    letter-spacing: -.07em;
+}
+
+.howto-opening-heading h1 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-opening-heading-offset {
+    display: inline-block;
+    margin-left: 3vw;
+}
+
+.howto-opening-side {
+    max-width: 390px;
+    align-self: end;
+}
+
+.howto-opening-intro {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.howto-opening-note {
+    margin: 22px 0 0;
+    padding-left: 16px;
+    border-left: 1px solid var(--dv-red);
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-opening-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.howto-opening-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.howto-opening-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-opening-bottom > :last-child {
+    text-align: right;
+}
+
+.howto-opening-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+@media (max-width: 900px) {
+
+    .howto-opening-main {
+        grid-template-columns:
+            minmax(90px, .2fr)
+            minmax(0, 1fr)
+            minmax(230px, .75fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .howto-opening {
+        padding: 25px var(--dv-gutter) 55px;
+    }
+
+    .howto-opening-topline {
+        font-size: 7px;
+    }
+
+    .howto-opening-main {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 55px 0 50px;
+    }
+
+    .howto-opening-label {
+        padding-top: 0;
+    }
+
+    .howto-opening-heading h1 {
+        font-size: clamp(46px, 12.5vw, 70px);
+        line-height: .88;
+    }
+
+    .howto-opening-heading-offset {
+        margin-left: 5vw;
+    }
+
+    .howto-opening-side {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .howto-opening-intro {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .howto-opening-note {
+        font-size: 9px;
+    }
+
+    .howto-opening-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .howto-opening-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+}
+
+
+.howto-choice {
+    padding: 78px var(--dv-gutter) 82px;
+    background: #f3f3f0;
+    color: var(--dv-blue);
+}
+
+.howto-choice-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-choice-index {
+    color: var(--dv-red);
+}
+
+.howto-choice-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr);
+    gap: clamp(50px, 9vw, 150px);
+    padding: 62px 0 58px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-choice-heading {
+    max-width: 760px;
+}
+
+.howto-choice-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-choice-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.5vw, 94px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.howto-choice-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-choice-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.howto-choice-copy p {
+    margin: 0 0 18px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.howto-choice-copy .howto-choice-lead {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.howto-choice-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.howto-choice-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-choice-option {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 24px;
+    padding: 45px 40px 48px 0;
+}
+
+.howto-choice-option + .howto-choice-option {
+    padding-left: 40px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.howto-choice-number {
+    font-family: var(--dv-display);
+    font-size: 22px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.howto-choice-option-content {
+    max-width: 470px;
+}
+
+.howto-choice-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-choice-option h3 {
+    margin: 0 0 17px;
+    font-family: var(--dv-display);
+    font-size: clamp(29px, 3vw, 44px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.howto-choice-option h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-choice-option p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-choice-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.howto-choice-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.howto-choice-note {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 20px;
+    max-width: 820px;
+    padding-top: 20px;
+}
+
+.howto-choice-note-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+.howto-choice-note p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 760px) {
+
+    .howto-choice {
+        padding: 58px var(--dv-gutter) 60px;
+    }
+
+    .howto-choice-topline {
+        font-size: 7px;
+    }
+
+    .howto-choice-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 0 48px;
+    }
+
+    .howto-choice-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+    }
+
+    .howto-choice-copy {
+        max-width: 410px;
+        margin-left: 7vw;
+    }
+
+    .howto-choice-copy p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .howto-choice-copy .howto-choice-lead {
+        font-size: 11px;
+    }
+
+    .howto-choice-options {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-choice-option,
+    .howto-choice-option + .howto-choice-option {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 18px;
+        padding: 35px 0;
+        border-left: 0;
+    }
+
+    .howto-choice-option + .howto-choice-option {
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .howto-choice-option h3 {
+        font-size: 32px;
+    }
+
+    .howto-choice-note {
+        align-items: start;
+        gap: 15px;
+    }
+
+    .howto-choice-note p {
+        font-size: 8px;
+    }
+}
 
 
 
+.howto-quote {
+    padding: 78px var(--dv-gutter) 82px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.howto-quote-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-quote-index {
+    color: var(--dv-red);
+}
+
+.howto-quote-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr);
+    gap: clamp(50px, 9vw, 150px);
+    padding: 62px 0 58px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-quote-heading {
+    max-width: 760px;
+}
+
+.howto-quote-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-quote-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.4vw, 92px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.howto-quote-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-quote-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.howto-quote-copy p {
+    margin: 0 0 18px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.howto-quote-copy .howto-quote-lead {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.howto-quote-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.howto-quote-details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-quote-detail {
+    display: grid;
+    grid-template-columns: 35px minmax(0, 1fr);
+    gap: 20px;
+    padding: 42px 35px 45px 0;
+}
+
+.howto-quote-detail + .howto-quote-detail {
+    padding-left: 35px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.howto-quote-number {
+    font-family: var(--dv-display);
+    font-size: 21px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.howto-quote-detail-copy {
+    max-width: 390px;
+}
+
+.howto-quote-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-quote-detail h3 {
+    margin: 0 0 16px;
+    font-family: var(--dv-display);
+    font-size: clamp(27px, 2.6vw, 38px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.howto-quote-detail h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-quote-detail p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-quote-note {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    max-width: 900px;
+    padding-top: 20px;
+}
+
+.howto-quote-note-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+.howto-quote-note strong {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+}
+
+.howto-quote-note p {
+    max-width: 780px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 760px) {
+
+    .howto-quote {
+        padding: 58px var(--dv-gutter) 62px;
+    }
+
+    .howto-quote-topline {
+        font-size: 7px;
+    }
+
+    .howto-quote-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 0 48px;
+    }
+
+    .howto-quote-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+    }
+
+    .howto-quote-copy {
+        max-width: 410px;
+        margin-left: 7vw;
+    }
+
+    .howto-quote-copy p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .howto-quote-copy .howto-quote-lead {
+        font-size: 11px;
+    }
+
+    .howto-quote-details {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-quote-detail,
+    .howto-quote-detail + .howto-quote-detail {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 18px;
+        padding: 34px 0;
+        border-left: 0;
+    }
+
+    .howto-quote-detail + .howto-quote-detail {
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .howto-quote-detail h3 {
+        font-size: 31px;
+    }
+
+    .howto-quote-detail p {
+        font-size: 9px;
+    }
+
+    .howto-quote-note {
+        gap: 15px;
+    }
+
+    .howto-quote-note p {
+        font-size: 8px;
+    }
+}
 
 
 
+.howto-payment {
+    padding: 80px var(--dv-gutter) 84px;
+    background: var(--dv-blue);
+    color: var(--dv-white);
+}
+
+.howto-payment-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(244, 243, 238, .55);
+}
+
+.howto-payment-index {
+    color: #e06a62;
+}
+
+.howto-payment-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr);
+    gap: clamp(50px, 9vw, 150px);
+    padding: 62px 0 58px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.howto-payment-heading {
+    max-width: 760px;
+}
+
+.howto-payment-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(244, 243, 238, .55);
+}
+
+.howto-payment-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.4vw, 92px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.howto-payment-heading h2 em {
+    color: #e06a62;
+    font-style: italic;
+}
+
+.howto-payment-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.howto-payment-copy p {
+    margin: 0 0 18px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: rgba(244, 243, 238, .76);
+}
+
+.howto-payment-copy .howto-payment-lead {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--dv-white);
+}
+
+.howto-payment-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.howto-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.howto-payment-method {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 24px;
+    padding: 46px 45px 48px 0;
+}
+
+.howto-payment-method + .howto-payment-method {
+    padding-left: 45px;
+    border-left: 1px solid rgba(201, 203, 197, .3);
+}
+
+.howto-payment-number {
+    font-family: var(--dv-display);
+    font-size: 22px;
+    line-height: 1;
+    color: #e06a62;
+}
+
+.howto-payment-method-content {
+    max-width: 500px;
+}
+
+.howto-payment-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: rgba(244, 243, 238, .48);
+}
+
+.howto-payment-method h3 {
+    margin: 0 0 18px;
+    font-family: var(--dv-display);
+    font-size: clamp(30px, 3vw, 44px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.howto-payment-method h3 em {
+    color: #e06a62;
+    font-style: italic;
+}
+
+.howto-payment-method p {
+    margin: 0 0 16px;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: rgba(244, 243, 238, .68);
+}
+
+.howto-payment-method p:last-child {
+    margin-bottom: 0;
+}
+
+.howto-payment-method strong {
+    color: var(--dv-white);
+}
+
+.howto-payment-process {
+    display: grid;
+    grid-template-columns: minmax(260px, .65fr) minmax(0, 1.35fr);
+    gap: 60px;
+    padding: 48px 0 45px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.howto-payment-process-heading {
+    max-width: 380px;
+}
+
+.howto-payment-process-kicker {
+    display: block;
+    margin-bottom: 13px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: rgba(244, 243, 238, .48);
+}
+
+.howto-payment-process-heading h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(31px, 3.4vw, 48px);
+    font-weight: 400;
+    line-height: .95;
+    letter-spacing: -.05em;
+}
+
+.howto-payment-process-heading h3 em {
+    color: #e06a62;
+    font-style: italic;
+}
+
+.howto-payment-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.howto-payment-step {
+    padding: 0 22px;
+    border-left: 1px solid rgba(201, 203, 197, .3);
+}
+
+.howto-payment-step:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+.howto-payment-step span {
+    display: block;
+    margin-bottom: 15px;
+    font-family: var(--dv-display);
+    font-size: 19px;
+    color: #e06a62;
+}
+
+.howto-payment-step p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: rgba(244, 243, 238, .65);
+}
+
+.howto-payment-note {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    max-width: 900px;
+    padding-top: 20px;
+}
+
+.howto-payment-note-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: #e06a62;
+}
+
+.howto-payment-note p {
+    max-width: 800px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: rgba(244, 243, 238, .48);
+}
+
+@media (max-width: 850px) {
+
+    .howto-payment-process {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .howto-payment-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 28px;
+    }
+
+    .howto-payment-step:nth-child(3) {
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .howto-payment {
+        padding: 58px var(--dv-gutter) 62px;
+    }
+
+    .howto-payment-topline {
+        font-size: 7px;
+    }
+
+    .howto-payment-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 0 48px;
+    }
+
+    .howto-payment-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+    }
+
+    .howto-payment-copy {
+        max-width: 410px;
+        margin-left: 7vw;
+    }
+
+    .howto-payment-copy p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .howto-payment-copy .howto-payment-lead {
+        font-size: 11px;
+    }
+
+    .howto-payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-payment-method,
+    .howto-payment-method + .howto-payment-method {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 18px;
+        padding: 35px 0;
+        border-left: 0;
+    }
+
+    .howto-payment-method + .howto-payment-method {
+        border-top: 1px solid rgba(201, 203, 197, .3);
+    }
+
+    .howto-payment-method h3 {
+        font-size: 31px;
+    }
+
+    .howto-payment-method p {
+        font-size: 9px;
+    }
+
+    .howto-payment-process {
+        padding: 40px 0 38px;
+    }
+
+    .howto-payment-steps {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .howto-payment-step,
+    .howto-payment-step:nth-child(3) {
+        padding: 20px 0;
+        border-left: 0;
+        border-top: 1px solid rgba(201, 203, 197, .3);
+    }
+
+    .howto-payment-step:first-child {
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .howto-payment-step span {
+        margin-bottom: 8px;
+    }
+
+    .howto-payment-note {
+        gap: 15px;
+    }
+
+    .howto-payment-note p {
+        font-size: 8px;
+    }
+}
 
 
+.howto-after-payment {
+    padding: 80px var(--dv-gutter) 84px;
+    background: #f3f3f0;
+    color: var(--dv-blue);
+}
+
+.howto-after-payment-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-after-payment-index {
+    color: var(--dv-red);
+}
+
+.howto-after-payment-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .72fr);
+    gap: clamp(50px, 9vw, 150px);
+    padding: 62px 0 58px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-heading {
+    max-width: 760px;
+}
+
+.howto-after-payment-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-after-payment-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.4vw, 92px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.howto-after-payment-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-after-payment-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.howto-after-payment-copy p {
+    margin: 0 0 18px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.howto-after-payment-copy .howto-after-payment-lead {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.howto-after-payment-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.howto-after-payment-paths {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-path {
+    padding: 46px 45px 50px 0;
+}
+
+.howto-after-payment-path + .howto-after-payment-path {
+    padding-left: 45px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-path-head {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 24px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-number {
+    font-family: var(--dv-display);
+    font-size: 22px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.howto-after-payment-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-after-payment-path h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(30px, 3vw, 43px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.howto-after-payment-path h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-after-payment-path-body {
+    padding-top: 28px;
+}
+
+.howto-after-payment-path-body > p {
+    max-width: 510px;
+    margin: 0 0 28px;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-after-payment-step-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.howto-after-payment-step {
+    padding: 22px 25px 22px 0;
+    border-top: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-step:nth-child(even) {
+    padding-left: 25px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.howto-after-payment-step span {
+    display: block;
+    margin-bottom: 9px;
+    font-family: var(--dv-display);
+    font-size: 17px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.howto-after-payment-step p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+.howto-after-payment-step strong {
+    color: var(--dv-blue);
+}
+
+.howto-after-payment-note {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    max-width: 900px;
+    padding-top: 20px;
+}
+
+.howto-after-payment-note-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+.howto-after-payment-note p {
+    max-width: 820px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 850px) {
+
+    .howto-after-payment-paths {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-after-payment-path,
+    .howto-after-payment-path + .howto-after-payment-path {
+        padding: 40px 0;
+        border-left: 0;
+    }
+
+    .howto-after-payment-path + .howto-after-payment-path {
+        border-top: 1px solid var(--dv-silver);
+    }
+}
+
+@media (max-width: 760px) {
+
+    .howto-after-payment {
+        padding: 58px var(--dv-gutter) 62px;
+    }
+
+    .howto-after-payment-topline {
+        font-size: 7px;
+    }
+
+    .howto-after-payment-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 0 48px;
+    }
+
+    .howto-after-payment-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+    }
+
+    .howto-after-payment-copy {
+        max-width: 410px;
+        margin-left: 7vw;
+    }
+
+    .howto-after-payment-copy p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .howto-after-payment-copy .howto-after-payment-lead {
+        font-size: 11px;
+    }
+
+    .howto-after-payment-path,
+    .howto-after-payment-path + .howto-after-payment-path {
+        padding: 35px 0;
+    }
+
+    .howto-after-payment-path-head {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 18px;
+        padding-bottom: 25px;
+    }
+
+    .howto-after-payment-path h3 {
+        font-size: 31px;
+    }
+
+    .howto-after-payment-path-body {
+        padding-top: 24px;
+    }
+
+    .howto-after-payment-path-body > p {
+        font-size: 9px;
+    }
+
+    .howto-after-payment-step-list {
+        grid-template-columns: 1fr;
+    }
+
+    .howto-after-payment-step,
+    .howto-after-payment-step:nth-child(even) {
+        padding: 20px 0;
+        border-left: 0;
+    }
+
+    .howto-after-payment-step + .howto-after-payment-step {
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .howto-after-payment-step p {
+        font-size: 8px;
+    }
+
+    .howto-after-payment-note {
+        gap: 15px;
+    }
+
+    .howto-after-payment-note p {
+        font-size: 8px;
+    }
+}
+
+
+
+/* =========================================================
+   PART 06 — CRATING & INTERNATIONAL SHIPPING
+   ========================================================= */
+
+.howto-shipping {
+    padding: 78px var(--dv-gutter) 88px;
+    border-top: 1px solid rgba(23, 63, 71, .14);
+}
+
+.howto-shipping-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 52px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-shipping-intro {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: clamp(50px, 8vw, 130px);
+    align-items: start;
+    margin-bottom: 64px;
+}
+
+.howto-shipping-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5.2vw, 78px);
+    line-height: .94;
+    font-weight: 400;
+    letter-spacing: -.035em;
+    color: var(--dv-blue);
+}
+
+.howto-shipping-heading h2 em {
+    display: block;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-shipping-copy {
+    max-width: 650px;
+    padding-top: 5px;
+}
+
+.howto-shipping-copy p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--dv-black);
+}
+
+.howto-shipping-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* SHIPPING FLOW */
+
+.howto-shipping-flow {
+    border-top: 1px solid rgba(23, 63, 71, .18);
+}
+
+.howto-shipping-step {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 30px;
+    padding: 27px 0 29px;
+    border-bottom: 1px solid rgba(23, 63, 71, .12);
+}
+
+.howto-shipping-number {
+    padding-top: 2px;
+
+    font-family: var(--dv-display);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--dv-red);
+}
+
+.howto-shipping-step h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--dv-display);
+    font-size: 23px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-shipping-step p {
+    max-width: 720px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+
+/* INSURANCE + SHIPPING NOTE */
+
+.howto-shipping-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+    gap: clamp(45px, 8vw, 120px);
+    padding-top: 58px;
+}
+
+.howto-shipping-insurance {
+    padding-left: 20px;
+    border-left: 2px solid var(--dv-red);
+}
+
+.howto-shipping-label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-shipping-insurance h3 {
+    margin: 0 0 15px;
+
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-shipping-insurance h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-shipping-insurance p,
+.howto-shipping-note p {
+    max-width: 650px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-shipping-note {
+    padding-top: 2px;
+}
+
+.howto-shipping-note a {
+    color: var(--dv-blue);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(23, 63, 71, .35);
+    transition: color .25s ease, border-color .25s ease;
+}
+
+.howto-shipping-note a:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+
+
+/* =========================================================
+   PART 07 — DELIVERY & RECEIVING YOUR SCOOTER
+   ========================================================= */
+
+.howto-delivery {
+    padding: 78px var(--dv-gutter) 88px;
+    border-top: 1px solid rgba(23, 63, 71, .14);
+}
+
+.howto-delivery-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 52px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-delivery-intro {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: clamp(50px, 8vw, 130px);
+    align-items: start;
+    margin-bottom: 64px;
+}
+
+.howto-delivery-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5.2vw, 78px);
+    line-height: .94;
+    font-weight: 400;
+    letter-spacing: -.035em;
+    color: var(--dv-blue);
+}
+
+.howto-delivery-heading h2 em {
+    display: block;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-delivery-copy {
+    max-width: 650px;
+    padding-top: 5px;
+}
+
+.howto-delivery-copy p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--dv-black);
+}
+
+.howto-delivery-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* DELIVERY FLOW */
+
+.howto-delivery-flow {
+    border-top: 1px solid rgba(23, 63, 71, .18);
+}
+
+.howto-delivery-step {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 30px;
+    padding: 27px 0 29px;
+    border-bottom: 1px solid rgba(23, 63, 71, .12);
+}
+
+.howto-delivery-number {
+    padding-top: 2px;
+
+    font-family: var(--dv-display);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--dv-red);
+}
+
+.howto-delivery-step h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--dv-display);
+    font-size: 23px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-delivery-step p {
+    max-width: 720px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+
+/* INSPECTION + SHIPPING NOTE */
+
+.howto-delivery-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+    gap: clamp(45px, 8vw, 120px);
+    padding-top: 58px;
+}
+
+.howto-delivery-inspection {
+    padding-left: 20px;
+    border-left: 2px solid var(--dv-red);
+}
+
+.howto-delivery-label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-delivery-inspection h3 {
+    margin: 0 0 15px;
+
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-delivery-inspection h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-delivery-inspection p,
+.howto-delivery-note p {
+    max-width: 650px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-delivery-note {
+    padding-top: 2px;
+}
+
+.howto-delivery-note a {
+    color: var(--dv-blue);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(23, 63, 71, .35);
+    transition:
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.howto-delivery-note a:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+
+
+/* =========================================================
+   PART 08 — REGISTRATION & LONG-TERM SUPPORT
+   ========================================================= */
+
+.howto-support {
+    padding: 78px var(--dv-gutter) 88px;
+    border-top: 1px solid rgba(23, 63, 71, .14);
+}
+
+.howto-support-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 52px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-support-intro {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: clamp(50px, 8vw, 130px);
+    align-items: start;
+    margin-bottom: 64px;
+}
+
+.howto-support-heading h2 {
+    margin: 0;
+
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5.2vw, 78px);
+    line-height: .94;
+    font-weight: 400;
+    letter-spacing: -.035em;
+    color: var(--dv-blue);
+}
+
+.howto-support-heading h2 em {
+    display: block;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-support-copy {
+    max-width: 650px;
+    padding-top: 5px;
+}
+
+.howto-support-copy p {
+    margin: 0 0 20px;
+
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--dv-black);
+}
+
+.howto-support-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* SUPPORT FLOW */
+
+.howto-support-flow {
+    border-top: 1px solid rgba(23, 63, 71, .18);
+}
+
+.howto-support-step {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 30px;
+
+    padding: 27px 0 29px;
+    border-bottom: 1px solid rgba(23, 63, 71, .12);
+}
+
+.howto-support-number {
+    padding-top: 2px;
+
+    font-family: var(--dv-display);
+    font-size: 15px;
+    font-style: italic;
+    color: var(--dv-red);
+}
+
+.howto-support-step h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--dv-display);
+    font-size: 23px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-support-step p {
+    max-width: 720px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--dv-grey);
+}
+
+
+/* WARRANTY + LONG-TERM SUPPORT */
+
+.howto-support-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+    gap: clamp(45px, 8vw, 120px);
+
+    padding-top: 58px;
+}
+
+.howto-support-warranty {
+    padding-left: 20px;
+    border-left: 2px solid var(--dv-red);
+}
+
+.howto-support-label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.howto-support-warranty h3 {
+    margin: 0 0 15px;
+
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.05;
+    font-weight: 400;
+    color: var(--dv-blue);
+}
+
+.howto-support-warranty h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.howto-support-warranty p,
+.howto-support-note p {
+    max-width: 650px;
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.howto-support-note {
+    padding-top: 2px;
+}
+
+.howto-support-link {
+    display: inline-block;
+    margin-top: 20px;
+
+    color: var(--dv-blue);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(23, 63, 71, .35);
+    transition:
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.howto-support-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+
+
+/* =========================================================
+   PART 09 — FINAL CTA
+   ========================================================= */
+
+.howto-closing {
+    padding: 86px var(--dv-gutter) 96px;
+    background: var(--dv-blue);
+    color: var(--dv-white);
+}
+
+.howto-closing-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.howto-closing-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 64px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.48);
+}
+
+.howto-closing-main {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: clamp(50px, 8vw, 130px);
+    align-items: start;
+}
+
+.howto-closing-heading h2 {
+    margin: 0;
+
+    font-family: var(--dv-display);
+    font-size: clamp(46px, 5.5vw, 82px);
+    line-height: .94;
+    font-weight: 400;
+    letter-spacing: -.035em;
+    color: var(--dv-white);
+}
+
+.howto-closing-heading h2 em {
+    display: block;
+    color: #e05a50;
+    font-style: italic;
+}
+
+.howto-closing-copy {
+    max-width: 650px;
+    padding-top: 5px;
+}
+
+.howto-closing-copy p {
+    margin: 0 0 20px;
+
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.78);
+}
+
+.howto-closing-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ACTIONS */
+
+.howto-closing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 66px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.howto-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-bottom: 7px;
+
+    color: var(--dv-white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.42);
+
+    transition:
+        color .25s ease,
+        border-color .25s ease,
+        gap .25s ease;
+}
+
+.howto-closing-link span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.howto-closing-link:hover {
+    color: #e05a50;
+    border-color: #e05a50;
+    gap: 16px;
+}
+
+.howto-closing-link-primary {
+    color: #e05a50;
+    border-color: #e05a50;
+}
 
 
 
@@ -1745,24 +3803,1316 @@ main {
 
 
     
+ <section class="howto-opening" aria-labelledby="howto-opening-title">
+
+    <div class="howto-opening-topline">
+        <span class="howto-opening-index">01 / How It Works</span>
+        <span>Buying a Vintage Scooter from Vietnam</span>
+    </div>
+
+    <div class="howto-opening-main">
+
+        <div class="howto-opening-label">
+            <span class="howto-opening-rule"></span>
+            <span>Order / Restore / Deliver</span>
+        </div>
+
+        <div class="howto-opening-heading">
+            <h1 id="howto-opening-title">
+                From
+                <span class="howto-opening-heading-offset">
+                    Selection
+                </span>
+                <br>
+                <em>to Your Door.</em>
+            </h1>
+        </div>
+
+        <div class="howto-opening-side">
+
+            <p class="howto-opening-intro">
+                Buying a vintage Vespa or Lambretta from Vietnam
+                should be straightforward. Choose a scooter from
+                our collection, request a quotation, arrange payment,
+                and we take care of the restoration preparation,
+                crating and international delivery.
+            </p>
+
+            <p class="howto-opening-note">
+                Select your scooter.<br>
+                Confirm your order.<br>
+                Follow the restoration.<br>
+                Receive your machine.
+            </p>
+
+            <a
+                href="https://www.dolcevitascooters.com/inventory.html"
+                class="howto-opening-link"
+            >
+                Browse the collection
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="howto-opening-bottom">
+
+        <span>
+            Vintage Vespa / Lambretta
+        </span>
+
+        <span class="howto-opening-mark">
+            DV
+        </span>
+
+        <span>
+            Restored in Vietnam / Worldwide Delivery
+        </span>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="howto-choice" aria-labelledby="howto-choice-title">
+
+    <div class="howto-choice-topline">
+        <span class="howto-choice-index">02 / Choose</span>
+        <span>Current Inventory / Custom Restoration</span>
+    </div>
+
+    <div class="howto-choice-main">
+
+        <div class="howto-choice-heading">
+
+            <span class="howto-choice-kicker">
+                Start With the Machine
+            </span>
+
+            <h2 id="howto-choice-title">
+                Choose your
+                <em>scooter.</em>
+            </h2>
+
+        </div>
+
+        <div class="howto-choice-copy">
+
+            <p class="howto-choice-lead">
+                Begin with a vintage Vespa or Lambretta from our
+                current collection, or tell us what kind of Italian
+                scooter you would like us to restore.
+            </p>
+
+            <p>
+                Our inventory includes individually restored vintage
+                scooters selected in Vietnam. Each machine is different,
+                so availability, condition, specification and restoration
+                details are confirmed before an order is finalized.
+            </p>
+
+            <p>
+                If you are looking for a particular model, colour or
+                specification that is not currently listed, contact us.
+                We can discuss the possibility of finding a suitable
+                vintage machine and restoring it to your requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="howto-choice-options">
+
+        <article class="howto-choice-option">
+
+            <span class="howto-choice-number">01</span>
+
+            <div class="howto-choice-option-content">
+
+                <span class="howto-choice-label">
+                    Current Inventory
+                </span>
+
+                <h3>
+                    Select from
+                    <em>the collection.</em>
+                </h3>
+
+                <p>
+                    Browse available Vespa and Lambretta scooters,
+                    review the photographs, model information and
+                    listed price, then contact us for availability
+                    and a detailed quotation.
+                </p>
+
+                <a
+                    href="https://www.dolcevitascooters.com/inventory.html"
+                    class="howto-choice-link"
+                >
+                    Browse inventory
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="howto-choice-option">
+
+            <span class="howto-choice-number">02</span>
+
+            <div class="howto-choice-option-content">
+
+                <span class="howto-choice-label">
+                    Custom Restoration
+                </span>
+
+                <h3>
+                    Create your
+                    <em>own specification.</em>
+                </h3>
+
+                <p>
+                    Tell us the Vespa or Lambretta model you prefer,
+                    together with your desired colour, finish,
+                    accessories and other restoration requirements.
+                </p>
+
+                <a
+                    href="https://www.dolcevitascooters.com/contact.html"
+                    class="howto-choice-link"
+                >
+                    Discuss your requirements
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="howto-choice-note">
+
+        <span class="howto-choice-note-mark">
+            DV
+        </span>
+
+        <p>
+            Custom restoration requests depend on the availability
+            of suitable vintage machines, original or appropriate
+            components and the requested specification. We confirm
+            what is possible before restoration begins.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="howto-quote" aria-labelledby="howto-quote-title">
+
+    <div class="howto-quote-topline">
+        <span class="howto-quote-index">03 / Your Quote</span>
+        <span>Availability / Specification / Delivery</span>
+    </div>
+
+    <div class="howto-quote-main">
+
+        <div class="howto-quote-heading">
+
+            <span class="howto-quote-kicker">
+                Before You Pay
+            </span>
+
+            <h2 id="howto-quote-title">
+                Know what
+                <em>you are buying.</em>
+            </h2>
+
+        </div>
+
+        <div class="howto-quote-copy">
+
+            <p class="howto-quote-lead">
+                Once you have selected a scooter, contact us for a
+                personalized quotation. We confirm the scooter,
+                specification and delivery details before payment
+                is arranged.
+            </p>
+
+            <p>
+                For an in-stock vintage Vespa or Lambretta, we will
+                confirm current availability and the details of the
+                machine shown in our inventory. For a custom restoration,
+                we will discuss the model, colour, finish, accessories
+                and restoration requirements with you.
+            </p>
+
+            <p>
+                Your destination is also important. International
+                shipping arrangements and applicable delivery costs
+                are confirmed as part of the quotation so that you
+                understand the agreed purchase and delivery terms
+                before proceeding.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="howto-quote-details">
+
+        <div class="howto-quote-detail">
+
+            <span class="howto-quote-number">01</span>
+
+            <div class="howto-quote-detail-copy">
+
+                <span class="howto-quote-label">
+                    Tell Us
+                </span>
+
+                <h3>
+                    Your scooter
+                    <em>requirements.</em>
+                </h3>
+
+                <p>
+                    Send us the model you are interested in, your
+                    preferred specification and any questions you have.
+                    If you are looking for a custom restoration, include
+                    your preferred model and colour.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="howto-quote-detail">
+
+            <span class="howto-quote-number">02</span>
+
+            <div class="howto-quote-detail-copy">
+
+                <span class="howto-quote-label">
+                    Confirm
+                </span>
+
+                <h3>
+                    The machine and
+                    <em>the specification.</em>
+                </h3>
+
+                <p>
+                    We review your request and confirm availability,
+                    restoration details and any agreed accessories
+                    or custom requirements before the order is finalized.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="howto-quote-detail">
+
+            <span class="howto-quote-number">03</span>
+
+            <div class="howto-quote-detail-copy">
+
+                <span class="howto-quote-label">
+                    Receive
+                </span>
+
+                <h3>
+                    Your
+                    <em>quotation.</em>
+                </h3>
+
+                <p>
+                    We provide the agreed purchase and delivery
+                    information for your scooter. Once you are
+                    satisfied with the quotation, you can proceed
+                    to payment and order confirmation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="howto-quote-note">
+
+        <span class="howto-quote-note-mark">
+            DV
+        </span>
+
+        <div>
+            <strong>
+                Every scooter is individually confirmed.
+            </strong>
+
+            <p>
+                Vintage machines vary in condition, specification,
+                parts availability and restoration requirements.
+                We therefore confirm the details of each order
+                directly rather than treating every scooter as
+                identical.
+            </p>
+        </div>
+
+    </div>
+
+</section>
  
 
 
+<section class="howto-payment" aria-labelledby="howto-payment-title">
+
+    <div class="howto-payment-topline">
+        <span class="howto-payment-index">04 / Payment</span>
+        <span>International Bank Transfer / Card Payment</span>
+    </div>
+
+    <div class="howto-payment-main">
+
+        <div class="howto-payment-heading">
+
+            <span class="howto-payment-kicker">
+                Secure Your Order
+            </span>
+
+            <h2 id="howto-payment-title">
+                Two simple ways
+                <em>to pay.</em>
+            </h2>
+
+        </div>
+
+        <div class="howto-payment-copy">
+
+            <p class="howto-payment-lead">
+                Once your scooter, specification and quotation have
+                been confirmed, we will provide the payment details
+                required to proceed with your order.
+            </p>
+
+            <p>
+                Dolce Vita Scooters accepts international bank wire
+                transfers and card-based payments through established
+                international money transfer services. The available
+                payment route may depend on your country and the
+                transaction.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="howto-payment-methods">
+
+        <article class="howto-payment-method">
+
+            <span class="howto-payment-number">01</span>
+
+            <div class="howto-payment-method-content">
+
+                <span class="howto-payment-label">
+                    International Bank Transfer
+                </span>
+
+                <h3>
+                    International
+                    <em>bank wire.</em>
+                </h3>
+
+                <p>
+                    You can pay by international bank wire transfer
+                    using the bank details provided by Dolce Vita
+                    Scooters with your order instructions.
+                </p>
+
+                <p>
+                    Before sending the payment, please make sure that
+                    the beneficiary information and payment amount
+                    exactly match the details provided in your quotation
+                    or payment instructions.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="howto-payment-method">
+
+            <span class="howto-payment-number">02</span>
+
+            <div class="howto-payment-method-content">
+
+                <span class="howto-payment-label">
+                    Card Payment
+                </span>
+
+                <h3>
+                    Credit or debit card
+                    <em>via Wise or Remitly.</em>
+                </h3>
+
+                <p>
+                    Customers who prefer to pay by card may use
+                    <strong>Wise</strong> or <strong>Remitly</strong>
+                    to send the agreed payment amount, where the
+                    required card and transfer options are available
+                    for the transaction.
+                </p>
+
+                <p>
+                    Payment methods, supported cards, currencies,
+                    transfer limits and applicable service fees are
+                    determined by the relevant payment provider and
+                    may vary by country.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="howto-payment-process">
+
+        <div class="howto-payment-process-heading">
+
+            <span class="howto-payment-process-kicker">
+                Payment Process
+            </span>
+
+            <h3>
+                From quotation
+                <em>to confirmation.</em>
+            </h3>
+
+        </div>
+
+        <div class="howto-payment-steps">
+
+            <div class="howto-payment-step">
+                <span>01</span>
+                <p>
+                    Receive and review your confirmed quotation.
+                </p>
+            </div>
+
+            <div class="howto-payment-step">
+                <span>02</span>
+                <p>
+                    Choose the available payment method that suits you.
+                </p>
+            </div>
+
+            <div class="howto-payment-step">
+                <span>03</span>
+                <p>
+                    Send the agreed payment using the provided instructions.
+                </p>
+            </div>
+
+            <div class="howto-payment-step">
+                <span>04</span>
+                <p>
+                    We confirm receipt before the order moves forward.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="howto-payment-note">
+
+        <span class="howto-payment-note-mark">
+            DV
+        </span>
+
+        <p>
+            Please do not send payment to an account or recipient
+            that has not been confirmed directly by Dolce Vita Scooters.
+            Any applicable fees charged by your bank or payment provider
+            are the responsibility of the customer unless otherwise
+            agreed in writing.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="howto-after-payment" aria-labelledby="howto-after-payment-title">
+
+    <div class="howto-after-payment-topline">
+        <span class="howto-after-payment-index">05 / After Payment</span>
+        <span>Documentation / Restoration / Export</span>
+    </div>
+
+    <div class="howto-after-payment-main">
+
+        <div class="howto-after-payment-heading">
+
+            <span class="howto-after-payment-kicker">
+                What Happens Next
+            </span>
+
+            <h2 id="howto-after-payment-title">
+                Two paths.
+                <em>One destination.</em>
+            </h2>
+
+        </div>
+
+        <div class="howto-after-payment-copy">
+
+            <p class="howto-after-payment-lead">
+                What happens after payment depends on whether you
+                have selected a scooter already completed and available
+                in our inventory, or asked us to restore a vintage
+                machine to your specification.
+            </p>
+
+            <p>
+                In both cases, our team coordinates the necessary
+                preparation in Vietnam before the scooter is released
+                for international shipment.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="howto-after-payment-paths">
+
+        <article class="howto-after-payment-path">
+
+            <div class="howto-after-payment-path-head">
+
+                <span class="howto-after-payment-number">
+                    01
+                </span>
+
+                <div>
+                    <span class="howto-after-payment-label">
+                        Scooter Already in Inventory
+                    </span>
+
+                    <h3>
+                        Ready scooter.
+                        <em>Export preparation.</em>
+                    </h3>
+                </div>
+
+            </div>
+
+            <div class="howto-after-payment-path-body">
+
+                <p>
+                    If you purchase a scooter that is already completed
+                    and available at our workshop, we move directly into
+                    the ownership transfer and export preparation process.
+                </p>
+
+                <div class="howto-after-payment-step-list">
+
+                    <div class="howto-after-payment-step">
+                        <span>01</span>
+                        <p>
+                            <strong>Ownership Transfer</strong><br>
+                            We complete the applicable vehicle ownership
+                            transfer procedures for the buyer.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>02</span>
+                        <p>
+                            <strong>Registration Documents</strong><br>
+                            We arrange the required procedures for
+                            deleting the scooter from its Vietnamese
+                            registration certificate for export.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>03</span>
+                        <p>
+                            <strong>Export Preparation</strong><br>
+                            Once the required documentation is prepared,
+                            we coordinate the scooter's export process
+                            with our shipping forwarder.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>04</span>
+                        <p>
+                            <strong>Shipping Schedule</strong><br>
+                            We book the available shipping schedule
+                            with our forwarder and prepare the scooter
+                            for international transport.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="howto-after-payment-path">
+
+            <div class="howto-after-payment-path-head">
+
+                <span class="howto-after-payment-number">
+                    02
+                </span>
+
+                <div>
+                    <span class="howto-after-payment-label">
+                        Custom Restoration
+                    </span>
+
+                    <h3>
+                        Your specification.
+                        <em>Our workshop.</em>
+                    </h3>
+                </div>
+
+            </div>
+
+            <div class="howto-after-payment-path-body">
+
+                <p>
+                    If you have ordered a custom-built vintage Vespa
+                    or Lambretta, restoration begins after payment
+                    has been received and the project requirements
+                    have been confirmed.
+                </p>
+
+                <div class="howto-after-payment-step-list">
+
+                    <div class="howto-after-payment-step">
+                        <span>01</span>
+                        <p>
+                            <strong>Restoration Begins</strong><br>
+                            Our workshop begins the restoration according
+                            to the agreed model, colour, specification
+                            and restoration requirements.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>02</span>
+                        <p>
+                            <strong>Progress Updates</strong><br>
+                            We send photographs during the restoration
+                            so you can follow the work as your scooter
+                            takes shape.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>03</span>
+                        <p>
+                            <strong>Finished Scooter</strong><br>
+                            When restoration is complete, we photograph
+                            the finished scooter and send the final
+                            images to you for confirmation.
+                        </p>
+                    </div>
+
+                    <div class="howto-after-payment-step">
+                        <span>04</span>
+                        <p>
+                            <strong>Ready for Export</strong><br>
+                            After the finished scooter is confirmed,
+                            we proceed with the necessary export
+                            preparation and arrange international
+                            shipping.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="howto-after-payment-note">
+
+        <span class="howto-after-payment-note-mark">
+            DV
+        </span>
+
+        <p>
+            Restoration photographs are progress updates rather than
+            a substitute for the final inspection. For custom orders,
+            the finished scooter photographs provide the final visual
+            confirmation before export preparation and shipping proceed.
+        </p>
+
+    </div>
+
+</section>
 
 
 
 
+<!-- PART 06 — CRATING & INTERNATIONAL SHIPPING -->
+<section class="howto-shipping" aria-labelledby="howto-shipping-title">
+
+    <div class="howto-shipping-topline">
+        <span>06 / Shipping</span>
+        <span>From Vietnam to Your Destination</span>
+    </div>
+
+    <div class="howto-shipping-intro">
+
+        <div class="howto-shipping-heading">
+            <h2 id="howto-shipping-title">
+                Crated,
+                <em>cleared &amp; shipped.</em>
+            </h2>
+        </div>
+
+        <div class="howto-shipping-copy">
+            <p>
+                Once all required export documents are ready and the
+                shipping schedule has been confirmed by our forwarder,
+                we hand the scooter over to the forwarder for
+                international shipment.
+            </p>
+
+            <p>
+                The forwarder handles the wooden crate packaging,
+                export customs clearance and shipment arrangements
+                so your vintage Vespa or Lambretta can leave Vietnam
+                properly prepared for international transport.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="howto-shipping-flow">
+
+        <div class="howto-shipping-step">
+            <span class="howto-shipping-number">01</span>
+
+            <div>
+                <h3>Shipping Schedule Confirmed</h3>
+                <p>
+                    After the export documentation is complete,
+                    our forwarder confirms the available shipping
+                    schedule and we arrange the handover of the scooter.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-shipping-step">
+            <span class="howto-shipping-number">02</span>
+
+            <div>
+                <h3>Handover to Our Forwarder</h3>
+                <p>
+                    We deliver the scooter to our appointed forwarder,
+                    who takes responsibility for the next stages of
+                    packaging and export shipment preparation.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-shipping-step">
+            <span class="howto-shipping-number">03</span>
+
+            <div>
+                <h3>Wooden Crate Packaging</h3>
+                <p>
+                    The scooter is prepared and secured inside a
+                    wooden shipping crate for international transport,
+                    with protection appropriate for the journey.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-shipping-step">
+            <span class="howto-shipping-number">04</span>
+
+            <div>
+                <h3>Export Customs Clearance</h3>
+                <p>
+                    Our forwarder handles the export customs clearance
+                    and the required shipment procedures before the
+                    consignment leaves Vietnam.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-shipping-step">
+            <span class="howto-shipping-number">05</span>
+
+            <div>
+                <h3>On Board</h3>
+                <p>
+                    Our usual shipping schedule has the consignment
+                    going on board on Sunday each week, subject to the
+                    forwarder's confirmed sailing schedule.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="howto-shipping-bottom">
+
+        <div class="howto-shipping-insurance">
+
+            <span class="howto-shipping-label">
+                Optional Insurance
+            </span>
+
+            <h3>
+                Protect your shipment
+                <em>with insurance.</em>
+            </h3>
+
+            <p>
+                Customers may choose to purchase shipping insurance
+                at an additional cost. If you would like insurance,
+                let us know when confirming your shipping arrangements
+                so the applicable cost and coverage can be included
+                in your quotation.
+            </p>
+
+        </div>
+
+
+        <div class="howto-shipping-note">
+
+            <span class="howto-shipping-label">
+                Shipping Details
+            </span>
+
+            <p>
+                For more information about international shipping,
+                wooden crating, delivery, destinations and shipping
+                terms, please visit our
+                <a href="https://www.dolcevitascooters.com/shipping.html">
+                    Shipping page ↗
+                </a>
+                or contact us directly.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
- 
+<!-- PART 07 — DELIVERY & RECEIVING YOUR SCOOTER -->
+<section class="howto-delivery" aria-labelledby="howto-delivery-title">
+
+    <div class="howto-delivery-topline">
+        <span>07 / Delivery</span>
+        <span>Arrival at Your Destination</span>
+    </div>
+
+    <div class="howto-delivery-intro">
+
+        <div class="howto-delivery-heading">
+            <h2 id="howto-delivery-title">
+                From the crate
+                <em>to your door.</em>
+            </h2>
+        </div>
+
+        <div class="howto-delivery-copy">
+            <p>
+                Once the scooter has been exported from Vietnam and
+                shipped to its destination, the final stage is delivery
+                according to the shipping arrangement confirmed in your
+                quotation.
+            </p>
+
+            <p>
+                For door-to-door shipments, the forwarder coordinates
+                the onward delivery to the agreed destination address.
+                Delivery arrangements and local procedures can vary
+                depending on the destination country.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="howto-delivery-flow">
+
+        <div class="howto-delivery-step">
+            <span class="howto-delivery-number">01</span>
+
+            <div>
+                <h3>Arrival at Destination</h3>
+                <p>
+                    The consignment arrives in the destination country
+                    and proceeds through the applicable import and
+                    delivery procedures.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-delivery-step">
+            <span class="howto-delivery-number">02</span>
+
+            <div>
+                <h3>Door-to-Door Delivery</h3>
+                <p>
+                    Where door-to-door delivery is included in your
+                    confirmed shipping arrangement, the forwarder
+                    coordinates delivery to the agreed address.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-delivery-step">
+            <span class="howto-delivery-number">03</span>
+
+            <div>
+                <h3>Receive the Wooden Crate</h3>
+                <p>
+                    When the scooter arrives, inspect the wooden crate
+                    and its exterior condition before opening it.
+                    We recommend taking photographs or video if you
+                    notice any visible damage.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-delivery-step">
+            <span class="howto-delivery-number">04</span>
+
+            <div>
+                <h3>Uncrate &amp; Inspect</h3>
+                <p>
+                    Carefully open the crate and check the scooter,
+                    accessories and visible condition against the
+                    agreed specification and final photographs.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-delivery-step">
+            <span class="howto-delivery-number">05</span>
+
+            <div>
+                <h3>Ready for the Road</h3>
+                <p>
+                    Your vintage Vespa or Lambretta has completed its
+                    journey from our workshop in Vietnam and is ready
+                    for the next chapter with its new owner.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="howto-delivery-bottom">
+
+        <div class="howto-delivery-inspection">
+
+            <span class="howto-delivery-label">
+                At Delivery
+            </span>
+
+            <h3>
+                Check the shipment
+                <em>before opening.</em>
+            </h3>
+
+            <p>
+                If the crate or packaging shows visible signs of
+                transport damage, document the condition clearly with
+                photographs and contact us as soon as possible.
+                This documentation can be important when handling
+                a shipping or insurance claim.
+            </p>
+
+        </div>
+
+
+        <div class="howto-delivery-note">
+
+            <span class="howto-delivery-label">
+                Shipping Details
+            </span>
+
+            <p>
+                For detailed information about door-to-door delivery,
+                shipping destinations, insurance, crate specifications
+                and international shipping terms, visit our
+                <a href="https://www.dolcevitascooters.com/shipping.html">
+                    Shipping page ↗
+                </a>.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
+<!-- PART 08 — REGISTRATION & LONG-TERM SUPPORT -->
+<section class="howto-support" aria-labelledby="howto-support-title">
+
+    <div class="howto-support-topline">
+        <span>08 / After Delivery</span>
+        <span>Registration &amp; Ongoing Support</span>
+    </div>
+
+    <div class="howto-support-intro">
+
+        <div class="howto-support-heading">
+            <h2 id="howto-support-title">
+                Delivered
+                <em>isn't the end.</em>
+            </h2>
+        </div>
+
+        <div class="howto-support-copy">
+            <p>
+                Receiving your scooter is only the beginning of
+                ownership. Once the scooter has arrived, we provide
+                the full set of legal export and vehicle documents
+                required for you to proceed with registration in
+                your country.
+            </p>
+
+            <p>
+                Using these documents, the new owner can complete
+                the local registration process and obtain the
+                appropriate registration and license plate according
+                to the requirements of the destination country.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="howto-support-flow">
+
+        <div class="howto-support-step">
+            <span class="howto-support-number">01</span>
+
+            <div>
+                <h3>Receive the Legal Documents</h3>
+                <p>
+                    Dolce Vita Scooters provides the full set of
+                    legal documents prepared for the export and
+                    transfer of the scooter.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-support-step">
+            <span class="howto-support-number">02</span>
+
+            <div>
+                <h3>Register Your Scooter</h3>
+                <p>
+                    The owner uses the supplied documentation to
+                    complete the registration process and apply for
+                    a new license plate with the relevant authority
+                    in the destination country.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-support-step">
+            <span class="howto-support-number">03</span>
+
+            <div>
+                <h3>Ride &amp; Enjoy</h3>
+                <p>
+                    Once local registration and any required
+                    road-legal procedures are complete, your
+                    restored vintage scooter is ready to be enjoyed
+                    on the road.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="howto-support-step">
+            <span class="howto-support-number">04</span>
+
+            <div>
+                <h3>Stay Connected With Us</h3>
+                <p>
+                    Your relationship with Dolce Vita does not end
+                    when the scooter leaves Vietnam. Our team remains
+                    available to support you throughout ownership,
+                    including questions that may arise during use
+                    of your scooter.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="howto-support-bottom">
+
+        <div class="howto-support-warranty">
+
+            <span class="howto-support-label">
+                Warranty &amp; Support
+            </span>
+
+            <h3>
+                We stay with the scooter
+                <em>after delivery.</em>
+            </h3>
+
+            <p>
+                Every scooter is covered by our applicable warranty,
+                and our support continues after delivery. If you
+                have questions about the scooter, its components,
+                operation, maintenance or ownership, you can contact
+                us and our team will assist wherever we can.
+            </p>
+
+        </div>
+
+
+        <div class="howto-support-note">
+
+            <span class="howto-support-label">
+                Beyond the Sale
+            </span>
+
+            <p>
+                We believe buying a vintage scooter should be a
+                long-term relationship, not simply a transaction.
+                From the first inquiry to life with the scooter on
+                the road, Dolce Vita Scooters remains available to
+                support our customers.
+            </p>
+
+            <a
+                href="https://www.dolcevitascooters.com/warranty.html"
+                class="howto-support-link"
+            >
+                View Warranty ↗
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
+<!-- PART 09 — FINAL CTA -->
+<section class="howto-closing" aria-labelledby="howto-closing-title">
 
+    <div class="howto-closing-inner">
+
+        <div class="howto-closing-index">
+            <span>09 / Dolce Vita Scooters</span>
+            <span>From Vietnam to the World</span>
+        </div>
+
+        <div class="howto-closing-main">
+
+            <div class="howto-closing-heading">
+                <h2 id="howto-closing-title">
+                    Your scooter.
+                    <em>Your journey.</em>
+                </h2>
+            </div>
+
+            <div class="howto-closing-copy">
+
+                <p>
+                    From selecting a vintage Vespa or Lambretta to
+                    restoration, export preparation, international
+                    shipping and delivery, we keep the process clear
+                    from beginning to end.
+                </p>
+
+                <p>
+                    Every scooter is restored in Vietnam and prepared
+                    for its new owner with the documentation, shipping
+                    arrangements and support appropriate to the order.
+                </p>
+
+                <p>
+                    Whether you are choosing a scooter from our current
+                    collection or discussing a custom restoration,
+                    the next step is simply to tell us what you are
+                    looking for.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="howto-closing-actions">
+
+            <a
+                href="https://www.dolcevitascooters.com/inventory.html"
+                class="howto-closing-link howto-closing-link-primary"
+            >
+                Explore the Collection
+                <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+                href="https://www.dolcevitascooters.com/contact.html"
+                class="howto-closing-link"
+            >
+                Start an Inquiry
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
