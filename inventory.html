@@ -1117,15 +1117,1649 @@ main {
 }
 
 
+/* =========================================================
+   INVENTORY — PART 01
+   HERO / OPENING
+   ========================================================= */
+
+.inventory-opening {
+    padding:
+        38px
+        var(--dv-gutter)
+        0;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.inventory-opening-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.inventory-opening-location {
+    text-align: right;
+    color: var(--dv-grey);
+}
+
+.inventory-opening-main {
+    min-height: 560px;
+
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr) 300px;
+    column-gap: 45px;
+    align-items: center;
+
+    padding:
+        70px 0
+        65px;
+}
+
+.inventory-opening-label {
+    align-self: start;
+    padding-top: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-opening-rule {
+    display: block;
+    width: 1px;
+    height: 38px;
+    background: var(--dv-red);
+}
+
+.inventory-opening-heading {
+    position: relative;
+}
+
+.inventory-opening-heading::before {
+    content: "02";
+
+    position: absolute;
+    top: -45px;
+    left: 0;
+
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    color: var(--dv-red);
+}
+
+.inventory-opening-heading h1 {
+    max-width: 950px;
+    margin: 0;
+
+    font-family: var(--dv-display);
+    font-size: clamp(76px, 10vw, 150px);
+    font-weight: 400;
+    line-height: .82;
+    letter-spacing: -.075em;
+
+    color: var(--dv-blue);
+}
+
+.inventory-opening-heading-offset {
+    display: block;
+    margin-left: 8vw;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-opening-side {
+    align-self: end;
+    padding-bottom: 15px;
+    max-width: 300px;
+}
+
+.inventory-opening-intro {
+    margin: 0;
+
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dv-blue);
+}
+
+.inventory-opening-note {
+    margin: 28px 0 0;
+
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.8;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-opening-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 30px;
+
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    color: var(--dv-blue);
+
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.inventory-opening-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.inventory-opening-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding:
+        14px 0
+        0;
+
+    border-top: 1px solid var(--dv-silver);
+
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-opening-bottom > :last-child {
+    text-align: right;
+}
+
+.inventory-opening-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border: 1px solid var(--dv-silver);
+
+    font-family: var(--dv-display);
+    font-size: 9px;
+    color: var(--dv-blue);
+}
 
 
+/* =========================================================
+   INVENTORY — PART 01
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .inventory-opening {
+        padding-top: 25px;
+    }
+
+    .inventory-opening-topline {
+        font-size: 7px;
+    }
+
+    .inventory-opening-location {
+        max-width: 150px;
+        line-height: 1.5;
+    }
+
+    .inventory-opening-main {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+        row-gap: 38px;
+
+        padding:
+            75px 0
+            65px;
+    }
+
+    .inventory-opening-label {
+        padding-top: 0;
+
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .inventory-opening-rule {
+        width: 35px;
+        height: 1px;
+    }
+
+    .inventory-opening-heading::before {
+        top: -27px;
+    }
+
+    .inventory-opening-heading h1 {
+        font-size: clamp(50px, 14vw, 76px);
+        line-height: .88;
+        letter-spacing: -.065em;
+    }
+
+    .inventory-opening-heading-offset {
+        margin-left: 5vw;
+    }
+
+    .inventory-opening-side {
+        max-width: 390px;
+        padding-bottom: 0;
+        margin-left: 7vw;
+    }
+
+    .inventory-opening-bottom {
+        grid-template-columns: 1fr auto;
+    }
+
+    .inventory-opening-bottom > :last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .inventory-opening-heading h1 {
+        font-size: clamp(44px, 13vw, 64px);
+        line-height: .9;
+    }
+
+    .inventory-opening-intro {
+        font-size: 12px;
+    }
+}
 
 
+/* =========================================================
+   INVENTORY — PART 02
+   AUTHENTICITY / STANDARDS
+   ========================================================= */
+
+.inventory-standards {
+    padding:
+        55px
+        var(--dv-gutter)
+        65px;
+
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-standards-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+
+    color: var(--dv-grey);
+}
+
+.inventory-standards-index {
+    color: var(--dv-red);
+}
+
+.inventory-standards-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+
+    padding:
+        55px 0
+        45px;
+}
+
+.inventory-standards-heading h2 {
+    max-width: 760px;
+    margin: 0;
+
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6vw, 88px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.inventory-standards-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-standards-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.inventory-standards-copy p {
+    margin: 0;
+
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: var(--dv-blue);
+}
+
+.inventory-standards-copy p + p {
+    margin-top: 20px;
+    color: var(--dv-grey);
+}
+
+.inventory-standards-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-standard-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-height: 58px;
+    padding-right: 20px;
+
+    border-right: 1px solid var(--dv-silver);
+
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.inventory-standard-item:not(:first-child) {
+    padding-left: 20px;
+}
+
+.inventory-standard-item:last-child {
+    border-right: 0;
+}
+
+.inventory-standard-number {
+    color: var(--dv-red);
+}
 
 
+/* =========================================================
+   INVENTORY — PART 02
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .inventory-standards {
+        padding:
+            45px
+            var(--dv-gutter)
+            50px;
+    }
+
+    .inventory-standards-topline {
+        font-size: 7px;
+    }
+
+    .inventory-standards-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+        padding:
+            42px 0
+            38px;
+    }
+
+    .inventory-standards-heading h2 {
+        font-size: clamp(45px, 12vw, 68px);
+        line-height: .9;
+    }
+
+    .inventory-standards-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .inventory-standards-copy p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .inventory-standards-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inventory-standard-item {
+        min-height: 50px;
+        padding: 12px 10px 12px 0;
+
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .inventory-standard-item:not(:first-child) {
+        padding-left: 10px;
+    }
+
+    .inventory-standard-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .inventory-standard-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+}
 
 
+.inventory-select {
+    padding: 45px var(--dv-gutter) 50px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+    border-top: 1px solid var(--dv-silver);
+}
 
+.inventory-select-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-select-index {
+    color: var(--dv-red);
+}
+
+.inventory-select-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(240px, .7fr);
+    gap: 70px;
+    align-items: end;
+    padding: 35px 0 0;
+}
+
+.inventory-select-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6vw, 86px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.inventory-select-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-select-copy {
+    max-width: 360px;
+    padding-bottom: 4px;
+}
+
+.inventory-select-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dv-blue);
+}
+
+.inventory-select-note {
+    display: inline-block;
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 760px) {
+    .inventory-select {
+        padding: 38px var(--dv-gutter) 42px;
+    }
+
+    .inventory-select-topline {
+        font-size: 7px;
+    }
+
+    .inventory-select-main {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 32px;
+    }
+
+    .inventory-select-heading h2 {
+        font-size: clamp(45px, 12vw, 68px);
+        line-height: .9;
+    }
+
+    .inventory-select-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .inventory-select-copy p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+    .inventory-select-note {
+        margin-top: 15px;
+    }
+}
+
+
+.inventory-list {
+    padding: 70px var(--dv-gutter) 85px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-list-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-list-index {
+    color: var(--dv-red);
+}
+
+.inventory-list-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    align-items: end;
+    padding: 55px 0 70px;
+}
+
+.inventory-list-heading h2 {
+    max-width: 800px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(58px, 7vw, 100px);
+    font-weight: 400;
+    line-height: .86;
+    letter-spacing: -.07em;
+}
+
+.inventory-list-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-list-intro > p {
+    max-width: 370px;
+    margin: 0 0 5px;
+    font-family: var(--dv-body);
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.inventory-group {
+    margin-top: 0;
+}
+
+.inventory-group + .inventory-group {
+    margin-top: 90px;
+}
+
+.inventory-group-header {
+    display: grid;
+    grid-template-columns: 55px minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 20px;
+    padding: 15px 0;
+    border-top: 1px solid var(--dv-blue);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.inventory-group-number,
+.inventory-group-count {
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.inventory-group-number {
+    color: var(--dv-red);
+}
+
+.inventory-group-count {
+    color: var(--dv-grey);
+}
+
+.inventory-group-header h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 55px;
+    padding-top: 30px;
+}
+
+.inventory-item {
+    min-width: 0;
+}
+
+.inventory-item > a {
+    display: block;
+    color: inherit;
+}
+
+.inventory-image {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f3f3f0;
+}
+
+.inventory-image img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.inventory-item:hover .inventory-image img {
+    transform: scale(1.025);
+}
+
+.inventory-info {
+    padding-top: 15px;
+    border-top: 1px solid var(--dv-silver);
+    margin-top: 12px;
+}
+
+.inventory-marque {
+    display: block;
+    margin-bottom: 7px;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.inventory-info h4 {
+    min-height: 42px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -.025em;
+    color: var(--dv-blue);
+}
+
+.inventory-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+    margin-top: 13px;
+    padding-top: 10px;
+    border-top: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-meta strong {
+    font-family: var(--dv-display);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--dv-red);
+}
+
+.inventory-item-as-is .inventory-image {
+    border-bottom: 2px solid var(--dv-red);
+}
+
+.inventory-status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 9px;
+    background: var(--dv-red);
+    color: var(--dv-white);
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: .14em;
+}
+
+.inventory-meta-as-is strong {
+    color: var(--dv-red);
+}
+
+.inventory-secondary-price {
+    display: block;
+    margin-top: 7px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 900px) {
+    .inventory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 22px;
+        row-gap: 45px;
+    }
+
+    .inventory-list-intro {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 760px) {
+    .inventory-list {
+        padding: 50px var(--dv-gutter) 60px;
+    }
+
+    .inventory-list-topline {
+        font-size: 7px;
+    }
+
+    .inventory-list-intro {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 40px 0 50px;
+    }
+
+    .inventory-list-heading h2 {
+        font-size: clamp(46px, 12vw, 70px);
+        line-height: .9;
+    }
+
+    .inventory-list-intro > p {
+        max-width: 390px;
+        margin-left: 7vw;
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .inventory-group + .inventory-group {
+        margin-top: 65px;
+    }
+
+    .inventory-group-header {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .inventory-group-count {
+        grid-column: 2;
+        margin-top: -5px;
+    }
+
+    .inventory-group-header h3 {
+        font-size: 27px;
+    }
+
+    .inventory-grid {
+        grid-template-columns: 1fr;
+        row-gap: 45px;
+        padding-top: 25px;
+    }
+
+    .inventory-info h4 {
+        min-height: 0;
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-list {
+        padding-top: 42px;
+    }
+
+    .inventory-list-intro {
+        padding-top: 35px;
+    }
+
+    .inventory-info h4 {
+        font-size: 21px;
+    }
+
+    .inventory-meta strong {
+        font-size: 17px;
+    }
+}
+
+
+.inventory-customize {
+    padding: 65px var(--dv-gutter) 70px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-customize-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-customize-index {
+    color: var(--dv-red);
+}
+
+.inventory-customize-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    padding: 55px 0 45px;
+}
+
+.inventory-customize-heading h2 {
+    max-width: 760px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(54px, 6.5vw, 92px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.inventory-customize-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-customize-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.inventory-customize-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.inventory-customize-copy p + p {
+    margin-top: 18px;
+    color: var(--dv-grey);
+}
+
+.inventory-customize-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.inventory-customize-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.inventory-customize-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-customize-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 55px;
+    padding-right: 20px;
+    border-right: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.inventory-customize-item:not(:first-child) {
+    padding-left: 20px;
+}
+
+.inventory-customize-item:last-child {
+    border-right: 0;
+}
+
+.inventory-customize-number {
+    color: var(--dv-red);
+}
+
+@media (max-width: 760px) {
+
+    .inventory-customize {
+        padding: 48px var(--dv-gutter) 52px;
+    }
+
+    .inventory-customize-topline {
+        font-size: 7px;
+    }
+
+    .inventory-customize-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0 36px;
+    }
+
+    .inventory-customize-heading h2 {
+        font-size: clamp(46px, 12vw, 70px);
+        line-height: .9;
+    }
+
+    .inventory-customize-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .inventory-customize-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .inventory-customize-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-customize-item {
+        min-height: 46px;
+        padding: 11px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+        font-size: 7px;
+    }
+
+    .inventory-customize-item:not(:first-child) {
+        padding-left: 0;
+    }
+
+    .inventory-customize-item:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+.inventory-ordering {
+    padding: 65px var(--dv-gutter) 70px;
+    background: #f3f2ed;
+    color: var(--dv-blue);
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-ordering-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-ordering-index {
+    color: var(--dv-red);
+}
+
+.inventory-ordering-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    padding: 55px 0 48px;
+}
+
+.inventory-ordering-heading h2 {
+    max-width: 820px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.3vw, 90px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.inventory-ordering-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-ordering-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.inventory-ordering-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.inventory-ordering-copy p + p {
+    margin-top: 18px;
+    color: var(--dv-grey);
+}
+
+.inventory-ordering-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--dv-silver);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.inventory-ordering-step {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 16px;
+    min-height: 135px;
+    padding: 24px 24px 22px 0;
+    border-right: 1px solid var(--dv-silver);
+}
+
+.inventory-ordering-step + .inventory-ordering-step {
+    padding-left: 24px;
+}
+
+.inventory-ordering-step:last-child {
+    border-right: 0;
+}
+
+.inventory-ordering-number {
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var(--dv-red);
+}
+
+.inventory-ordering-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+}
+
+.inventory-ordering-step p {
+    max-width: 190px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+.inventory-ordering-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 28px;
+}
+
+.inventory-ordering-cta > span {
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-ordering-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.inventory-ordering-cta a:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+@media (max-width: 900px) {
+
+    .inventory-ordering-steps {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inventory-ordering-step:nth-child(2) {
+        border-right: 0;
+    }
+
+    .inventory-ordering-step:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .inventory-ordering {
+        padding: 48px var(--dv-gutter) 52px;
+    }
+
+    .inventory-ordering-topline {
+        font-size: 7px;
+    }
+
+    .inventory-ordering-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0 36px;
+    }
+
+    .inventory-ordering-heading h2 {
+        font-size: clamp(45px, 12vw, 69px);
+        line-height: .9;
+    }
+
+    .inventory-ordering-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .inventory-ordering-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .inventory-ordering-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-ordering-step,
+    .inventory-ordering-step + .inventory-ordering-step {
+        min-height: auto;
+        padding: 18px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .inventory-ordering-step:last-child {
+        border-bottom: 0;
+    }
+
+    .inventory-ordering-step p {
+        max-width: 320px;
+    }
+
+    .inventory-ordering-cta {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding-top: 24px;
+    }
+
+}
+
+.inventory-classic {
+    padding: 65px var(--dv-gutter) 70px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+    border-top: 1px solid var(--dv-silver);
+}
+
+.inventory-classic-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.inventory-classic-index {
+    color: var(--dv-red);
+}
+
+.inventory-classic-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    padding: 55px 0 48px;
+}
+
+.inventory-classic-heading h2 {
+    max-width: 780px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.3vw, 90px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.inventory-classic-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.inventory-classic-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.inventory-classic-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.inventory-classic-copy p + p {
+    margin-top: 18px;
+    color: var(--dv-grey);
+}
+
+.inventory-classic-points {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--dv-silver);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.inventory-classic-point {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 16px;
+    min-height: 145px;
+    padding: 25px 24px 24px 0;
+    border-right: 1px solid var(--dv-silver);
+}
+
+.inventory-classic-point + .inventory-classic-point {
+    padding-left: 24px;
+}
+
+.inventory-classic-point:last-child {
+    border-right: 0;
+}
+
+.inventory-classic-number {
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var(--dv-red);
+}
+
+.inventory-classic-point h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.025em;
+    color: var(--dv-blue);
+}
+
+.inventory-classic-point p {
+    max-width: 185px;
+    margin: 13px 0 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 900px) {
+
+    .inventory-classic-points {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inventory-classic-point:nth-child(2) {
+        border-right: 0;
+    }
+
+    .inventory-classic-point:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .inventory-classic {
+        padding: 48px var(--dv-gutter) 52px;
+    }
+
+    .inventory-classic-topline {
+        font-size: 7px;
+    }
+
+    .inventory-classic-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0 36px;
+    }
+
+    .inventory-classic-heading h2 {
+        font-size: clamp(45px, 12vw, 69px);
+        line-height: .9;
+    }
+
+    .inventory-classic-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .inventory-classic-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .inventory-classic-points {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-classic-point,
+    .inventory-classic-point + .inventory-classic-point {
+        min-height: auto;
+        padding: 19px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .inventory-classic-point:last-child {
+        border-bottom: 0;
+    }
+
+    .inventory-classic-point h3 {
+        font-size: 20px;
+    }
+
+    .inventory-classic-point p {
+        max-width: 330px;
+    }
+
+}
+
+
+.inventory-closing {
+    padding: 65px var(--dv-gutter) 45px;
+    background: var(--dv-blue);
+    color: var(--dv-paper);
+}
+
+.inventory-closing-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(253,253,253,.52);
+}
+
+.inventory-closing-index {
+    color: #e05a51;
+}
+
+.inventory-closing-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    align-items: end;
+    padding: 75px 0 80px;
+}
+
+.inventory-closing-heading h2 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(60px, 8vw, 120px);
+    font-weight: 400;
+    line-height: .84;
+    letter-spacing: -.07em;
+    color: var(--dv-paper);
+}
+
+.inventory-closing-heading h2 em {
+    color: #e05a51;
+    font-style: italic;
+}
+
+.inventory-closing-copy {
+    max-width: 360px;
+    padding-bottom: 5px;
+}
+
+.inventory-closing-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 16px;
+    line-height: 1.75;
+    color: rgba(253,253,253,.72);
+}
+
+.inventory-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(253,253,253,.7);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-paper);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.inventory-closing-link:hover {
+    color: #e05a51;
+    border-color: #e05a51;
+}
+
+.inventory-closing-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid rgba(253,253,253,.2);
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(253,253,253,.38);
+}
+
+.inventory-closing-bottom > :last-child {
+    text-align: right;
+}
+
+.inventory-closing-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(253,253,253,.25);
+    font-family: var(--dv-display);
+    font-size: 9px;
+    color: var(--dv-paper);
+}
+
+@media (max-width: 760px) {
+
+    .inventory-closing {
+        padding: 48px var(--dv-gutter) 35px;
+    }
+
+    .inventory-closing-topline {
+        font-size: 7px;
+    }
+
+    .inventory-closing-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 60px 0 58px;
+    }
+
+    .inventory-closing-heading h2 {
+        font-size: clamp(50px, 14vw, 78px);
+        line-height: .88;
+    }
+
+    .inventory-closing-copy {
+        max-width: 340px;
+        margin-left: 7vw;
+        padding-bottom: 0;
+    }
+
+    .inventory-closing-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .inventory-closing-link {
+        margin-top: 25px;
+    }
+
+    .inventory-closing-bottom {
+        grid-template-columns: 1fr auto;
+    }
+
+    .inventory-closing-bottom > :last-child {
+        display: none;
+    }
+
+}
 
 
 
@@ -1745,25 +3379,1612 @@ main {
 
 
     
+ <section class="inventory-opening" aria-labelledby="inventory-opening-title">
+
+    <div class="inventory-opening-topline">
+        <span class="inventory-opening-index">01 / The Collection</span>
+        <span class="inventory-opening-location">
+            Vietnam - Italian Scooter Atelier
+        </span>
+    </div>
+
+    <div class="inventory-opening-main">
+
+        <div class="inventory-opening-label">
+            <span class="inventory-opening-rule"></span>
+            <span>Vintage Vespa / Lambretta</span>
+        </div>
+
+        <div class="inventory-opening-heading">
+            <h1 id="inventory-opening-title">
+                The
+                <span class="inventory-opening-heading-offset">
+                    Collection.
+                </span>
+            </h1>
+        </div>
+
+        <div class="inventory-opening-side">
+
+            <p class="inventory-opening-intro">
+                Authentic vintage Vespa and Lambretta scooters,
+                restored in Vietnam and prepared for collectors and
+                enthusiasts around the world.
+            </p>
+
+            <p class="inventory-opening-note">
+                Original machines.<br>
+                Faithful restoration.<br>
+                Worldwide delivery.
+            </p>
+
+           
+
+        </div>
+
+    </div>
+
+    <div class="inventory-opening-bottom">
+        <span>Classic Italian Motoring</span>
+        <span class="inventory-opening-mark">DV</span>
+        <span>Selected in Vietnam</span>
+    </div>
+
+</section>
+
+
+
+<section class="inventory-standards" aria-labelledby="inventory-standards-title">
+
+    <div class="inventory-standards-topline">
+        <span class="inventory-standards-index">02 / Our Standard</span>
+        <span>Authenticity / Craftsmanship</span>
+    </div>
+
+    <div class="inventory-standards-main">
+
+        <div class="inventory-standards-heading">
+            <h2 id="inventory-standards-title">
+                Built around
+                <em>authenticity.</em>
+            </h2>
+        </div>
+
+        <div class="inventory-standards-copy">
+            <p>
+                Every Dolce Vita scooter begins with an authentic
+                vintage machine. We work with original frames and
+                genuine engines, combining careful mechanical
+                craftsmanship with faithful restoration.
+            </p>
+
+            <p>
+                Each scooter is supplied with spare parts and a
+                matching batch of paint to help preserve its finish
+                long after delivery.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="inventory-standards-bottom">
+
+        <div class="inventory-standard-item">
+            <span class="inventory-standard-number">01</span>
+            <span>Original Frames</span>
+        </div>
+
+        <div class="inventory-standard-item">
+            <span class="inventory-standard-number">02</span>
+            <span>Genuine Engines</span>
+        </div>
+
+        <div class="inventory-standard-item">
+            <span class="inventory-standard-number">03</span>
+            <span>Spare Parts</span>
+        </div>
+
+        <div class="inventory-standard-item">
+            <span class="inventory-standard-number">04</span>
+            <span>Matching Paint</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="inventory-select" aria-labelledby="inventory-select-title">
+
+    <div class="inventory-select-topline">
+        <span class="inventory-select-index">03 / Select Your Scooter</span>
+        <span>Available Machines</span>
+    </div>
+
+    <div class="inventory-select-main">
+
+        <div class="inventory-select-heading">
+            <h2 id="inventory-select-title">
+                Find your
+                <em>machine.</em>
+            </h2>
+        </div>
+
+        <div class="inventory-select-copy">
+            <p>
+                Explore the scooters currently available from
+                Dolce Vita Scooters. Each machine is individually
+                restored and prepared for international delivery.
+            </p>
+
+            <span class="inventory-select-note">
+                Vintage Vespa / Vintage Lambretta
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
  
+<section class="inventory-list" aria-labelledby="inventory-list-title">
+
+    <div class="inventory-list-topline">
+        <span class="inventory-list-index">04 / Available Machines</span>
+        <span>Vespa / Lambretta</span>
+    </div>
+
+    <div class="inventory-list-intro">
+        <div class="inventory-list-heading">
+            <h2 id="inventory-list-title">
+                The machines
+                <em>available.</em>
+            </h2>
+        </div>
+
+        <p>
+            Our scooters are fully restored, ready to ride, and include all accessories shown in the photos.
+
+WHAT YOU SEE IS EXACTLY WHAT YOU GET.
+        </p>
+    </div>
+
+
+    <!-- LAMBRETTA -->
+
+    <div class="inventory-group">
+
+        <div class="inventory-group-header">
+            
+            <h3>Vintage Lambretta</h3>
+            
+        </div>
+
+        <div class="inventory-grid">
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il1.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il1.jpg"
+                            alt="Lambretta LI Special in Blue and White MOD Target"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Blue &amp; White MOD Target</h4>
+
+                        <div class="inventory-meta">
+                            <span>1964</span>
+                            <strong>$2,950</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il2.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il2.jpg"
+                            alt="Lambretta LI Special in White and Red"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in White &amp; Red</h4>
+
+                        <div class="inventory-meta">
+                            <span>1963</span>
+                            <strong>$2,850</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il3.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il3.jpg"
+                            alt="Lambretta LI Series III in White and Pastel Blue"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI3 in White &amp; Pastel Blue</h4>
+
+                        <div class="inventory-meta">
+                            <span>1963</span>
+                            <strong>$2,700</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il4.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il4.jpg"
+                            alt="Lambretta LI Special in Red and White MOD Target"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Red &amp; White MOD Target</h4>
+
+                        <div class="inventory-meta">
+                            <span>1965</span>
+                            <strong>$2,800</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il5.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il5.jpg"
+                            alt="Lambretta LI Special in Brown and Copper Brown"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Brown &amp; Copper Brown</h4>
+
+                        <div class="inventory-meta">
+                            <span>1964</span>
+                            <strong>$2,950</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il6.htmly">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il6.jpg"
+                            alt="Lambretta LI Special in Red and Ivory"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Red &amp; Ivory</h4>
+
+                        <div class="inventory-meta">
+                            <span>1964</span>
+                            <strong>$2,800</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il7.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il7.jpg"
+                            alt="Lambretta LI Special in Blue and White MOD Target"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Blue &amp; White MOD Target</h4>
+
+                        <div class="inventory-meta">
+                            <span>1966</span>
+                            <strong>$2,800</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il8.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il8.jpg"
+                            alt="Lambretta LI Special in Turquoise Blue and White"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Turquoise Blue &amp; White</h4>
+
+                        <div class="inventory-meta">
+                            <span>1963</span>
+                            <strong>$2,850</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il9.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il9.jpg"
+                            alt="Lambretta LI Special in White and Steel Blue"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in White &amp; Steel Blue</h4>
+
+                        <div class="inventory-meta">
+                            <span>1964</span>
+                            <strong>$2,650</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il10.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il10.jpg"
+                            alt="Lambretta LI Special in Dark Ivory and Ribbon Blue"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Dark Ivory &amp; Ribbon Blue</h4>
+
+                        <div class="inventory-meta">
+                            <span>1964</span>
+                            <strong>$2,700</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il11.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il11.jpg"
+                            alt="Lambretta TV 175 Series III in Red and White"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>TV 175 Series III in Red &amp; White</h4>
+
+                        <div class="inventory-meta">
+                            <span>1966</span>
+                            <strong>$3,450</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il12.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il12.jpg"
+                            alt="Lambretta SX 150 in Pure White"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>SX 150 in Pure White</h4>
+
+                        <div class="inventory-meta">
+                            <span>1968</span>
+                            <strong>$3,750</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il13.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il13.jpg"
+                            alt="Lambretta TV 175 Series III in White and Ribbon Blue"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>TV 175 Series III in White &amp; Ribbon Blue</h4>
+
+                        <div class="inventory-meta">
+                            <span>1963</span>
+                            <strong>$3,650</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il14.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il14.jpg"
+                            alt="Lambretta LI Special in Pure Black"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>LI Special in Pure Black</h4>
+
+                        <div class="inventory-meta">
+                            <span>1965</span>
+                            <strong>$2,700</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il15.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il15.jpg"
+                            alt="Lambretta GP 200 in Yellow Ochre"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>GP 200 in Yellow Ochre</h4>
+
+                        <div class="inventory-meta">
+                            <span>1971</span>
+                            <strong>$4,150</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il16.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il16.jpg"
+                            alt="Lambretta TV 175 Series I in Ivory"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>TV 175 Series I in Ivory</h4>
+
+                        <div class="inventory-meta">
+                            <span>1958</span>
+                            <strong>$4,650</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/lambretta/il17.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/il17.jpg"
+                            alt="Lambretta SX 200 in White"
+                        >
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>SX 200 in White</h4>
+
+                        <div class="inventory-meta">
+                            <span>1966</span>
+                            <strong>$4,650</strong>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+
+            <!-- AS IS -->
+
+            <article class="inventory-item inventory-item-as-is">
+                <a href="https://www.dolcevitascooters.com/await/aw3.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/aw3.jpg"
+                            alt="Lambretta SX 200 in White"
+                        >
+                        <span class="inventory-status">AS IS</span>
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>SX 200 in White</h4>
+
+                        <div class="inventory-meta inventory-meta-as-is">
+                            <span>1966</span>
+                            <strong>$3,150</strong>
+                        </div>
+
+                        <span class="inventory-secondary-price">
+                            Restored: $4,650
+                        </span>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item inventory-item-as-is">
+                <a href="https://www.dolcevitascooters.com/await/aw4.html">
+                    <div class="inventory-image">
+                        <img
+                            src="https://www.dolcevitascooters.com/invt/aw4.jpg"
+                            alt="Lambretta TV 200 in Original White"
+                        >
+                        <span class="inventory-status">AS IS</span>
+                    </div>
+
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Lambretta</span>
+                        <h4>TV 200 in Original White</h4>
+
+                        <div class="inventory-meta inventory-meta-as-is">
+                            <span>1963</span>
+                            <strong>$3,450</strong>
+                        </div>
+
+                        <span class="inventory-secondary-price">
+                            Restored: $4,950
+                        </span>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </div>
+
+
+    <!-- VESPA -->
+
+    <div class="inventory-group inventory-group-vespa">
+
+        <div class="inventory-group-header">
+            
+            <h3>Vintage Vespa</h3>
+            
+        </div>
+
+        <div class="inventory-grid">
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv1.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv1.jpg" alt="Vespa VBB 150 in Linden Green and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Linden Green &amp; White</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,650</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv2.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv2.jpg" alt="Vespa VBB 150 in Ivory">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Ivory</h4>
+                        <div class="inventory-meta"><span>1965</span><strong>$2,450</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv3.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv3.jpg" alt="Vespa VBB 150 in Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Blue</h4>
+                        <div class="inventory-meta"><span>1963</span><strong>$2,400</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv4.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv4.jpg" alt="Vespa VLB 150 in Blue and White MOD Target">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VLB 150 in Blue &amp; White MOD Target</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv5.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv5.jpg" alt="Vespa VBB 150 in Pastel Blue and Off White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Pastel Blue &amp; Off White</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv6.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv6.jpg" alt="Vespa VBB 150 in Dark Cobalt Blue and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Dark Cobalt Blue &amp; White</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,650</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv7html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv7.jpg" alt="Vespa VBB 150 in Signal Red and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Signal Red &amp; White</h4>
+                        <div class="inventory-meta"><span>1962</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv8.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv8.jpg" alt="Vespa VLB Sprint 150 in White and Patina Green">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VLB Sprint 150 in White &amp; Patina Green</h4>
+                        <div class="inventory-meta"><span>1969</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv9.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv9.jpg" alt="Vespa VBB Standard 150 in White and Iceplant Green">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB Standard 150 in White &amp; Iceplant Green</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv10.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv10.jpg" alt="Vespa VBB Standard 150 in Pure Orange and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB Standard 150 in Pure Orange &amp; White</h4>
+                        <div class="inventory-meta"><span>1963</span><strong>$2,650</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv39.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv39.jpg" alt="Vespa VBB 150 in Pure Black">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Pure Black</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv40.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv40.jpg" alt="Vespa VNB 125 in White and Silver">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VNB 125 in White &amp; Silver</h4>
+                        <div class="inventory-meta"><span>1962</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv11.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv11.jpg" alt="Vespa VBB Standard 150 in Light Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB Standard 150 in Light Blue</h4>
+                        <div class="inventory-meta"><span>1965</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv12.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv12.jpg" alt="Vespa VBB 150 in Steel Blue and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Steel Blue &amp; White</h4>
+                        <div class="inventory-meta"><span>1962</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv13.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv13.jpg" alt="Vespa VBB 150 in Traffic Red">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Traffic Red</h4>
+                        <div class="inventory-meta"><span>1962</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv14.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv14.jpg" alt="Vespa VBB 150 in Pastel Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Pastel Blue</h4>
+                        <div class="inventory-meta"><span>1967</span><strong>$2,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv15.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv15.jpg" alt="Vespa VLB 150 in Green Blue and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VLB 150 in Green Blue &amp; White</h4>
+                        <div class="inventory-meta"><span>1969</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv16.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv16.jpg" alt="Vespa VLB Sprint 150 in Yellow and White MOD Target">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VLB Sprint 150 in Yellow &amp; White MOD Target</h4>
+                        <div class="inventory-meta"><span>1969</span><strong>$2,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv17.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv17.jpg" alt="Vespa VBB 150 in Blue and White MOD Target">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Blue &amp; White MOD Target</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv18.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv18.jpg" alt="Vespa VBB 150 in Turquoise Blue and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Turquoise Blue &amp; White</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv19.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv19.jpg" alt="Vespa VBB 150 in Dark Ivory">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Dark Ivory</h4>
+                        <div class="inventory-meta"><span>1962</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv20.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv20.jpg" alt="Vespa VBC Super 150 in Red and White MOD Target">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBC Super 150 in Red &amp; White MOD Target</h4>
+                        <div class="inventory-meta"><span>1967</span><strong>$2,650</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv21.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv21.jpg" alt="Vespa VBB 150 in Brown and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Brown &amp; White</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv22.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv22.jpg" alt="Vespa VBC Super 150 in Black and Silver Metallic">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBC Super 150 in Black &amp; Silver Metallic</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$2,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv23.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv23.jpg" alt="Vespa VLB 150 in Traffic Orange">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VLB 150 in Traffic Orange</h4>
+                        <div class="inventory-meta"><span>1970</span><strong>$2,450</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv24.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv24.jpg" alt="Vespa VBB 150 in Patina Green">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Patina Green</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv25.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv25.jpg" alt="Vespa VBB 150 in Turkish Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Turkish Blue</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv26.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv26.jpg" alt="Vespa 180SS Super Sport in Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>180SS Super Sport in Blue</h4>
+                        <div class="inventory-meta"><span>1968</span><strong>$3,250</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv27.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv27.jpg" alt="Vespa Super Sport 180 in Red">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>Super Sport 180 in Red</h4>
+                        <div class="inventory-meta"><span>1967</span><strong>$3,250</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv37.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv37.jpg" alt="Vespa VBB 150 in Gray Silver">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Gray Silver</h4>
+                        <div class="inventory-meta"><span>1963</span><strong>$2,500</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv28.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv28.jpg" alt="Vespa APE in Cream">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>APE in Cream</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$3,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv29.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv29.jpg" alt="Vespa APE in Black">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>APE in Black</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$3,700</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv30.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv30.jpg" alt="Vespa APE in Signal White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>APE in Signal White</h4>
+                        <div class="inventory-meta"><span>1963</span><strong>$3,850</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv31.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv31.jpg" alt="Vespa VB1 in Cream">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VB1 in Cream</h4>
+                        <div class="inventory-meta"><span>1958</span><strong>$3,200</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv41.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv41.jpg" alt="Vespa VBC in Red">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBC in Red</h4>
+                        <div class="inventory-meta"><span>1967</span><strong>$2,550</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv42.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv42.jpg" alt="Vespa VBB in Dark Cyan and White">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB in Dark Cyan &amp; White</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv43.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv43.jpg" alt="Vespa VBB 150 in White and Red">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in White &amp; Red</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv44.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv44.jpg" alt="Vespa VBC 150 in Black and Orange">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBC 150 in Black &amp; Orange</h4>
+                        <div class="inventory-meta"><span>1968</span><strong>$2,600</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv32.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv32.jpg" alt="Vespa Faro Basso in Green with Sidecar">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>Faro Basso in Green with Sidecar</h4>
+                        <div class="inventory-meta"><span>1954</span><strong>$4,850</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv33.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv33.jpg" alt="Vespa 90SS Super Sport in Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>90SS Super Sport in Blue</h4>
+                        <div class="inventory-meta"><span>1966</span><strong>$3,750</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv34.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv34.jpg" alt="Vespa VBB 150 in Linden Green and White with Sidecar">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VBB 150 in Linden Green &amp; White with Sidecar</h4>
+                        <div class="inventory-meta"><span>1964</span><strong>$3,650</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv35.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv35.jpg" alt="Vespa VNB 125 in Pastel Blue">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>VNB 125 in Pastel Blue</h4>
+                        <div class="inventory-meta"><span>1961</span><strong>$2,450</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv36.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv36.jpg" alt="Vespa Faro Basso 125cc in Green">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>Faro Basso 125cc in Green</h4>
+                        <div class="inventory-meta"><span>1951</span><strong>$3,750</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item">
+                <a href="https://www.dolcevitascooters.com/vespa/iv38.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/iv38.jpg" alt="Vespa Rally 200 in Red">
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>Rally 200 in Red</h4>
+                        <div class="inventory-meta"><span>1974</span><strong>$3,700</strong></div>
+                    </div>
+                </a>
+            </article>
+
+
+            <!-- AS IS -->
+
+            <article class="inventory-item inventory-item-as-is">
+                <a href="https://www.dolcevitascooters.com/await/aw1.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/aw1.jpg" alt="Vespa GS 150 in Original White">
+                        <span class="inventory-status">AS IS</span>
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>GS 150 in Original White</h4>
+                        <div class="inventory-meta inventory-meta-as-is">
+                            <span>1955</span>
+                            <strong>$2,750</strong>
+                        </div>
+                        <span class="inventory-secondary-price">
+                            Restored: $3,850
+                        </span>
+                    </div>
+                </a>
+            </article>
+
+
+            <article class="inventory-item inventory-item-as-is">
+                <a href="https://www.dolcevitascooters.com/await/aw2.html">
+                    <div class="inventory-image">
+                        <img src="https://www.dolcevitascooters.com/invt/aw2.jpg" alt="Vespa GS 160 in Original White">
+                        <span class="inventory-status">AS IS</span>
+                    </div>
+                    <div class="inventory-info">
+                        <span class="inventory-marque">Vespa</span>
+                        <h4>GS 160 in Original White</h4>
+                        <div class="inventory-meta inventory-meta-as-is">
+                            <span>1964</span>
+                            <strong>$2,700</strong>
+                        </div>
+                        <span class="inventory-secondary-price">
+                            Restored: $3,800
+                        </span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </div>
+
+</section>
 
 
 
+<section class="inventory-customize" aria-labelledby="inventory-customize-title">
+
+    <div class="inventory-customize-topline">
+        <span class="inventory-customize-index">05 / Your Scooter</span>
+        <span>Colour / Finish / Specification</span>
+    </div>
+
+    <div class="inventory-customize-main">
+
+        <div class="inventory-customize-heading">
+            <h2 id="inventory-customize-title">
+                Make it
+                <em>yours.</em>
+            </h2>
+        </div>
+
+        <div class="inventory-customize-copy">
+
+            <p class="inventory-customize-lead">
+    Choose a scooter from our current inventory,
+    or let us restore a vintage machine to your
+    own specification.
+</p>
+
+<p>
+    From the model and paint colour to accessories
+    and finishing details, tell us what you have in mind.
+    Our team will work with you to create a scooter
+    tailored to your requirements.
+</p>
+
+            <a
+                href="https://www.dolcevitascooters.com/howto.html"
+                class="inventory-customize-link"
+            >
+                How To Order
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="inventory-customize-bottom">
+
+        <div class="inventory-customize-item">
+            <span class="inventory-customize-number">01</span>
+            <span>Colour</span>
+        </div>
+
+        <div class="inventory-customize-item">
+            <span class="inventory-customize-number">02</span>
+            <span>Finish</span>
+        </div>
+
+        <div class="inventory-customize-item">
+            <span class="inventory-customize-number">03</span>
+            <span>Specification</span>
+        </div>
+
+    </div>
+
+</section>
 
 
 
+<section class="inventory-ordering" aria-labelledby="inventory-ordering-title">
+
+    <div class="inventory-ordering-topline">
+        <span class="inventory-ordering-index">06 / Ordering</span>
+        <span>Inquiry / Confirmation / Delivery</span>
+    </div>
+
+    <div class="inventory-ordering-main">
+
+        <div class="inventory-ordering-heading">
+            <h2 id="inventory-ordering-title">
+                From
+                <em>selection</em>
+                to delivery.
+            </h2>
+        </div>
+
+        <div class="inventory-ordering-copy">
+            <p>
+                Once you have selected a scooter, contact our sales
+                team to confirm its availability, specification
+                and final quotation.
+            </p>
+
+            <p>
+                We then arrange payment, final preparation and
+                international shipping according to the agreed
+                delivery terms.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="inventory-ordering-steps">
+
+        <div class="inventory-ordering-step">
+            <span class="inventory-ordering-number">01</span>
+            <div>
+                <span class="inventory-ordering-label">
+                    Select
+                </span>
+                <p>
+                    Choose a scooter from the current collection.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-ordering-step">
+            <span class="inventory-ordering-number">02</span>
+            <div>
+                <span class="inventory-ordering-label">
+                    Confirm
+                </span>
+                <p>
+                    Discuss the scooter, restoration details and
+                    delivery destination with our team.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-ordering-step">
+            <span class="inventory-ordering-number">03</span>
+            <div>
+                <span class="inventory-ordering-label">
+                    Pay
+                </span>
+                <p>
+                    Complete payment according to the agreed
+                    purchase terms.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-ordering-step">
+            <span class="inventory-ordering-number">04</span>
+            <div>
+                <span class="inventory-ordering-label">
+                    Deliver
+                </span>
+                <p>
+                    Your scooter is prepared, crated and shipped
+                    to the agreed destination.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="inventory-ordering-cta">
+        <span>Ready to discuss a machine?</span>
+
+        <a
+            href="https://www.dolcevitascooters.com/shipping.html"
+        >
+            Explore Shipping Process
+            <span aria-hidden="true">↗</span>
+        </a>
+    </div>
+
+</section>
+
+
+<section class="inventory-classic" aria-labelledby="inventory-classic-title">
+
+    <div class="inventory-classic-topline">
+        <span class="inventory-classic-index">07 / The Appeal</span>
+        <span>Heritage / Character / Craft</span>
+    </div>
+
+    <div class="inventory-classic-main">
+
+        <div class="inventory-classic-heading">
+            <h2 id="inventory-classic-title">
+                More than
+                <em>a machine.</em>
+            </h2>
+        </div>
+
+        <div class="inventory-classic-copy">
+
+            <p class="inventory-classic-lead">
+                A classic Italian scooter carries the character
+                of another time — in its lines, its engineering
+                and the way it is made.
+            </p>
+
+            <p>
+                At Dolce Vita Scooters, we preserve that character
+                while bringing each machine back to the road.
+                The result is a scooter built to be ridden,
+                enjoyed and owned for years to come.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="inventory-classic-points">
+
+        <div class="inventory-classic-point">
+            <span class="inventory-classic-number">01</span>
+            <div>
+                <h3>Italian Heritage</h3>
+                <p>
+                    Distinctive designs and engineering from
+                    the golden age of Italian scooters.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-classic-point">
+            <span class="inventory-classic-number">02</span>
+            <div>
+                <h3>Individual Character</h3>
+                <p>
+                    Every vintage machine has its own history,
+                    details and personality.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-classic-point">
+            <span class="inventory-classic-number">03</span>
+            <div>
+                <h3>Restored by Hand</h3>
+                <p>
+                    Careful mechanical and cosmetic restoration
+                    brings each scooter back to life.
+                </p>
+            </div>
+        </div>
+
+        <div class="inventory-classic-point">
+            <span class="inventory-classic-number">04</span>
+            <div>
+                <h3>Made to Be Ridden</h3>
+                <p>
+                    These are historic machines restored for
+                    the road, not simply for display.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 
- 
+<section class="inventory-closing" aria-labelledby="inventory-closing-title">
 
+    <div class="inventory-closing-topline">
+        <span class="inventory-closing-index">08 / Begin</span>
+        <span>Dolce Vita Scooters - Vietnam</span>
+    </div>
 
+    <div class="inventory-closing-main">
 
+        <div class="inventory-closing-heading">
+            <h2 id="inventory-closing-title">
+                Find your
+                <em>machine.</em>
+            </h2>
+        </div>
 
+        <div class="inventory-closing-copy">
 
+            <p>
+                Choose from our current collection, or tell us
+                what you would like us to restore for you.
+            </p>
 
+            <a
+                href="https://www.dolcevitascooters.com/contact.html"
+                class="inventory-closing-link"
+            >
+                Begin an inquiry
+                <span aria-hidden="true">↗</span>
+            </a>
 
+        </div>
 
+    </div>
+
+    <div class="inventory-closing-bottom">
+
+        <span>
+            Vespa / Lambretta
+        </span>
+
+        <span class="inventory-closing-mark">
+            DV
+        </span>
+
+        <span>
+            Worldwide Delivery
+        </span>
+
+    </div>
+
+</section>
 
 
     <!-- =====================================================
