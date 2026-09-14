@@ -1603,6 +1603,159 @@ main {
 
 
 
+/* =========================================================
+   TERMS — MOBILE FIX
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .terms-page {
+        padding: 58px var(--dv-gutter) 62px;
+    }
+
+    /* TOPLINE */
+    .terms-topline {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        padding-bottom: 14px;
+        margin-bottom: 0;
+        font-size: 7px;
+        line-height: 1.4;
+    }
+
+
+    /* INTRO */
+    .terms-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 42px 0 44px;
+    }
+
+    .terms-heading h1 {
+        max-width: none;
+        font-size: clamp(44px, 12vw, 64px);
+        line-height: .94;
+        letter-spacing: -.06em;
+    }
+
+    .terms-intro-copy {
+        max-width: none;
+        align-self: auto;
+    }
+
+    .terms-intro-copy p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .terms-intro-copy p + p {
+        margin-top: 18px;
+    }
+
+
+    /* TERMS CONTENT */
+    .terms-content {
+        max-width: none;
+    }
+
+    .terms-section {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 16px;
+        padding: 30px 0 32px;
+    }
+
+    .terms-section-number {
+        padding-top: 5px;
+        font-size: 8px;
+        line-height: 1.4;
+    }
+
+    .terms-section-body {
+        min-width: 0;
+        max-width: none;
+    }
+
+    .terms-section-body h2 {
+        margin: 0 0 18px;
+        font-size: clamp(26px, 7vw, 36px);
+        line-height: 1.05;
+        letter-spacing: -.04em;
+    }
+
+    .terms-section-body p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .terms-section-body p + p {
+        margin-top: 15px;
+    }
+
+    .terms-section-body ul {
+        margin-top: 18px;
+    }
+
+    .terms-section-body li {
+        padding-left: 17px;
+        margin-bottom: 9px;
+        font-size: 9px;
+        line-height: 1.65;
+    }
+
+
+    /* LEGAL NOTICE */
+    .terms-notice {
+        margin-top: 38px;
+        padding: 22px 0;
+    }
+
+    .terms-notice-label {
+        margin-bottom: 10px;
+        font-size: 7px;
+    }
+
+    .terms-notice p {
+        max-width: none;
+        font-size: 9px;
+        line-height: 1.75;
+    }
+
+
+    /* CONTACT */
+    .terms-contact {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-top: 42px;
+        padding: 42px 0 15px;
+    }
+
+    .terms-contact-heading > span {
+        margin-bottom: 12px;
+        font-size: 7px;
+    }
+
+    .terms-contact-heading h2 {
+        font-size: clamp(40px, 11vw, 58px);
+        line-height: .94;
+    }
+
+    .terms-contact-copy {
+        max-width: none;
+        align-self: auto;
+    }
+
+    .terms-contact-copy p {
+        font-size: 10px;
+        line-height: 1.75;
+    }
+
+    .terms-contact-copy a {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+
+}
 
 
 /* =========================================================
