@@ -1118,12 +1118,260 @@ main {
 
 
 
+/* =========================================================
+           TERMS PAGE
+        ========================================================= */
+
+        .terms-page {
+            padding: 38px var(--dv-gutter) 90px;
+            background: var(--dv-paper);
+            color: var(--dv-blue);
+        }
+
+        .terms-topline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--dv-silver);
+            font-family: var(--dv-body);
+            font-size: 8px;
+            font-weight: 600;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--dv-grey);
+        }
+
+        .terms-index {
+            color: var(--dv-red);
+        }
+
+        .terms-intro {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1.35fr)
+                minmax(260px, .65fr);
+            gap: 80px;
+            padding: 75px 0 80px;
+            border-bottom: 1px solid var(--dv-silver);
+        }
+
+        .terms-heading h1 {
+            max-width: 850px;
+            margin: 0;
+            font-family: var(--dv-display);
+            font-size: clamp(62px, 8vw, 118px);
+            font-weight: 400;
+            line-height: .84;
+            letter-spacing: -.07em;
+        }
+
+        .terms-heading h1 em {
+            color: var(--dv-red);
+            font-style: italic;
+        }
+
+        .terms-intro-copy {
+            max-width: 390px;
+            align-self: end;
+        }
+
+        .terms-intro-copy p {
+            margin: 0;
+            font-family: var(--dv-body);
+            font-size: 14px;
+            line-height: 1.75;
+            color: var(--dv-blue);
+        }
+
+        .terms-intro-copy p + p {
+            margin-top: 20px;
+            color: var(--dv-grey);
+        }
+
+        .terms-intro-copy strong {
+            color: var(--dv-blue);
+            font-weight: 600;
+        }
+
+        .terms-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .terms-section {
+            display: grid;
+            grid-template-columns: 70px minmax(0, 1fr);
+            gap: 35px;
+            padding: 60px 0;
+            border-bottom: 1px solid var(--dv-silver);
+        }
+
+        .terms-section-number {
+            padding-top: 7px;
+            font-family: var(--dv-body);
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: .12em;
+            color: var(--dv-red);
+        }
+
+        .terms-section-body {
+            max-width: 760px;
+        }
+
+        .terms-section-body h2 {
+            margin: 0 0 25px;
+            font-family: var(--dv-display);
+            font-size: clamp(30px, 3.2vw, 45px);
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -.045em;
+            color: var(--dv-blue);
+        }
+
+        .terms-section-body p {
+            margin: 0;
+            font-family: var(--dv-body);
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--dv-grey);
+        }
+
+        .terms-section-body p + p {
+            margin-top: 18px;
+        }
+
+        .terms-section-body ul {
+            margin: 22px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .terms-section-body li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 11px;
+            font-family: var(--dv-body);
+            font-size: 11px;
+            line-height: 1.65;
+            color: var(--dv-grey);
+        }
+
+        .terms-section-body li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: .7em;
+            width: 7px;
+            height: 1px;
+            background: var(--dv-red);
+        }
 
 
+        /* =========================================================
+           LEGAL NOTICE
+        ========================================================= */
+
+        .terms-notice {
+            margin-top: 60px;
+            padding: 28px 30px;
+            border-top: 1px solid var(--dv-blue);
+            border-bottom: 1px solid var(--dv-silver);
+        }
+
+        .terms-notice-label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 8px;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--dv-red);
+        }
+
+        .terms-notice p {
+            max-width: 800px;
+            margin: 0;
+            font-size: 11px;
+            line-height: 1.75;
+            color: var(--dv-grey);
+        }
 
 
+        /* =========================================================
+           CONTACT
+        ========================================================= */
 
+        .terms-contact {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1.35fr)
+                minmax(260px, .65fr);
+            gap: 80px;
+            margin-top: 70px;
+            padding: 55px 0 20px;
+            border-top: 1px solid var(--dv-blue);
+        }
 
+        .terms-contact-heading > span {
+            display: block;
+            margin-bottom: 16px;
+            font-family: var(--dv-body);
+            font-size: 8px;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--dv-red);
+        }
+
+        .terms-contact-heading h2 {
+            margin: 0;
+            font-family: var(--dv-display);
+            font-size: clamp(42px, 5vw, 70px);
+            font-weight: 400;
+            line-height: .9;
+            letter-spacing: -.06em;
+        }
+
+        .terms-contact-heading h2 em {
+            color: var(--dv-red);
+            font-style: italic;
+        }
+
+        .terms-contact-copy {
+            max-width: 390px;
+            align-self: end;
+        }
+
+        .terms-contact-copy p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.75;
+            color: var(--dv-grey);
+        }
+
+        .terms-contact-copy a {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 25px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid var(--dv-blue);
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: .1em;
+            color: var(--dv-blue);
+            transition:
+                color .3s ease,
+                border-color .3s ease;
+        }
+
+        .terms-contact-copy a:hover {
+            color: var(--dv-red);
+            border-color: var(--dv-red);
+        }
 
 
 
@@ -1746,20 +1994,833 @@ main {
 
     
  
+<section
+            class="terms-page"
+            aria-labelledby="terms-title"
+        >
+
+            <div class="terms-topline">
+
+                <span class="terms-index">
+                    Terms of Use
+                </span>
+
+                <span>
+                    Dolce Vita Scooters
+                </span>
+
+            </div>
 
 
+            <div class="terms-intro">
+
+                <div class="terms-heading">
+
+                    <h1 id="terms-title">
+                        The terms
+                        <em>of use.</em>
+                    </h1>
+
+                </div>
+
+                <div class="terms-intro-copy">
+
+                    <p>
+                        These Terms of Use govern your access to
+                        and use of the Dolce Vita Scooters website
+                        and its content.
+                    </p>
+
+                    <p>
+                        By using
+                        <strong>
+                            www.dolcevitascooters.com
+                        </strong>,
+                        you acknowledge that you have read,
+                        understood and agree to these terms.
+                    </p>
+
+                </div>
+
+            </div>
 
 
+            <div class="terms-content">
 
 
+                <!-- 01 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        01
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Agreement to These Terms
+                        </h2>
+
+                        <p>
+                            The Dolce Vita Scooters website is
+                            operated by Dolce Vita Scooters and
+                            provides information about vintage
+                            Italian scooters, restoration work,
+                            inventory, shipping and related services.
+                        </p>
+
+                        <p>
+                            By accessing or using the website,
+                            you agree to be bound by these Terms
+                            of Use, together with any other terms,
+                            policies or notices expressly referenced
+                            on the website.
+                        </p>
+
+                        <p>
+                            If you do not agree with these terms,
+                            please do not use the website.
+                        </p>
+
+                    </div>
+
+                </section>
 
 
+                <!-- 02 -->
 
- 
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        02
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Website Information
+                        </h2>
+
+                        <p>
+                            We make reasonable efforts to keep the
+                            information published on our website
+                            useful and up to date. However, website
+                            content may change from time to time
+                            without prior notice.
+                        </p>
+
+                        <p>
+                            Scooter descriptions, photographs,
+                            specifications, colours, availability,
+                            prices and other information are provided
+                            for general information and may be subject
+                            to change or correction.
+                        </p>
+
+                        <p>
+                            The appearance of a vintage scooter,
+                            including its colour and finish, may also
+                            vary depending on photography, lighting,
+                            display settings and the individual
+                            characteristics of the machine.
+                        </p>
+
+                    </div>
+
+                </section>
 
 
+                <!-- 03 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        03
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Scooter Inquiries and Purchases
+                        </h2>
+
+                        <p>
+                            Information displayed on this website
+                            does not by itself constitute a binding
+                            offer to sell a particular scooter.
+                        </p>
+
+                        <p>
+                            Availability, specification, price,
+                            restoration requirements, shipping
+                            arrangements and other transaction
+                            details will be confirmed directly with
+                            the customer before a purchase is finalized.
+                        </p>
+
+                        <p>
+                            An inquiry submitted through the website
+                            is a request for information and does not
+                            itself create a purchase contract.
+                        </p>
+
+                        <p>
+                            Any final purchase, payment, restoration
+                            or shipping arrangement may be subject
+                            to additional written terms agreed between
+                            Dolce Vita Scooters and the customer.
+                        </p>
+
+                    </div>
+
+                </section>
 
 
+                <!-- 04 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        04
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Prices, Availability and Offers
+                        </h2>
+
+                        <p>
+                            Prices and availability shown on the
+                            website may change without notice.
+                        </p>
+
+                        <p>
+                            Promotional offers, shipping arrangements
+                            and other commercial terms are subject to
+                            the specific conditions communicated for
+                            the relevant offer.
+                        </p>
+
+                        <p>
+                            Where a quotation or promotional offer is
+                            provided directly to a customer, the terms
+                            of that quotation or offer will govern the
+                            transaction to the extent stated in the
+                            applicable documentation.
+                        </p>
+
+                        <p>
+                            We reserve the right to correct
+                            typographical, pricing or availability
+                            errors and to withdraw or amend an offer
+                            where reasonably necessary.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 05 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        05
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Restoration and Custom Work
+                        </h2>
+
+                        <p>
+                            Vintage scooters are individual historic
+                            machines. Their condition, construction,
+                            components and previous history may vary
+                            from one machine to another.
+                        </p>
+
+                        <p>
+                            Restoration work may involve mechanical,
+                            structural, electrical, cosmetic and
+                            finishing work according to the agreed
+                            specification.
+                        </p>
+
+                        <p>
+                            Custom restoration requests are subject
+                            to the availability of suitable vintage
+                            machines, parts, components, paint and
+                            other materials.
+                        </p>
+
+                        <p>
+                            Any agreed restoration specification,
+                            replacement parts or custom features
+                            should be confirmed with Dolce Vita
+                            Scooters before restoration begins.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 06 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        06
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Shipping and International Delivery
+                        </h2>
+
+                        <p>
+                            Dolce Vita Scooters may arrange
+                            international shipping and delivery for
+                            customers outside Vietnam, subject to the
+                            shipping terms applicable to the order.
+                        </p>
+
+                        <p>
+                            Shipping estimates, transit times and
+                            delivery schedules are estimates only and
+                            may be affected by carriers, customs,
+                            ports, weather, governmental procedures
+                            and other circumstances outside our control.
+                        </p>
+
+                        <p>
+                            Import requirements, registration,
+                            licensing and other requirements in the
+                            destination country may differ from one
+                            jurisdiction to another.
+                        </p>
+
+                        <p>
+                            Customers are responsible for complying
+                            with applicable destination-country
+                            requirements unless a written agreement
+                            with Dolce Vita Scooters expressly provides
+                            otherwise.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 07 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        07
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Acceptable Use
+                        </h2>
+
+                        <p>
+                            You agree to use this website only for
+                            lawful purposes and in a manner that does
+                            not interfere with the operation,
+                            security or availability of the website.
+                        </p>
+
+                        <p>
+                            You must not:
+
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Use the website for any unlawful,
+                                fraudulent or deceptive purpose.
+                            </li>
+
+                            <li>
+                                Attempt to gain unauthorized access
+                                to the website, its systems or data.
+                            </li>
+
+                            <li>
+                                Introduce malicious code, viruses or
+                                other harmful material.
+                            </li>
+
+                            <li>
+                                Interfere with or disrupt the website
+                                or its servers.
+                            </li>
+
+                            <li>
+                                Scrape, copy or systematically extract
+                                website content for unauthorized
+                                commercial use.
+                            </li>
+
+                            <li>
+                                Use information obtained from the
+                                website to impersonate Dolce Vita
+                                Scooters or misrepresent an association
+                                with the business.
+                            </li>
+
+                            <li>
+                                Violate any applicable law or regulation.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 08 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        08
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Intellectual Property
+                        </h2>
+
+                        <p>
+                            Unless otherwise stated, the content of
+                            this website, including text, photographs,
+                            graphics, logos, design elements, page
+                            layouts and other materials, is owned by
+                            or used by Dolce Vita Scooters with the
+                            necessary rights.
+                        </p>
+
+                        <p>
+                            You may view the website and use its
+                            content for your own personal,
+                            non-commercial reference.
+                        </p>
+
+                        <p>
+                            You may not reproduce, republish,
+                            distribute, modify, commercially exploit
+                            or create derivative works from website
+                            content without prior written permission,
+                            except where permitted by applicable law.
+                        </p>
+
+                        <p>
+                            The names, trademarks and logos of third
+                            parties remain the property of their
+                            respective owners.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 09 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        09
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Third-Party Websites and Services
+                        </h2>
+
+                        <p>
+                            The website may contain links to websites,
+                            platforms or services operated by third
+                            parties.
+                        </p>
+
+                        <p>
+                            These links are provided for convenience
+                            and do not necessarily constitute an
+                            endorsement or recommendation by Dolce Vita
+                            Scooters.
+                        </p>
+
+                        <p>
+                            Dolce Vita Scooters does not control the
+                            content, availability, security or privacy
+                            practices of third-party websites or services.
+                        </p>
+
+                        <p>
+                            Your use of a third-party website or service
+                            is subject to that provider's own terms and
+                            policies.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 10 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        10
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Privacy
+                        </h2>
+
+                        <p>
+                            Information submitted through this website
+                            may be collected and processed as described
+                            in our
+                            <a
+                                href="https://www.dolcevitascooters.com/policy.html"
+                                style="color: var(--dv-blue); text-decoration: underline; text-decoration-color: var(--dv-red); text-underline-offset: 4px;"
+                            >
+                                Privacy Policy
+                            </a>.
+                        </p>
+
+                        <p>
+                            By using the website, you acknowledge that
+                            website inquiries and communications may
+                            involve third-party service providers used
+                            to operate and process website functions.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 11 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        11
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Disclaimer of Warranties
+                        </h2>
+
+                        <p>
+                            To the maximum extent permitted by applicable
+                            law, the website and its content are provided
+                            on an "as available" basis.
+                        </p>
+
+                        <p>
+                            Dolce Vita Scooters does not guarantee that
+                            the website will always be available,
+                            uninterrupted, error-free or completely
+                            free from harmful components.
+                        </p>
+
+                        <p>
+                            We make no representation that all website
+                            content will always be complete, current,
+                            accurate or suitable for every particular
+                            purpose.
+                        </p>
+
+                        <p>
+                            Information published on the website should
+                            not be treated as professional legal,
+                            financial, tax, registration or import advice.
+                            Customers should obtain appropriate professional
+                            or governmental advice where necessary.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 12 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        12
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Limitation of Liability
+                        </h2>
+
+                        <p>
+                            To the maximum extent permitted by applicable
+                            law, Dolce Vita Scooters will not be liable
+                            for losses or damages arising from your use
+                            of, or inability to use, the website or
+                            information made available through it.
+                        </p>
+
+                        <p>
+                            This includes, to the extent permitted by
+                            law, indirect, incidental, consequential,
+                            special or punitive losses arising from
+                            website use, reliance on website information,
+                            interruptions, technical failures or
+                            third-party services.
+                        </p>
+
+                        <p>
+                            Nothing in these Terms of Use is intended to
+                            exclude or limit liability that cannot
+                            lawfully be excluded or limited under
+                            applicable law.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 13 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        13
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Suspension or Termination
+                        </h2>
+
+                        <p>
+                            Dolce Vita Scooters may suspend, restrict
+                            or terminate access to the website where
+                            reasonably necessary to protect the website,
+                            its users, its business or its legal rights,
+                            or where a user has violated these Terms of Use.
+                        </p>
+
+                        <p>
+                            We may also modify, suspend or discontinue
+                            any part of the website at any time.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 14 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        14
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Changes to These Terms
+                        </h2>
+
+                        <p>
+                            Dolce Vita Scooters may update these Terms
+                            of Use from time to time to reflect changes
+                            to the website, services, business practices
+                            or applicable requirements.
+                        </p>
+
+                        <p>
+                            The updated version will be published on
+                            this page. Your continued use of the website
+                            after an updated version is published
+                            constitutes acceptance of the revised terms
+                            to the extent permitted by applicable law.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 15 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        15
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            Governing Law
+                        </h2>
+
+                        <p>
+                            These Terms of Use are governed by the laws
+                            of Vietnam, without regard to conflict-of-law
+                            principles, to the extent permitted by
+                            applicable law.
+                        </p>
+
+                        <p>
+                            Any dispute relating to the use of this
+                            website will be subject to the jurisdiction
+                            of the competent courts of Vietnam, unless
+                            applicable law requires otherwise.
+                        </p>
+
+                        <p>
+                            Where a separate written agreement for the
+                            purchase, restoration or delivery of a
+                            scooter contains specific dispute-resolution
+                            or governing-law provisions, those provisions
+                            may apply to that transaction.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 16 -->
+
+                <section class="terms-section">
+
+                    <span class="terms-section-number">
+                        16
+                    </span>
+
+                    <div class="terms-section-body">
+
+                        <h2>
+                            General Provisions
+                        </h2>
+
+                        <p>
+                            If any provision of these Terms of Use is
+                            found to be invalid or unenforceable, that
+                            provision will be interpreted or modified
+                            to the extent necessary to make it
+                            enforceable, while the remaining provisions
+                            will continue in effect.
+                        </p>
+
+                        <p>
+                            These Terms of Use, together with the policies
+                            and notices expressly referenced on the
+                            website, constitute the terms governing your
+                            use of the website unless a separate written
+                            agreement applies to a particular transaction.
+                        </p>
+
+                        <p>
+                            No provision of these Terms creates a
+                            partnership, joint venture, employment,
+                            agency or other relationship between you
+                            and Dolce Vita Scooters beyond the rights
+                            and obligations expressly stated.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- NOTICE -->
+
+                <div class="terms-notice">
+
+                    <span class="terms-notice-label">
+                        Important
+                    </span>
+
+                    <p>
+                        These Terms of Use govern the website itself.
+                        Specific purchase, restoration, payment,
+                        warranty or shipping terms may apply separately
+                        to an individual scooter transaction and will
+                        be communicated to the customer before the
+                        relevant transaction is finalized.
+                    </p>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <section class="terms-contact">
+
+                    <div class="terms-contact-heading">
+
+                        <span>
+                            Terms Questions
+                        </span>
+
+                        <h2>
+                            Need to
+                            <em>ask us?</em>
+                        </h2>
+
+                    </div>
+
+                    <div class="terms-contact-copy">
+
+                        <p>
+                            If you have questions about these Terms
+                            of Use or about using the Dolce Vita
+                            Scooters website, please contact us.
+                        </p>
+
+                        <a
+                            href="mailto:sales@dolcevitascooters.com"
+                        >
+                            sales@dolcevitascooters.com
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
 
 
 

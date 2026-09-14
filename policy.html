@@ -1117,7 +1117,293 @@ main {
 }
 
 
+.policy-page {
+    padding: 38px var(--dv-gutter) 90px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
 
+.policy-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.policy-index {
+    color: var(--dv-red);
+}
+
+.policy-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    padding: 75px 0 80px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.policy-heading h1 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(62px, 8vw, 118px);
+    font-weight: 400;
+    line-height: .84;
+    letter-spacing: -.07em;
+}
+
+.policy-heading h1 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.policy-intro-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.policy-intro-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.policy-intro-copy p + p {
+    margin-top: 20px;
+    color: var(--dv-grey);
+}
+
+.policy-intro-copy strong {
+    color: var(--dv-blue);
+    font-weight: 600;
+}
+
+.policy-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.policy-section {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 35px;
+    padding: 60px 0;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.policy-section-number {
+    padding-top: 7px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.policy-section-body {
+    max-width: 760px;
+}
+
+.policy-section-body h2 {
+    margin: 0 0 25px;
+    font-family: var(--dv-display);
+    font-size: clamp(30px, 3.2vw, 45px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.045em;
+    color: var(--dv-blue);
+}
+
+.policy-section-body p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.policy-section-body p + p {
+    margin-top: 18px;
+}
+
+.policy-section-body ul {
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.policy-section-body li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 11px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+.policy-section-body li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .7em;
+    width: 7px;
+    height: 1px;
+    background: var(--dv-red);
+}
+
+.policy-contact {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 80px;
+    margin-top: 70px;
+    padding: 55px 0 20px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.policy-contact-heading > span {
+    display: block;
+    margin-bottom: 16px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.policy-contact-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.06em;
+}
+
+.policy-contact-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.policy-contact-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.policy-contact-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.policy-contact-copy a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.policy-contact-copy a:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+@media (max-width: 760px) {
+
+    .policy-page {
+        padding: 25px var(--dv-gutter) 60px;
+    }
+
+    .policy-topline {
+        font-size: 7px;
+    }
+
+    .policy-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 0 55px;
+    }
+
+    .policy-heading h1 {
+        font-size: clamp(48px, 13vw, 72px);
+        line-height: .88;
+    }
+
+    .policy-intro-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .policy-intro-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .policy-section {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 15px;
+        padding: 42px 0;
+    }
+
+    .policy-section-number {
+        padding-top: 5px;
+        font-size: 8px;
+    }
+
+    .policy-section-body h2 {
+        margin-bottom: 20px;
+        font-size: clamp(27px, 7vw, 38px);
+    }
+
+    .policy-section-body p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .policy-section-body li {
+        font-size: 10px;
+    }
+
+    .policy-contact {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-top: 50px;
+        padding-top: 45px;
+    }
+
+    .policy-contact-heading h2 {
+        font-size: clamp(40px, 11vw, 60px);
+    }
+
+    .policy-contact-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+}
 
 
 
@@ -1745,7 +2031,341 @@ main {
 
 
     
- 
+ <section class="policy-page" aria-labelledby="policy-title">
+
+    <div class="policy-topline">
+        <span class="policy-index">Privacy Policy</span>
+        <span>Dolce Vita Scooters</span>
+    </div>
+
+    <div class="policy-intro">
+
+        <div class="policy-heading">
+            <h1 id="policy-title">
+                Your privacy
+                <em>matters.</em>
+            </h1>
+        </div>
+
+        <div class="policy-intro-copy">
+            <p>
+                This Privacy Policy explains how Dolce Vita Scooters
+                collects, uses and protects information provided through
+                our website.
+            </p>
+
+            <p>
+                This policy applies to information collected through
+                <strong>www.dolcevitascooters.com</strong> and does not
+                apply to information collected offline or through
+                third-party websites and services.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="policy-content">
+
+        <section class="policy-section">
+            <span class="policy-section-number">01</span>
+
+            <div class="policy-section-body">
+                <h2>Information We Collect</h2>
+
+                <p>
+                    We may collect information that you choose to provide
+                    when you contact us, submit an inquiry, request
+                    information about a scooter, or otherwise communicate
+                    with Dolce Vita Scooters through our website.
+                </p>
+
+                <p>
+                    This information may include your name, email address,
+                    telephone number, shipping or destination information,
+                    and any other information you choose to include in
+                    your message.
+                </p>
+
+                <p>
+                    Our website may also collect certain technical and
+                    usage information automatically, such as browser
+                    type, device information, IP address, referring
+                    website and general information about how visitors
+                    interact with our website.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">02</span>
+
+            <div class="policy-section-body">
+                <h2>How We Use Information</h2>
+
+                <p>
+                    We use information provided through our website
+                    primarily to communicate with you and respond to
+                    your requests.
+                </p>
+
+                <ul>
+                    <li>Respond to scooter and restoration inquiries.</li>
+                    <li>
+                        Provide information about available scooters,
+                        restoration services and shipping.
+                    </li>
+                    <li>
+                        Prepare quotations and respond to purchase
+                        or delivery requests.
+                    </li>
+                    <li>
+                        Communicate with you regarding an existing
+                        inquiry or order.
+                    </li>
+                    <li>
+                        Maintain, operate and improve our website
+                        and services.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">03</span>
+
+            <div class="policy-section-body">
+                <h2>Email Communications</h2>
+
+                <p>
+                    If you contact us by email or through our website,
+                    we may use the information you provide to respond
+                    to your inquiry and continue communication regarding
+                    your request.
+                </p>
+
+                <p>
+                    We will not use your contact information for unrelated
+                    purposes without a reasonable basis or your consent
+                    where consent is required.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">04</span>
+
+            <div class="policy-section-body">
+                <h2>Cookies and Similar Technologies</h2>
+
+                <p>
+                    Our website may use cookies or similar technologies
+                    to support website functionality, understand how
+                    visitors use the site, and improve the user experience.
+                </p>
+
+                <p>
+                    Cookies are small files stored on your device by your
+                    browser. You can manage or disable cookies through
+                    your browser settings. Some website functions may
+                    be affected if cookies are disabled.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">05</span>
+
+            <div class="policy-section-body">
+                <h2>Website Analytics and Technical Data</h2>
+
+                <p>
+                    Like many websites, our website may collect
+                    technical information automatically when you visit.
+                    This may include your IP address, browser type,
+                    operating system, referring page and general
+                    navigation information.
+                </p>
+
+                <p>
+                    This information may be used for website
+                    administration, security, troubleshooting,
+                    performance analysis and improving our services.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+    <span class="policy-section-number">06</span>
+
+    <div class="policy-section-body">
+        <h2>Third-Party Services</h2>
+
+        <p>
+            We use third-party service providers to support certain
+            functions of our website. In particular, our website
+            uses Formspree to process and deliver inquiries submitted
+            through our online contact form.
+        </p>
+
+        <p>
+            When you submit an inquiry through our contact form,
+            the information you provide is transmitted to Formspree
+            for processing and may be stored within the Formspree
+            service before being delivered to us.
+        </p>
+
+        <p>
+            Formspree may process information such as your name,
+            email address, destination, scooter preferences and
+            message, depending on the information you choose to
+            provide through our form.
+        </p>
+
+        <p>
+            Formspree maintains its own privacy and security
+            practices. For more information about how Formspree
+            handles personal information, please review its
+            privacy policy and security information.
+        </p>
+
+        <p>
+            We do not control the privacy practices of third-party
+            websites or services. Information submitted directly
+            to those services is subject to their respective
+            privacy policies and terms.
+        </p>
+    </div>
+</section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">07</span>
+
+            <div class="policy-section-body">
+                <h2>Sharing and Disclosure</h2>
+
+                <p>
+                    We do not sell your personal information.
+                </p>
+
+                <p>
+    We may share information with trusted service providers
+    when reasonably necessary to operate our website, process
+    inquiries, respond to your request, provide services,
+    arrange shipping or otherwise conduct our business.
+</p>
+
+                <p>
+                    We may also disclose information when required to do
+                    so by law, legal process, or a lawful governmental
+                    request, or when necessary to protect our rights,
+                    property, users or the public.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">08</span>
+
+            <div class="policy-section-body">
+                <h2>Security</h2>
+
+                <p>
+                    We take reasonable measures to protect information
+                    provided to us through our website and to reduce the
+                    risk of unauthorized access, use or disclosure.
+                </p>
+
+                <p>
+                    However, no method of transmission over the internet
+                    or method of electronic storage is completely secure.
+                    We therefore cannot guarantee absolute security of
+                    information transmitted to or stored by us.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">09</span>
+
+            <div class="policy-section-body">
+                <h2>Children's Privacy</h2>
+
+                <p>
+                    Our website is not intended for children under the
+                    age of 13, and we do not knowingly collect personal
+                    information from children under 13.
+                </p>
+
+                <p>
+                    If you believe that a child has provided personal
+                    information to us through our website, please contact
+                    us so that we can take appropriate steps.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-section">
+            <span class="policy-section-number">10</span>
+
+            <div class="policy-section-body">
+                <h2>Changes to This Policy</h2>
+
+                <p>
+                    We may update this Privacy Policy from time to time
+                    to reflect changes to our website, services or
+                    applicable practices.
+                </p>
+
+                <p>
+                    When we make changes, the updated policy will be
+                    published on this page. We encourage visitors to
+                    review this page periodically for the latest version.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="policy-contact">
+            <div class="policy-contact-heading">
+                <span>Privacy Questions</span>
+
+                <h2>
+                    Need to
+                    <em>ask us?</em>
+                </h2>
+            </div>
+
+            <div class="policy-contact-copy">
+
+                <p>
+                    If you have questions about this Privacy Policy
+                    or how your information is handled, please contact
+                    Dolce Vita Scooters.
+                </p>
+
+                <a
+                    href="mailto:sales@dolcevitascooters.com"
+                >
+                    sales@dolcevitascooters.com
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+</section>
 
 
 

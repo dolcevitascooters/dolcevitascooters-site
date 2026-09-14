@@ -1118,13 +1118,1580 @@ main {
 
 
 
+.warranty-page {
+    padding: 38px var(--dv-gutter) 90px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.warranty-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-index {
+    color: var(--dv-red);
+}
+
+.warranty-intro {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(260px, .65fr);
+    gap: 80px;
+    padding: 75px 0 80px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-heading h1 {
+    max-width: 900px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(62px, 8vw, 118px);
+    font-weight: 400;
+    line-height: .84;
+    letter-spacing: -.07em;
+}
+
+.warranty-heading h1 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-intro-copy {
+    max-width: 390px;
+    align-self: end;
+}
+
+.warranty-intro-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.warranty-intro-copy p + p {
+    margin-top: 20px;
+    color: var(--dv-grey);
+}
+
+
+/* Warranty overview */
+
+.warranty-overview {
+    display: grid;
+    grid-template-columns:
+        minmax(220px, .7fr)
+        minmax(220px, .7fr)
+        minmax(280px, 1fr);
+    gap: 45px;
+    padding: 45px 0 15px;
+}
+
+.warranty-overview-item {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.warranty-overview-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-overview-label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-overview-item strong {
+    display: block;
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.04em;
+    color: var(--dv-red);
+}
+
+.warranty-overview-copy {
+    max-width: 390px;
+    justify-self: end;
+}
+
+.warranty-overview-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-page {
+        padding: 25px var(--dv-gutter) 60px;
+    }
+
+    .warranty-topline {
+        font-size: 7px;
+    }
+
+    .warranty-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 0;
+    }
+
+    .warranty-heading h1 {
+        font-size: clamp(48px, 13vw, 72px);
+        line-height: .88;
+    }
+
+    .warranty-intro-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-intro-copy p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .warranty-overview {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0 5px;
+    }
+
+    .warranty-overview-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+        justify-self: start;
+    }
+
+    .warranty-overview-copy p {
+        font-size: 11px;
+    }
+
+}
+
+
+.warranty-coverage {
+    padding: 75px 0 85px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-coverage-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-coverage-index {
+    color: var(--dv-red);
+}
+
+.warranty-coverage-intro {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(280px, .9fr);
+    gap: 80px;
+    padding: 55px 0 60px;
+}
+
+.warranty-coverage-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.warranty-coverage-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-coverage-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.warranty-coverage-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.warranty-coverage-copy p + p {
+    margin-top: 18px;
+}
+
+
+/* Coverage columns */
+
+.warranty-coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 70px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-coverage-column {
+    padding-top: 35px;
+}
+
+.warranty-coverage-column + .warranty-coverage-column {
+    border-left: 1px solid var(--dv-silver);
+    padding-left: 55px;
+}
+
+.warranty-coverage-column-top {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.warranty-coverage-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-coverage-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-coverage-column h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(32px, 3.4vw, 48px);
+    font-weight: 400;
+    line-height: .92;
+    letter-spacing: -.05em;
+    color: var(--dv-blue);
+}
+
+.warranty-coverage-column h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-coverage-description {
+    max-width: 510px;
+    margin: 28px 0 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+/* Component list */
+
+.warranty-component-list {
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.warranty-component-list li {
+    display: grid;
+    grid-template-columns: minmax(130px, .42fr) minmax(0, 1fr);
+    gap: 25px;
+    padding: 15px 0;
+    border-top: 1px solid var(--dv-silver);
+}
+
+.warranty-component-list li:last-child {
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-component-list li > span {
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+}
+
+.warranty-component-list li small {
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+
+/* Warranty note */
+
+.warranty-coverage-note {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-coverage-note-mark {
+    font-family: var(--dv-display);
+    font-size: 19px;
+    letter-spacing: -.05em;
+    color: var(--dv-red);
+}
+
+.warranty-coverage-note p {
+    max-width: 700px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-coverage {
+        padding: 55px 0 60px;
+    }
+
+    .warranty-coverage-topline {
+        font-size: 7px;
+    }
+
+    .warranty-coverage-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 50px;
+    }
+
+    .warranty-coverage-heading h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .warranty-coverage-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-coverage-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-coverage-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .warranty-coverage-column {
+        padding-top: 30px;
+    }
+
+    .warranty-coverage-column + .warranty-coverage-column {
+        border-left: 0;
+        border-top: 1px solid var(--dv-silver);
+        padding-top: 45px;
+        padding-left: 0;
+    }
+
+    .warranty-coverage-column h3 {
+        font-size: clamp(30px, 8vw, 42px);
+    }
+
+    .warranty-coverage-description {
+        margin-left: 7vw;
+        font-size: 10px;
+    }
+
+    .warranty-component-list {
+        margin-top: 25px;
+    }
+
+    .warranty-component-list li {
+        grid-template-columns: 1fr;
+        gap: 7px;
+        padding: 14px 0;
+    }
+
+    .warranty-component-list li > span {
+        font-size: 8px;
+    }
+
+    .warranty-component-list li small {
+        font-size: 10px;
+    }
+
+    .warranty-coverage-note {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .warranty-coverage-note p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+.warranty-claims {
+    padding: 75px 0 85px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-claims-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-claims-index {
+    color: var(--dv-red);
+}
+
+.warranty-claims-main {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(280px, .9fr);
+    gap: 80px;
+    padding: 55px 0 60px;
+}
+
+.warranty-claims-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.warranty-claims-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-claims-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.warranty-claims-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.warranty-claims-copy .warranty-claims-lead {
+    color: var(--dv-blue);
+}
+
+.warranty-claims-copy p + p {
+    margin-top: 18px;
+}
+
+
+/* Claim steps */
+
+.warranty-claims-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-claim-step {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    padding: 35px 35px 20px 0;
+}
+
+.warranty-claim-step + .warranty-claim-step {
+    padding-left: 35px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.warranty-claim-step-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-claim-step-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-claim-step h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 400;
+    line-height: .94;
+    letter-spacing: -.05em;
+    color: var(--dv-blue);
+}
+
+.warranty-claim-step h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-claim-step p {
+    max-width: 330px;
+    margin: 22px 0 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+/* Important note */
+
+.warranty-claims-note {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-claims-note-label {
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.warranty-claims-note p {
+    max-width: 700px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-claims {
+        padding: 55px 0 60px;
+    }
+
+    .warranty-claims-topline {
+        font-size: 7px;
+    }
+
+    .warranty-claims-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 50px;
+    }
+
+    .warranty-claims-heading h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .warranty-claims-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-claims-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-claims-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .warranty-claim-step {
+        padding: 28px 0 30px;
+    }
+
+    .warranty-claim-step + .warranty-claim-step {
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .warranty-claim-step h3 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .warranty-claim-step p {
+        font-size: 10px;
+    }
+
+    .warranty-claims-note {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 35px;
+    }
+
+}
+
+
+.warranty-limitations {
+    padding: 75px 0 85px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-limitations-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-limitations-index {
+    color: var(--dv-red);
+}
+
+.warranty-limitations-main {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(280px, .9fr);
+    gap: 80px;
+    padding: 55px 0 60px;
+}
+
+.warranty-limitations-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.warranty-limitations-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-limitations-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.warranty-limitations-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.warranty-limitations-copy .warranty-limitations-lead {
+    color: var(--dv-blue);
+}
+
+.warranty-limitations-copy p + p {
+    margin-top: 18px;
+}
+
+
+/* Limitation grid */
+
+.warranty-limitations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-limitation-item {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    padding: 35px 45px 35px 0;
+}
+
+.warranty-limitation-item:nth-child(2n) {
+    padding-left: 45px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.warranty-limitation-item:nth-child(n + 3) {
+    border-top: 1px solid var(--dv-silver);
+}
+
+.warranty-limitation-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-limitation-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-limitation-copy h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 400;
+    line-height: .94;
+    letter-spacing: -.05em;
+    color: var(--dv-blue);
+}
+
+.warranty-limitation-copy h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-limitation-copy p {
+    max-width: 430px;
+    margin: 22px 0 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+/* Note */
+
+.warranty-limitations-note {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-limitations-note-mark {
+    font-family: var(--dv-display);
+    font-size: 19px;
+    letter-spacing: -.05em;
+    color: var(--dv-red);
+}
+
+.warranty-limitations-note p {
+    max-width: 700px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-limitations {
+        padding: 55px 0 60px;
+    }
+
+    .warranty-limitations-topline {
+        font-size: 7px;
+    }
+
+    .warranty-limitations-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 50px;
+    }
+
+    .warranty-limitations-heading h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .warranty-limitations-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-limitations-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-limitations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .warranty-limitation-item {
+        padding: 28px 0 30px;
+    }
+
+    .warranty-limitation-item:nth-child(2n) {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    .warranty-limitation-item:nth-child(n + 2) {
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .warranty-limitation-copy h3 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .warranty-limitation-copy p {
+        font-size: 10px;
+    }
+
+    .warranty-limitations-note {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .warranty-limitations-note p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+.warranty-support {
+    padding: 75px 0 85px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-support-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-support-index {
+    color: var(--dv-red);
+}
+
+.warranty-support-main {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(280px, .9fr);
+    gap: 80px;
+    padding: 55px 0 60px;
+}
+
+.warranty-support-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.warranty-support-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-support-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.warranty-support-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.warranty-support-copy .warranty-support-lead {
+    color: var(--dv-blue);
+}
+
+.warranty-support-copy p + p {
+    margin-top: 18px;
+}
+
+
+/* Support services */
+
+.warranty-support-services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-support-service {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    padding: 35px 35px 20px 0;
+}
+
+.warranty-support-service + .warranty-support-service {
+    padding-left: 35px;
+    border-left: 1px solid var(--dv-silver);
+}
+
+.warranty-support-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-support-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-support-service h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 400;
+    line-height: .94;
+    letter-spacing: -.05em;
+    color: var(--dv-blue);
+}
+
+.warranty-support-service h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-support-service p {
+    max-width: 330px;
+    margin: 22px 0 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+/* Note */
+
+.warranty-support-note {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-support-note-mark {
+    font-family: var(--dv-display);
+    font-size: 19px;
+    letter-spacing: -.05em;
+    color: var(--dv-red);
+}
+
+.warranty-support-note p {
+    max-width: 700px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-support {
+        padding: 55px 0 60px;
+    }
+
+    .warranty-support-topline {
+        font-size: 7px;
+    }
+
+    .warranty-support-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 50px;
+    }
+
+    .warranty-support-heading h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .warranty-support-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-support-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-support-services {
+        grid-template-columns: 1fr;
+    }
+
+    .warranty-support-service {
+        padding: 28px 0 30px;
+    }
+
+    .warranty-support-service + .warranty-support-service {
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid var(--dv-silver);
+    }
+
+    .warranty-support-service h3 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .warranty-support-service p {
+        font-size: 10px;
+    }
+
+    .warranty-support-note {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .warranty-support-note p {
+        font-size: 10px;
+    }
+
+}
 
 
 
 
+.warranty-legal {
+    padding: 75px 0 85px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.warranty-legal-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-legal-index {
+    color: var(--dv-red);
+}
+
+.warranty-legal-main {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(280px, .9fr);
+    gap: 80px;
+    padding: 55px 0 60px;
+}
+
+.warranty-legal-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(48px, 5.5vw, 78px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.06em;
+}
+
+.warranty-legal-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-legal-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.warranty-legal-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--dv-grey);
+}
+
+.warranty-legal-copy p + p {
+    margin-top: 18px;
+}
+
+
+/* Legal sections */
+
+.warranty-legal-sections {
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-legal-section {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 18px;
+    padding: 35px 0;
+}
+
+.warranty-legal-section + .warranty-legal-section {
+    border-top: 1px solid var(--dv-silver);
+}
+
+.warranty-legal-number {
+    padding-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--dv-red);
+}
+
+.warranty-legal-section-body {
+    max-width: 760px;
+}
+
+.warranty-legal-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.warranty-legal-section-body h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(30px, 3.3vw, 45px);
+    font-weight: 400;
+    line-height: .94;
+    letter-spacing: -.05em;
+    color: var(--dv-blue);
+}
+
+.warranty-legal-section-body h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-legal-section-body p {
+    max-width: 680px;
+    margin: 22px 0 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+/* Legal note */
+
+.warranty-legal-note {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid var(--dv-blue);
+}
+
+.warranty-legal-note-label {
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.warranty-legal-note p {
+    max-width: 700px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-legal {
+        padding: 55px 0 60px;
+    }
+
+    .warranty-legal-topline {
+        font-size: 7px;
+    }
+
+    .warranty-legal-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 0 50px;
+    }
+
+    .warranty-legal-heading h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .warranty-legal-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-legal-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-legal-section {
+        padding: 28px 0 30px;
+    }
+
+    .warranty-legal-section-body h3 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .warranty-legal-section-body p {
+        font-size: 10px;
+    }
+
+    .warranty-legal-note {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 35px;
+    }
+
+    .warranty-legal-note p {
+        font-size: 10px;
+    }
+
+}
 
 
 
+.warranty-closing {
+    padding: 75px 0 35px;
+    background: var(--dv-blue-dark);
+    color: var(--dv-white);
+}
+
+.warranty-closing-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+
+.warranty-closing-index {
+    color: var(--dv-red);
+}
+
+.warranty-closing-main {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(280px, .85fr);
+    gap: 80px;
+    padding: 60px 0 70px;
+}
+
+.warranty-closing-label {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+
+.warranty-closing-heading h2 {
+    max-width: 760px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.5vw, 92px);
+    font-weight: 400;
+    line-height: .86;
+    letter-spacing: -.065em;
+    color: var(--dv-white);
+}
+
+.warranty-closing-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.warranty-closing-copy {
+    max-width: 420px;
+    align-self: end;
+}
+
+.warranty-closing-copy p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.68);
+}
+
+.warranty-closing-copy p + p {
+    margin-top: 18px;
+}
+
+.warranty-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,.55);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-white);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.warranty-closing-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+
+/* Bottom */
+
+.warranty-closing-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 30px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,.18);
+}
+
+.warranty-closing-contact span,
+.warranty-closing-site span {
+    display: block;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.4);
+}
+
+.warranty-closing-contact a {
+    display: inline-block;
+    margin-top: 5px;
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: var(--dv-white);
+}
+
+.warranty-closing-mark {
+    font-family: var(--dv-display);
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+.warranty-closing-site {
+    text-align: right;
+}
+
+
+@media (max-width: 760px) {
+
+    .warranty-closing {
+        padding: 55px 0 30px;
+    }
+
+    .warranty-closing-topline {
+        font-size: 7px;
+    }
+
+    .warranty-closing-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 45px 0 55px;
+    }
+
+    .warranty-closing-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+        line-height: .88;
+    }
+
+    .warranty-closing-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .warranty-closing-copy p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .warranty-closing-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+    }
+
+    .warranty-closing-mark {
+        order: 2;
+    }
+
+    .warranty-closing-site {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
 
 
 
@@ -1745,25 +3312,996 @@ main {
 
 
     
- 
+ <section class="warranty-page" aria-labelledby="warranty-title">
+
+    <div class="warranty-topline">
+        <span class="warranty-index">Limited Warranty</span>
+        <span>Dolce Vita Scooters</span>
+    </div>
+
+    <div class="warranty-intro">
+
+        <div class="warranty-heading">
+            <h1 id="warranty-title">
+                Confidence
+                <em>in every ride.</em>
+            </h1>
+        </div>
+
+        <div class="warranty-intro-copy">
+
+            <p>
+                Every Dolce Vita scooter is restored with careful
+                attention to craftsmanship, mechanical condition
+                and road readiness.
+            </p>
+
+            <p>
+                Our Limited Warranty provides defined coverage for
+                eligible components, while our long-term support
+                continues beyond the warranty period.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="warranty-overview">
+
+        <div class="warranty-overview-item">
+
+            <span class="warranty-overview-number">
+                01
+            </span>
+
+            <div>
+                <span class="warranty-overview-label">
+                    New Parts
+                </span>
+
+                <strong>
+                    12 Months
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="warranty-overview-item">
+
+            <span class="warranty-overview-number">
+                02
+            </span>
+
+            <div>
+                <span class="warranty-overview-label">
+                    Fully Restored Scooters
+                </span>
+
+                <strong>
+                    24 Months
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="warranty-overview-copy">
+
+            <p>
+                If a covered component fails due to a qualifying
+                mechanical defect during the applicable warranty
+                period, Dolce Vita Scooters will provide a
+                replacement part in accordance with the terms
+                of this Limited Warranty.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="warranty-coverage" aria-labelledby="warranty-coverage-title">
+
+    <div class="warranty-coverage-topline">
+        <span class="warranty-coverage-index">02 / Warranty Coverage</span>
+        <span>Covered / Excluded Components</span>
+    </div>
+
+    <div class="warranty-coverage-intro">
+
+        <div class="warranty-coverage-heading">
+            <h2 id="warranty-coverage-title">
+                What is
+                <em>covered.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-coverage-copy">
+            <p>
+                The Limited Warranty applies to eligible components
+                that experience mechanical defect or failure during
+                the applicable warranty period.
+            </p>
+
+            <p>
+                Coverage does not apply to normal wear and tear,
+                neglect, maintenance items, accessories or components
+                specifically excluded below.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="warranty-coverage-grid">
+
+        <article class="warranty-coverage-column">
+
+            <div class="warranty-coverage-column-top">
+                <span class="warranty-coverage-number">01</span>
+
+                <div>
+                    <span class="warranty-coverage-label">
+                        Covered Components
+                    </span>
+
+                    <h3>
+                        Eligible
+                        <em>components.</em>
+                    </h3>
+                </div>
+            </div>
+
+            <p class="warranty-coverage-description">
+                Subject to the terms of this Limited Warranty,
+                coverage may apply to mechanical defects or
+                failures involving the following components:
+            </p>
+
+            <ul class="warranty-component-list">
+
+                <li>
+                    <span>Fuel System</span>
+                    <small>
+                        Fuel pressure regulator, fuel injectors,
+                        carburetor and fuel pump
+                    </small>
+                </li>
+
+                <li>
+                    <span>Electrical System</span>
+                    <small>
+                        Alternator, regulator/rectifier, engine
+                        control module and ignition coils
+                    </small>
+                </li>
+
+                <li>
+                    <span>Engine Components</span>
+                    <small>
+                        Crankshaft, cylinder heads, pistons,
+                        camshafts and cylinders
+                    </small>
+                </li>
+
+                <li>
+                    <span>Braking System</span>
+                    <small>
+                        Brake calipers and reservoirs
+                    </small>
+                </li>
+
+                <li>
+                    <span>Exhaust System</span>
+                    <small>
+                        Muffler, exhaust pipe and variable
+                        exhaust control
+                    </small>
+                </li>
+
+                <li>
+                    <span>Chassis</span>
+                    <small>
+                        Forks, shocks and swing arm
+                    </small>
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <article class="warranty-coverage-column warranty-coverage-excluded">
+
+            <div class="warranty-coverage-column-top">
+                <span class="warranty-coverage-number">02</span>
+
+                <div>
+                    <span class="warranty-coverage-label">
+                        Excluded Components
+                    </span>
+
+                    <h3>
+                        Not
+                        <em>covered.</em>
+                    </h3>
+                </div>
+            </div>
+
+            <p class="warranty-coverage-description">
+                The Limited Warranty does not cover components
+                outside the covered list or items affected by
+                normal wear, maintenance requirements, neglect
+                or age-related deterioration.
+            </p>
+
+            <ul class="warranty-component-list">
+
+                <li>
+                    <span>Wear Items</span>
+                    <small>
+                        Tires, batteries, spark plugs, filters,
+                        belts and lubricants
+                    </small>
+                </li>
+
+                <li>
+                    <span>Accessories</span>
+                    <small>
+                        Accessories and other non-covered
+                        optional equipment
+                    </small>
+                </li>
+
+                <li>
+                    <span>Maintenance</span>
+                    <small>
+                        Routine servicing, maintenance and
+                        consumable replacement
+                    </small>
+                </li>
+
+                <li>
+                    <span>Neglect or Misuse</span>
+                    <small>
+                        Failure or damage caused by neglect,
+                        misuse or conditions other than a
+                        qualifying mechanical defect
+                    </small>
+                </li>
+
+                <li>
+                    <span>Age-Related Components</span>
+                    <small>
+                        Due to the age of vintage scooters,
+                        the engine and main frame are not
+                        covered under this Limited Warranty
+                    </small>
+                </li>
+
+            </ul>
+
+        </article>
+
+    </div>
+
+
+    <div class="warranty-coverage-note">
+
+        <span class="warranty-coverage-note-mark">DV</span>
+
+        <p>
+            Warranty coverage is determined based on the condition
+            and cause of the reported failure. Dolce Vita Scooters
+            reserves the right to inspect the scooter and determine
+            whether a reported failure qualifies under this
+            Limited Warranty.
+        </p>
+
+    </div>
+
+</section>
 
 
 
 
 
+ <section class="warranty-claims" aria-labelledby="warranty-claims-title">
+
+    <div class="warranty-claims-topline">
+        <span class="warranty-claims-index">03 / Making a Claim</span>
+        <span>Notification / Inspection / Replacement</span>
+    </div>
+
+    <div class="warranty-claims-main">
+
+        <div class="warranty-claims-heading">
+            <h2 id="warranty-claims-title">
+                If something
+                <em>goes wrong.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-claims-copy">
+
+            <p class="warranty-claims-lead">
+                If you believe a covered component has failed,
+                contact Dolce Vita Scooters as soon as possible
+                during the applicable warranty period.
+            </p>
+
+            <p>
+                Please contact us before arranging repairs or
+                replacing the affected component. This allows
+                our team to review the issue and determine whether
+                the reported failure falls within the Limited
+                Warranty.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="warranty-claims-steps">
+
+        <article class="warranty-claim-step">
+
+            <span class="warranty-claim-step-number">
+                01
+            </span>
+
+            <div class="warranty-claim-step-copy">
+
+                <span class="warranty-claim-step-label">
+                    Contact Us
+                </span>
+
+                <h3>
+                    Report the
+                    <em>problem.</em>
+                </h3>
+
+                <p>
+                    Notify Dolce Vita Scooters promptly and provide
+                    details about the scooter, the affected component
+                    and the problem you have experienced.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-claim-step">
+
+            <span class="warranty-claim-step-number">
+                02
+            </span>
+
+            <div class="warranty-claim-step-copy">
+
+                <span class="warranty-claim-step-label">
+                    Review
+                </span>
+
+                <h3>
+                    Let us
+                    <em>assess it.</em>
+                </h3>
+
+                <p>
+                    We may request photographs, videos, technical
+                    information or other details and may require
+                    an inspection of the scooter before approving
+                    a warranty claim.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-claim-step">
+
+            <span class="warranty-claim-step-number">
+                03
+            </span>
+
+            <div class="warranty-claim-step-copy">
+
+                <span class="warranty-claim-step-label">
+                    Resolution
+                </span>
+
+                <h3>
+                    Receive the
+                    <em>replacement.</em>
+                </h3>
+
+                <p>
+                    If the failure is determined to be covered,
+                    Dolce Vita Scooters will provide the applicable
+                    replacement part free of charge in accordance
+                    with this Limited Warranty.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="warranty-claims-note">
+
+        <span class="warranty-claims-note-label">
+            Important
+        </span>
+
+        <p>
+            Warranty claims must be reported before repairs are
+            carried out. Dolce Vita Scooters is not responsible
+            for diagnosis, installation, labour, transportation,
+            loss of use or other costs associated with repairing
+            a covered component unless specifically agreed in writing.
+        </p>
+
+    </div>
+
+</section>
 
 
 
+<section class="warranty-limitations" aria-labelledby="warranty-limitations-title">
 
- 
+    <div class="warranty-limitations-topline">
+        <span class="warranty-limitations-index">04 / Limitations</span>
+        <span>Use / Maintenance / Responsibility</span>
+    </div>
+
+    <div class="warranty-limitations-main">
+
+        <div class="warranty-limitations-heading">
+            <h2 id="warranty-limitations-title">
+                Keep the
+                <em>machine right.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-limitations-copy">
+
+            <p class="warranty-limitations-lead">
+                Vintage scooters require appropriate care and
+                regular maintenance. Warranty coverage depends
+                on the scooter being reasonably maintained and
+                used in a responsible manner.
+            </p>
+
+            <p>
+                The Limited Warranty does not extend to failures
+                or damage resulting from conditions other than
+                a qualifying mechanical defect.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="warranty-limitations-grid">
+
+        <article class="warranty-limitation-item">
+
+            <span class="warranty-limitation-number">
+                01
+            </span>
+
+            <div class="warranty-limitation-copy">
+
+                <span class="warranty-limitation-label">
+                    Normal Wear
+                </span>
+
+                <h3>
+                    Wear is part of
+                    <em>ownership.</em>
+                </h3>
+
+                <p>
+                    Components that naturally wear through normal
+                    use are not covered. This includes tires,
+                    batteries, spark plugs, filters, belts,
+                    lubricants and other consumable maintenance items.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-limitation-item">
+
+            <span class="warranty-limitation-number">
+                02
+            </span>
+
+            <div class="warranty-limitation-copy">
+
+                <span class="warranty-limitation-label">
+                    Care &amp; Maintenance
+                </span>
+
+                <h3>
+                    Regular care
+                    <em>matters.</em>
+                </h3>
+
+                <p>
+                    Owners are responsible for appropriate servicing,
+                    maintenance and care of the scooter. Failure to
+                    maintain the vehicle properly may affect warranty
+                    coverage.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-limitation-item">
+
+            <span class="warranty-limitation-number">
+                03
+            </span>
+
+            <div class="warranty-limitation-copy">
+
+                <span class="warranty-limitation-label">
+                    Neglect &amp; Misuse
+                </span>
+
+                <h3>
+                    Use it as it was
+                    <em>intended.</em>
+                </h3>
+
+                <p>
+                    The Limited Warranty does not cover failures or
+                    damage caused by neglect, misuse, improper
+                    operation, unauthorized modifications or other
+                    conditions unrelated to a qualifying mechanical
+                    defect.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-limitation-item">
+
+            <span class="warranty-limitation-number">
+                04
+            </span>
+
+            <div class="warranty-limitation-copy">
+
+                <span class="warranty-limitation-label">
+                    Repairs Before Approval
+                </span>
+
+                <h3>
+                    Contact us
+                    <em>first.</em>
+                </h3>
+
+                <p>
+                    Do not authorize repairs or replace a suspected
+                    covered component before contacting Dolce Vita
+                    Scooters. Repairs carried out without prior
+                    notification may not qualify for warranty coverage.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="warranty-limitations-note">
+
+        <span class="warranty-limitations-note-mark">
+            DV
+        </span>
+
+        <p>
+            Because every scooter is a vintage machine, its age,
+            previous history and condition must be considered when
+            assessing a warranty claim. Warranty coverage applies
+            only to the components and circumstances expressly
+            covered by this Limited Warranty.
+        </p>
+
+    </div>
+
+</section>
 
 
 
+<section class="warranty-support" aria-labelledby="warranty-support-title">
+
+    <div class="warranty-support-topline">
+        <span class="warranty-support-index">05 / After Warranty</span>
+        <span>Support / Parts / Technical Advice</span>
+    </div>
+
+    <div class="warranty-support-main">
+
+        <div class="warranty-support-heading">
+            <h2 id="warranty-support-title">
+                Support beyond
+                <em>the warranty.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-support-copy">
+
+            <p class="warranty-support-lead">
+                Our relationship with you does not end when the
+                warranty period expires.
+            </p>
+
+            <p>
+                We remain available to help with technical questions,
+                replacement parts and general ownership support for
+                your Dolce Vita scooter whenever we can.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="warranty-support-services">
+
+        <article class="warranty-support-service">
+
+            <span class="warranty-support-number">
+                01
+            </span>
+
+            <div class="warranty-support-service-copy">
+
+                <span class="warranty-support-label">
+                    Technical Advice
+                </span>
+
+                <h3>
+                    Keep your scooter
+                    <em>on the road.</em>
+                </h3>
+
+                <p>
+                    Contact our team when you need guidance on
+                    maintenance, operation or technical questions
+                    relating to your vintage Vespa or Lambretta.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-support-service">
+
+            <span class="warranty-support-number">
+                02
+            </span>
+
+            <div class="warranty-support-service-copy">
+
+                <span class="warranty-support-label">
+                    Replacement Parts
+                </span>
+
+                <h3>
+                    Find the right
+                    <em>part.</em>
+                </h3>
+
+                <p>
+                    We can assist with replacement parts and help
+                    identify suitable components for your scooter,
+                    subject to availability.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-support-service">
+
+            <span class="warranty-support-number">
+                03
+            </span>
+
+            <div class="warranty-support-service-copy">
+
+                <span class="warranty-support-label">
+                    Long-Term Assistance
+                </span>
+
+                <h3>
+                    Stay connected
+                    <em>to the atelier.</em>
+                </h3>
+
+                <p>
+                    Even after the warranty period, you are welcome
+                    to contact Dolce Vita Scooters for general
+                    assistance relating to your scooter and its
+                    continued ownership.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="warranty-support-note">
+
+        <span class="warranty-support-note-mark">
+            DV
+        </span>
+
+        <p>
+            Support provided after the warranty period is offered
+            as a customer service and does not extend or renew the
+            Limited Warranty. Replacement parts and other services
+            may be subject to availability and applicable charges.
+        </p>
+
+    </div>
+
+</section>
 
 
 
+<section class="warranty-legal" aria-labelledby="warranty-legal-title">
+
+    <div class="warranty-legal-topline">
+        <span class="warranty-legal-index">06 / Legal Terms</span>
+        <span>Vietnam Law / Jurisdiction</span>
+    </div>
+
+    <div class="warranty-legal-main">
+
+        <div class="warranty-legal-heading">
+            <h2 id="warranty-legal-title">
+                The terms
+                <em>behind it.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-legal-copy">
+
+            <p>
+                This Limited Warranty is governed by the laws
+                of Viet Nam and should be read together with
+                the terms applicable to the purchase of the
+                scooter.
+            </p>
+
+            <p>
+                Any dispute concerning this Limited Warranty
+                will be subject to the jurisdiction of a
+                competent court in Viet Nam.
+            </p>
+
+        </div>
+
+    </div>
 
 
+    <div class="warranty-legal-sections">
+
+        <article class="warranty-legal-section">
+
+            <span class="warranty-legal-number">
+                01
+            </span>
+
+            <div class="warranty-legal-section-body">
+
+                <span class="warranty-legal-label">
+                    Governing Law
+                </span>
+
+                <h3>
+                    Governed by
+                    <em>Viet Nam law.</em>
+                </h3>
+
+                <p>
+                    The enforcement and interpretation of this
+                    Limited Warranty, and any claim arising from
+                    it, are governed by the laws of Viet Nam.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-legal-section">
+
+            <span class="warranty-legal-number">
+                02
+            </span>
+
+            <div class="warranty-legal-section-body">
+
+                <span class="warranty-legal-label">
+                    Jurisdiction
+                </span>
+
+                <h3>
+                    Claims handled
+                    <em>in Viet Nam.</em>
+                </h3>
+
+                <p>
+                    You agree that claims relating to this Limited
+                    Warranty, including claims concerning an alleged
+                    breach of warranty, may be brought before a
+                    competent court located in Viet Nam.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="warranty-legal-section">
+
+            <span class="warranty-legal-number">
+                03
+            </span>
+
+            <div class="warranty-legal-section-body">
+
+                <span class="warranty-legal-label">
+                    Severability
+                </span>
+
+                <h3>
+                    One provision does not
+                    <em>affect the rest.</em>
+                </h3>
+
+                <p>
+                    If any provision of this Limited Warranty is
+                    determined to be unenforceable under applicable
+                    law, that provision will be severed or limited
+                    to the extent necessary, while the remaining
+                    provisions will continue in effect.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="warranty-legal-note">
+
+        <span class="warranty-legal-note-label">
+            Important
+        </span>
+
+        <p>
+            This Limited Warranty applies only to the scope,
+            components, conditions and procedures expressly
+            described on this page. It does not replace or
+            modify other written terms that may apply to the
+            purchase of a scooter unless expressly agreed.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="warranty-closing" aria-labelledby="warranty-closing-title">
+
+    <div class="warranty-closing-topline">
+        <span class="warranty-closing-index">07 / Acknowledgement</span>
+        <span>Dolce Vita Scooters — Vietnam</span>
+    </div>
+
+    <div class="warranty-closing-main">
+
+        <div class="warranty-closing-heading">
+            <span class="warranty-closing-label">
+                Limited Warranty
+            </span>
+
+            <h2 id="warranty-closing-title">
+                Ride with
+                <em>confidence.</em>
+            </h2>
+        </div>
+
+        <div class="warranty-closing-copy">
+
+            <p>
+                By purchasing a scooter from Dolce Vita Scooters,
+                you acknowledge that you have read and understood
+                this Limited Warranty and agree to the requirements
+                and limitations described above.
+            </p>
+
+            <p>
+                If you have questions about warranty coverage,
+                a potential claim or the care of your scooter,
+                please contact our team.
+            </p>
+
+            <a
+                href="https://www.dolcevitascooters.com/contact.html"
+                class="warranty-closing-link"
+            >
+                Contact Dolce Vita Scooters
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="warranty-closing-bottom">
+
+        <div class="warranty-closing-contact">
+
+            <span>
+                Warranty &amp; Customer Support
+            </span>
+
+            <a href="mailto:sales@dolcevitascooters.com">
+                sales@dolcevitascooters.com
+            </a>
+
+        </div>
+
+        <div class="warranty-closing-mark">
+            DV
+        </div>
+
+        <div class="warranty-closing-site">
+            <span>
+                Dolce Vita Scooters
+            </span>
+
+            <span>
+                www.dolcevitascooters.com
+            </span>
+        </div>
+
+    </div>
+
+</section>
 
 
     <!-- =====================================================

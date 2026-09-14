@@ -1118,13 +1118,2429 @@ main {
 
 
 
+.history-opening {
+    padding: 38px var(--dv-gutter) 75px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.history-opening-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-opening-index {
+    color: var(--dv-red);
+}
+
+.history-opening-main {
+    display: grid;
+    grid-template-columns:
+        minmax(110px, .18fr)
+        minmax(0, 1.1fr)
+        minmax(260px, .72fr);
+    gap: 45px;
+    padding: 70px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-opening-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 9px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-opening-rule {
+    width: 28px;
+    height: 1px;
+    margin-top: 5px;
+    flex: 0 0 auto;
+    background: var(--dv-red);
+}
+
+.history-opening-heading h1 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(58px, 7.2vw, 108px);
+    font-weight: 400;
+    line-height: .85;
+    letter-spacing: -.07em;
+}
+
+.history-opening-heading h1 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-opening-heading-offset {
+    display: inline-block;
+    margin-left: 3vw;
+}
+
+.history-opening-side {
+    max-width: 390px;
+    align-self: end;
+}
+
+.history-opening-intro {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.history-opening-note {
+    margin: 22px 0 0;
+    padding-left: 16px;
+    border-left: 1px solid var(--dv-red);
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.75;
+    color: var(--dv-grey);
+}
+
+.history-opening-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 28px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.history-opening-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.history-opening-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-opening-bottom > :last-child {
+    text-align: right;
+}
+
+.history-opening-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+
+@media (max-width: 900px) {
+
+    .history-opening-main {
+        grid-template-columns:
+            minmax(90px, .2fr)
+            minmax(0, 1fr)
+            minmax(230px, .75fr);
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .history-opening {
+        padding: 25px var(--dv-gutter) 55px;
+    }
+
+    .history-opening-topline {
+        font-size: 7px;
+    }
+
+    .history-opening-main {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 55px 0 50px;
+    }
+
+    .history-opening-label {
+        padding-top: 0;
+    }
+
+    .history-opening-heading h1 {
+        font-size: clamp(46px, 12.5vw, 70px);
+        line-height: .88;
+    }
+
+    .history-opening-heading-offset {
+        margin-left: 5vw;
+    }
+
+    .history-opening-side {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-opening-intro {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .history-opening-note {
+        font-size: 9px;
+    }
+
+    .history-opening-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-opening-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
+
+
+.history-vespa {
+    padding: 82px var(--dv-gutter) 78px;
+    background: #f4f3ee;
+    color: var(--dv-blue);
+}
+
+.history-vespa-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-vespa-index {
+    color: var(--dv-red);
+}
+
+.history-vespa-main {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(320px, .72fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-vespa-heading {
+    max-width: 760px;
+}
+
+.history-vespa-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-vespa-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.8vw, 102px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.history-vespa-heading h2 em {
+    display: block;
+    margin-top: 12px;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-vespa-copy {
+    max-width: 510px;
+    align-self: end;
+}
+
+.history-vespa-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: var(--dv-blue);
+}
+
+.history-vespa-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-vespa-copy .history-vespa-lead {
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.history-vespa-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-vespa-timeline-item {
+    min-height: 205px;
+    padding: 28px 25px 25px;
+    border-right: 1px solid var(--dv-silver);
+}
+
+.history-vespa-timeline-item:first-child {
+    padding-left: 0;
+}
+
+.history-vespa-timeline-item:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.history-vespa-timeline-year {
+    display: block;
+    margin-bottom: 34px;
+    font-family: var(--dv-display);
+    font-size: 27px;
+    line-height: 1;
+    letter-spacing: -.04em;
+    color: var(--dv-red);
+}
+
+.history-vespa-timeline-item h3 {
+    margin: 0 0 10px;
+    font-family: var(--dv-display);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -.025em;
+}
+
+.history-vespa-timeline-item p {
+    max-width: 230px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+.history-vespa-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-vespa-bottom > :last-child {
+    text-align: right;
+}
+
+.history-vespa-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.06em;
+    color: var(--dv-red);
+}
+
+@media (max-width: 900px) {
+
+    .history-vespa-main {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+    .history-vespa-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .history-vespa-timeline-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .history-vespa-timeline-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-vespa-timeline-item:nth-child(3),
+    .history-vespa-timeline-item:nth-child(4) {
+        padding-top: 28px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-vespa {
+        padding: 58px var(--dv-gutter) 55px;
+    }
+
+    .history-vespa-topline {
+        font-size: 7px;
+    }
+
+    .history-vespa-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 48px;
+    }
+
+    .history-vespa-heading h2 {
+        font-size: clamp(47px, 12vw, 70px);
+    }
+
+    .history-vespa-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-vespa-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-vespa-copy .history-vespa-lead {
+        font-size: 12px;
+    }
+
+    .history-vespa-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .history-vespa-timeline-item,
+    .history-vespa-timeline-item:first-child,
+    .history-vespa-timeline-item:last-child {
+        min-height: auto;
+        padding: 25px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-vespa-timeline-item:last-child {
+        border-bottom: 0;
+    }
+
+    .history-vespa-timeline-year {
+        margin-bottom: 17px;
+        font-size: 23px;
+    }
+
+    .history-vespa-timeline-item p {
+        max-width: 100%;
+    }
+
+    .history-vespa-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-vespa-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
 
 
 
+.history-lambretta {
+    padding: 82px var(--dv-gutter) 78px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.history-lambretta-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-lambretta-index {
+    color: var(--dv-red);
+}
+
+.history-lambretta-main {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(320px, .72fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-lambretta-heading {
+    max-width: 760px;
+}
+
+.history-lambretta-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-lambretta-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.8vw, 102px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.history-lambretta-heading h2 em {
+    display: block;
+    margin-top: 12px;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-lambretta-copy {
+    max-width: 510px;
+    align-self: end;
+}
+
+.history-lambretta-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: var(--dv-blue);
+}
+
+.history-lambretta-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-lambretta-copy .history-lambretta-lead {
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.history-lambretta-history {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-lambretta-history-item {
+    min-height: 215px;
+    padding: 28px 25px 25px;
+    border-right: 1px solid var(--dv-silver);
+}
+
+.history-lambretta-history-item:first-child {
+    padding-left: 0;
+}
+
+.history-lambretta-history-item:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.history-lambretta-number {
+    display: block;
+    margin-bottom: 22px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    color: var(--dv-red);
+}
+
+.history-lambretta-year {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-display);
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+.history-lambretta-history-item h3 {
+    margin: 0 0 10px;
+    font-family: var(--dv-display);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -.025em;
+}
+
+.history-lambretta-history-item p {
+    max-width: 230px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.65;
+    color: var(--dv-grey);
+}
+
+.history-lambretta-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-lambretta-bottom > :last-child {
+    text-align: right;
+}
+
+.history-lambretta-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.06em;
+    color: var(--dv-red);
+}
+
+@media (max-width: 900px) {
+
+    .history-lambretta-main {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+    .history-lambretta-history {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .history-lambretta-history-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .history-lambretta-history-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-lambretta {
+        padding: 58px var(--dv-gutter) 55px;
+    }
+
+    .history-lambretta-topline {
+        font-size: 7px;
+    }
+
+    .history-lambretta-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 48px;
+    }
+
+    .history-lambretta-heading h2 {
+        font-size: clamp(47px, 12vw, 70px);
+    }
+
+    .history-lambretta-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-lambretta-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-lambretta-copy .history-lambretta-lead {
+        font-size: 12px;
+    }
+
+    .history-lambretta-history {
+        grid-template-columns: 1fr;
+    }
+
+    .history-lambretta-history-item,
+    .history-lambretta-history-item:first-child,
+    .history-lambretta-history-item:last-child {
+        min-height: auto;
+        padding: 25px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-lambretta-history-item:last-child {
+        border-bottom: 0;
+    }
+
+    .history-lambretta-number {
+        margin-bottom: 15px;
+    }
+
+    .history-lambretta-year {
+        font-size: 23px;
+    }
+
+    .history-lambretta-history-item p {
+        max-width: 100%;
+    }
+
+    .history-lambretta-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-lambretta-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
 
 
 
+.history-vietnam {
+    padding: 88px var(--dv-gutter) 82px;
+    background: var(--dv-blue);
+    color: var(--dv-white);
+}
 
+.history-vietnam-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.58);
+}
+
+.history-vietnam-index {
+    color: #e06a61;
+}
+
+.history-vietnam-intro {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(300px, .65fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 68px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-vietnam-heading {
+    max-width: 760px;
+}
+
+.history-vietnam-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+
+.history-vietnam-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(54px, 7vw, 105px);
+    font-weight: 400;
+    line-height: .87;
+    letter-spacing: -.07em;
+}
+
+.history-vietnam-heading h2 em {
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-vietnam-intro-copy {
+    max-width: 510px;
+    align-self: end;
+}
+
+.history-vietnam-intro-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: rgba(255,255,255,.78);
+}
+
+.history-vietnam-intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-vietnam-intro-copy .history-vietnam-lead {
+    font-size: 14px;
+    line-height: 1.72;
+    color: var(--dv-white);
+}
+
+.history-vietnam-story {
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-vietnam-story-item {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 760px);
+    gap: 30px;
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(201, 203, 197, .18);
+}
+
+.history-vietnam-story-item:last-child {
+    border-bottom: 0;
+}
+
+.history-vietnam-story-number {
+    padding-top: 5px;
+    font-family: var(--dv-display);
+    font-size: 25px;
+    line-height: 1;
+    color: #e06a61;
+}
+
+.history-vietnam-story-content {
+    max-width: 760px;
+}
+
+.history-vietnam-story-label {
+    display: block;
+    margin-bottom: 13px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.48);
+}
+
+.history-vietnam-story-content h3 {
+    margin: 0 0 22px;
+    font-family: var(--dv-display);
+    font-size: clamp(31px, 3.2vw, 48px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.history-vietnam-story-content h3 em {
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-vietnam-story-content p {
+    max-width: 680px;
+    margin: 0 0 16px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: rgba(255,255,255,.7);
+}
+
+.history-vietnam-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+.history-vietnam-provenance {
+    display: grid;
+    grid-template-columns: minmax(0, .75fr) minmax(320px, .8fr);
+    gap: clamp(55px, 10vw, 160px);
+    padding: 65px 0 60px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-vietnam-provenance-heading {
+    max-width: 520px;
+}
+
+.history-vietnam-provenance-kicker {
+    display: block;
+    margin-bottom: 17px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #e06a61;
+}
+
+.history-vietnam-provenance-heading h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(40px, 5vw, 70px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.06em;
+}
+
+.history-vietnam-provenance-heading h3 em {
+    display: block;
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-vietnam-provenance-copy {
+    max-width: 570px;
+}
+
+.history-vietnam-provenance-copy p {
+    margin: 0 0 20px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.78;
+    color: rgba(255,255,255,.7);
+}
+
+.history-vietnam-provenance-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-vietnam-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.45);
+}
+
+.history-vietnam-bottom > :last-child {
+    text-align: right;
+}
+
+.history-vietnam-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.06em;
+    color: #e06a61;
+}
+
+@media (max-width: 900px) {
+
+    .history-vietnam-intro {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+    .history-vietnam-provenance {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .75fr);
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-vietnam {
+        padding: 60px var(--dv-gutter) 55px;
+    }
+
+    .history-vietnam-topline {
+        font-size: 7px;
+    }
+
+    .history-vietnam-intro {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 50px;
+    }
+
+    .history-vietnam-heading h2 {
+        font-size: clamp(48px, 12.5vw, 72px);
+    }
+
+    .history-vietnam-intro-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-vietnam-intro-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-vietnam-intro-copy .history-vietnam-lead {
+        font-size: 12px;
+    }
+
+    .history-vietnam-story-item {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        padding: 35px 0;
+    }
+
+    .history-vietnam-story-number {
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .history-vietnam-story-content h3 {
+        margin-bottom: 18px;
+        font-size: 32px;
+    }
+
+    .history-vietnam-story-content p {
+        font-size: 10.5px;
+        line-height: 1.72;
+    }
+
+    .history-vietnam-provenance {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 0 45px;
+    }
+
+    .history-vietnam-provenance-heading h3 {
+        font-size: clamp(40px, 11vw, 58px);
+    }
+
+    .history-vietnam-provenance-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-vietnam-provenance-copy p {
+        font-size: 10.5px;
+        line-height: 1.72;
+    }
+
+    .history-vietnam-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-vietnam-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
+
+
+
+.history-provenance {
+    padding: 88px var(--dv-gutter) 82px;
+    background: #f4f3ee;
+    color: var(--dv-blue);
+}
+
+.history-provenance-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-provenance-index {
+    color: var(--dv-red);
+}
+
+.history-provenance-main {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(320px, .72fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-provenance-heading {
+    max-width: 760px;
+}
+
+.history-provenance-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-provenance-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.8vw, 102px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.065em;
+}
+
+.history-provenance-heading h2 em {
+    display: block;
+    margin-top: 12px;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-provenance-copy {
+    max-width: 510px;
+    align-self: end;
+}
+
+.history-provenance-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: var(--dv-blue);
+}
+
+.history-provenance-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-provenance-copy .history-provenance-lead {
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.history-provenance-factors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-provenance-factor {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 20px;
+    min-height: 245px;
+    padding: 35px 35px 35px 0;
+    border-right: 1px solid var(--dv-silver);
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-provenance-factor:nth-child(2n) {
+    padding-left: 35px;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.history-provenance-factor:nth-child(3),
+.history-provenance-factor:nth-child(4) {
+    border-bottom: 0;
+}
+
+.history-provenance-factor-number {
+    font-family: var(--dv-display);
+    font-size: 22px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.history-provenance-factor-label {
+    display: block;
+    margin-bottom: 13px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-provenance-factor h3 {
+    max-width: 500px;
+    margin: 0 0 18px;
+    font-family: var(--dv-display);
+    font-size: clamp(27px, 2.8vw, 42px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.history-provenance-factor h3 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-provenance-factor p {
+    max-width: 490px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10.5px;
+    line-height: 1.72;
+    color: var(--dv-grey);
+}
+
+.history-provenance-note {
+    display: grid;
+    grid-template-columns: 55px minmax(0, 650px);
+    gap: 28px;
+    align-items: start;
+    padding: 55px 0 50px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-provenance-note-mark {
+    font-family: var(--dv-display);
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: var(--dv-red);
+}
+
+.history-provenance-note-copy > span {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-provenance-note-copy p {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(20px, 2.1vw, 29px);
+    line-height: 1.18;
+    letter-spacing: -.025em;
+    color: var(--dv-blue);
+}
+
+.history-provenance-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+@media (max-width: 900px) {
+
+    .history-provenance-main {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-provenance {
+        padding: 60px var(--dv-gutter) 55px;
+    }
+
+    .history-provenance-topline {
+        font-size: 7px;
+    }
+
+    .history-provenance-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 50px;
+    }
+
+    .history-provenance-heading h2 {
+        font-size: clamp(47px, 12vw, 70px);
+    }
+
+    .history-provenance-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-provenance-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-provenance-copy .history-provenance-lead {
+        font-size: 12px;
+    }
+
+    .history-provenance-factors {
+        grid-template-columns: 1fr;
+    }
+
+    .history-provenance-factor,
+    .history-provenance-factor:nth-child(2) {
+        grid-template-columns: 38px minmax(0, 1fr);
+        min-height: auto;
+        padding: 30px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-provenance-factor:nth-child(3) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-provenance-factor:last-child {
+        border-bottom: 0;
+    }
+
+    .history-provenance-factor h3 {
+        font-size: 29px;
+    }
+
+    .history-provenance-factor p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .history-provenance-note {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 42px 0 40px;
+    }
+
+    .history-provenance-note-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-provenance-note-copy p {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .history-provenance-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+}
+
+
+
+.history-cost {
+    padding: 88px var(--dv-gutter) 82px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.history-cost-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-cost-index {
+    color: var(--dv-red);
+}
+
+.history-cost-main {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(320px, .72fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 65px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-cost-heading {
+    max-width: 760px;
+}
+
+.history-cost-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-cost-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.7vw, 100px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.07em;
+}
+
+.history-cost-heading h2 em {
+    display: block;
+    margin-top: 12px;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-cost-copy {
+    max-width: 520px;
+    align-self: end;
+}
+
+.history-cost-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: var(--dv-blue);
+}
+
+.history-cost-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-cost-copy .history-cost-lead {
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.history-cost-breakdown {
+    display: grid;
+    grid-template-columns: minmax(250px, .62fr) minmax(0, 1fr);
+    gap: 65px;
+    padding: 65px 0 60px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-cost-breakdown-intro {
+    max-width: 430px;
+}
+
+.history-cost-breakdown-intro > span {
+    display: block;
+    margin-bottom: 15px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.history-cost-breakdown-intro h3 {
+    margin: 0 0 20px;
+    font-family: var(--dv-display);
+    font-size: clamp(38px, 4.4vw, 62px);
+    font-weight: 400;
+    line-height: .92;
+    letter-spacing: -.055em;
+}
+
+.history-cost-breakdown-intro h3 em {
+    display: block;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-cost-breakdown-intro p {
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10.5px;
+    line-height: 1.72;
+    color: var(--dv-grey);
+}
+
+.history-cost-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.history-cost-item {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 18px;
+    padding: 25px 25px 28px 0;
+    border-bottom: 1px solid var(--dv-silver);
+    border-right: 1px solid var(--dv-silver);
+}
+
+.history-cost-item:nth-child(2n) {
+    padding-left: 25px;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.history-cost-item:nth-child(5),
+.history-cost-item:nth-child(6) {
+    border-bottom: 0;
+}
+
+.history-cost-number {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    color: var(--dv-red);
+}
+
+.history-cost-item h4 {
+    margin: 0 0 9px;
+    font-family: var(--dv-display);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -.025em;
+}
+
+.history-cost-item p {
+    max-width: 300px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 9.5px;
+    line-height: 1.68;
+    color: var(--dv-grey);
+}
+
+.history-cost-comparison {
+    display: grid;
+    grid-template-columns: minmax(0, .78fr) minmax(320px, .8fr);
+    gap: clamp(55px, 10vw, 160px);
+    padding: 68px 0 62px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-cost-comparison-heading {
+    max-width: 580px;
+}
+
+.history-cost-comparison-heading > span {
+    display: block;
+    margin-bottom: 16px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-red);
+}
+
+.history-cost-comparison-heading h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5vw, 72px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.06em;
+}
+
+.history-cost-comparison-heading h3 em {
+    display: block;
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-cost-comparison-copy {
+    max-width: 570px;
+}
+
+.history-cost-comparison-copy p {
+    margin: 0 0 21px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.78;
+    color: var(--dv-grey);
+}
+
+.history-cost-comparison-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-cost-comparison-copy .history-cost-comparison-emphasis {
+    padding-left: 16px;
+    border-left: 1px solid var(--dv-red);
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dv-blue);
+}
+
+.history-cost-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-cost-bottom > :last-child {
+    text-align: right;
+}
+
+.history-cost-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: var(--dv-red);
+}
+
+@media (max-width: 900px) {
+
+    .history-cost-main {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+    .history-cost-breakdown {
+        grid-template-columns: minmax(220px, .55fr) minmax(0, 1fr);
+        gap: 40px;
+    }
+
+    .history-cost-comparison {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .75fr);
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-cost {
+        padding: 60px var(--dv-gutter) 55px;
+    }
+
+    .history-cost-topline {
+        font-size: 7px;
+    }
+
+    .history-cost-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 50px;
+    }
+
+    .history-cost-heading h2 {
+        font-size: clamp(47px, 12vw, 70px);
+    }
+
+    .history-cost-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-cost-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-cost-copy .history-cost-lead {
+        font-size: 12px;
+    }
+
+    .history-cost-breakdown {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .history-cost-breakdown-intro {
+        max-width: 390px;
+    }
+
+    .history-cost-breakdown-intro h3 {
+        font-size: 42px;
+    }
+
+    .history-cost-items {
+        grid-template-columns: 1fr;
+    }
+
+    .history-cost-item,
+    .history-cost-item:nth-child(2) {
+        grid-template-columns: 34px minmax(0, 1fr);
+        padding: 25px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-cost-item:nth-child(5) {
+        border-bottom: 1px solid var(--dv-silver);
+    }
+
+    .history-cost-item:last-child {
+        border-bottom: 0;
+    }
+
+    .history-cost-item p {
+        max-width: 100%;
+        font-size: 10px;
+    }
+
+    .history-cost-comparison {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 52px 0 48px;
+    }
+
+    .history-cost-comparison-heading h3 {
+        font-size: clamp(40px, 11vw, 58px);
+    }
+
+    .history-cost-comparison-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-cost-comparison-copy p {
+        font-size: 10.5px;
+        line-height: 1.72;
+    }
+
+    .history-cost-comparison-copy .history-cost-comparison-emphasis {
+        font-size: 19px;
+    }
+
+    .history-cost-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-cost-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
+
+
+.history-craft {
+    padding: 88px var(--dv-gutter) 82px;
+    background: var(--dv-blue);
+    color: var(--dv-white);
+}
+
+.history-craft-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.55);
+}
+
+.history-craft-index {
+    color: #e06a61;
+}
+
+.history-craft-main {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(320px, .72fr);
+    gap: clamp(55px, 9vw, 150px);
+    padding: 72px 0 65px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-craft-heading {
+    max-width: 760px;
+}
+
+.history-craft-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+
+.history-craft-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.7vw, 100px);
+    font-weight: 400;
+    line-height: .88;
+    letter-spacing: -.07em;
+}
+
+.history-craft-heading h2 em {
+    display: block;
+    margin-top: 12px;
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-craft-copy {
+    max-width: 520px;
+    align-self: end;
+}
+
+.history-craft-copy p {
+    margin: 0 0 22px;
+    font-family: var(--dv-body);
+    font-size: 12px;
+    line-height: 1.78;
+    color: rgba(255,255,255,.72);
+}
+
+.history-craft-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-craft-copy .history-craft-lead {
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--dv-white);
+}
+
+.history-craft-principles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-craft-principle {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 20px;
+    min-height: 245px;
+    padding: 35px 35px 35px 0;
+    border-right: 1px solid rgba(201, 203, 197, .3);
+    border-bottom: 1px solid rgba(201, 203, 197, .2);
+}
+
+.history-craft-principle:nth-child(2n) {
+    padding-left: 35px;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.history-craft-principle:nth-child(3),
+.history-craft-principle:nth-child(4) {
+    border-bottom: 0;
+}
+
+.history-craft-number {
+    font-family: var(--dv-display);
+    font-size: 21px;
+    line-height: 1;
+    color: #e06a61;
+}
+
+.history-craft-label {
+    display: block;
+    margin-bottom: 13px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.45);
+}
+
+.history-craft-principle h3 {
+    max-width: 500px;
+    margin: 0 0 18px;
+    font-family: var(--dv-display);
+    font-size: clamp(27px, 2.8vw, 42px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.history-craft-principle h3 em {
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-craft-principle p {
+    max-width: 490px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 10.5px;
+    line-height: 1.72;
+    color: rgba(255,255,255,.62);
+}
+
+.history-craft-statement {
+    display: grid;
+    grid-template-columns: 55px minmax(0, 760px);
+    gap: 28px;
+    padding: 65px 0 58px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-craft-statement-mark {
+    font-family: var(--dv-display);
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: #e06a61;
+}
+
+.history-craft-statement-copy > span {
+    display: block;
+    margin-bottom: 13px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.45);
+}
+
+.history-craft-statement-copy h3 {
+    max-width: 760px;
+    margin: 0 0 22px;
+    font-family: var(--dv-display);
+    font-size: clamp(30px, 3.5vw, 49px);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+}
+
+.history-craft-statement-copy h3 em {
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-craft-statement-copy p {
+    max-width: 680px;
+    margin: 0;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: rgba(255,255,255,.65);
+}
+
+.history-craft-value {
+    display: grid;
+    grid-template-columns: minmax(0, .78fr) minmax(320px, .8fr);
+    gap: clamp(55px, 10vw, 160px);
+    padding: 65px 0 60px;
+    border-bottom: 1px solid rgba(201, 203, 197, .3);
+}
+
+.history-craft-value-heading {
+    max-width: 580px;
+}
+
+.history-craft-value-heading > span {
+    display: block;
+    margin-bottom: 16px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #e06a61;
+}
+
+.history-craft-value-heading h3 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(42px, 5vw, 72px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.06em;
+}
+
+.history-craft-value-heading h3 em {
+    display: block;
+    color: #e06a61;
+    font-style: italic;
+}
+
+.history-craft-value-copy {
+    max-width: 570px;
+}
+
+.history-craft-value-copy p {
+    margin: 0 0 21px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.78;
+    color: rgba(255,255,255,.65);
+}
+
+.history-craft-value-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.history-craft-value-copy .history-craft-value-emphasis {
+    padding-left: 16px;
+    border-left: 1px solid #e06a61;
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dv-white);
+}
+
+.history-craft-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.42);
+}
+
+.history-craft-bottom > :last-child {
+    text-align: right;
+}
+
+.history-craft-bottom-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: #e06a61;
+}
+
+@media (max-width: 900px) {
+
+    .history-craft-main {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .7fr);
+        gap: 45px;
+    }
+
+    .history-craft-value {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, .75fr);
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .history-craft {
+        padding: 60px var(--dv-gutter) 55px;
+    }
+
+    .history-craft-topline {
+        font-size: 7px;
+    }
+
+    .history-craft-main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 55px 0 50px;
+    }
+
+    .history-craft-heading h2 {
+        font-size: clamp(47px, 12vw, 70px);
+    }
+
+    .history-craft-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-craft-copy p {
+        font-size: 11px;
+        line-height: 1.72;
+    }
+
+    .history-craft-copy .history-craft-lead {
+        font-size: 12px;
+    }
+
+    .history-craft-principles {
+        grid-template-columns: 1fr;
+    }
+
+    .history-craft-principle,
+    .history-craft-principle:nth-child(2) {
+        grid-template-columns: 38px minmax(0, 1fr);
+        min-height: auto;
+        padding: 30px 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(201, 203, 197, .25);
+    }
+
+    .history-craft-principle:nth-child(3) {
+        border-bottom: 1px solid rgba(201, 203, 197, .25);
+    }
+
+    .history-craft-principle:last-child {
+        border-bottom: 0;
+    }
+
+    .history-craft-principle h3 {
+        font-size: 29px;
+    }
+
+    .history-craft-principle p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .history-craft-statement {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 45px 0 42px;
+    }
+
+    .history-craft-statement-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-craft-statement-copy h3 {
+        font-size: 29px;
+    }
+
+    .history-craft-statement-copy p {
+        font-size: 10.5px;
+        line-height: 1.72;
+    }
+
+    .history-craft-value {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 0 45px;
+    }
+
+    .history-craft-value-heading h3 {
+        font-size: clamp(40px, 11vw, 58px);
+    }
+
+    .history-craft-value-copy {
+        max-width: 390px;
+        margin-left: 7vw;
+    }
+
+    .history-craft-value-copy p {
+        font-size: 10.5px;
+        line-height: 1.72;
+    }
+
+    .history-craft-value-copy .history-craft-value-emphasis {
+        font-size: 19px;
+    }
+
+    .history-craft-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-craft-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+}
+
+
+
+.history-closing {
+    padding: 72px var(--dv-gutter) 78px;
+    background: var(--dv-paper);
+    color: var(--dv-blue);
+}
+
+.history-closing-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--dv-silver);
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-closing-index {
+    color: var(--dv-red);
+}
+
+.history-closing-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(300px, .72fr);
+    gap: clamp(50px, 9vw, 150px);
+    padding: 68px 0 62px;
+    border-bottom: 1px solid var(--dv-silver);
+}
+
+.history-closing-heading {
+    max-width: 780px;
+}
+
+.history-closing-kicker {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--dv-body);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-closing-heading h2 {
+    margin: 0;
+    font-family: var(--dv-display);
+    font-size: clamp(52px, 6.4vw, 92px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.065em;
+}
+
+.history-closing-heading h2 em {
+    color: var(--dv-red);
+    font-style: italic;
+}
+
+.history-closing-copy {
+    max-width: 430px;
+    align-self: end;
+}
+
+.history-closing-copy p {
+    margin: 0 0 18px;
+    font-family: var(--dv-body);
+    font-size: 11px;
+    line-height: 1.75;
+    color: var(--dv-blue);
+}
+
+.history-closing-copy .history-closing-lead {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dv-blue);
+}
+
+.history-closing-copy p:last-of-type {
+    margin-bottom: 0;
+}
+
+.history-closing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.history-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--dv-blue);
+    font-family: var(--dv-body);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--dv-blue);
+    transition:
+        color .3s ease,
+        border-color .3s ease;
+}
+
+.history-closing-link:hover {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.history-closing-link-primary {
+    color: var(--dv-red);
+    border-color: var(--dv-red);
+}
+
+.history-closing-link-primary:hover {
+    color: var(--dv-blue);
+    border-color: var(--dv-blue);
+}
+
+.history-closing-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+    padding-top: 18px;
+    font-family: var(--dv-body);
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--dv-grey);
+}
+
+.history-closing-bottom > :last-child {
+    text-align: right;
+}
+
+.history-closing-mark {
+    font-family: var(--dv-display);
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -.08em;
+    color: var(--dv-red);
+}
+
+@media (max-width: 760px) {
+
+    .history-closing {
+        padding: 55px var(--dv-gutter) 58px;
+    }
+
+    .history-closing-topline {
+        font-size: 7px;
+    }
+
+    .history-closing-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 52px 0 48px;
+    }
+
+    .history-closing-heading h2 {
+        font-size: clamp(46px, 12vw, 68px);
+        line-height: .9;
+    }
+
+    .history-closing-copy {
+        max-width: 410px;
+        margin-left: 7vw;
+    }
+
+    .history-closing-copy p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .history-closing-copy .history-closing-lead {
+        font-size: 11px;
+    }
+
+    .history-closing-actions {
+        gap: 22px;
+        margin-top: 28px;
+    }
+
+    .history-closing-link {
+        font-size: 8px;
+    }
+
+    .history-closing-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .history-closing-bottom > :last-child {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+}
 
 
 
@@ -1745,24 +4161,1360 @@ main {
 
 
     
+ <section class="history-opening" aria-labelledby="history-opening-title">
+
+    <div class="history-opening-topline">
+        <span class="history-opening-index">01 / The Story</span>
+        <span>Vespa / Lambretta / Vietnam</span>
+    </div>
+
+    <div class="history-opening-main">
+
+        <div class="history-opening-label">
+            <span class="history-opening-rule"></span>
+            <span>Italian Scooter Heritage</span>
+        </div>
+
+        <div class="history-opening-heading">
+            <h1 id="history-opening-title">
+                Two Italian
+                <span class="history-opening-heading-offset">
+                    Legends.
+                </span>
+                <br>
+                <em>One Vietnamese Story.</em>
+            </h1>
+        </div>
+
+        <div class="history-opening-side">
+
+            <p class="history-opening-intro">
+                The history of Vespa and Lambretta is a story of
+                post-war Italy, design, engineering and a changing
+                world - a story that eventually reached Vietnam
+                and became part of the country's own scooter culture.
+            </p>
+
+            <p class="history-opening-note">
+                Vespa — Pontedera, 1946.<br>
+                Lambretta — Lambrate, 1947.<br>
+                Vietnam — a second life.
+            </p>
+
+            <a
+                href="https://www.dolcevitascooters.com/about.html"
+                class="history-opening-link"
+            >
+                About the atelier
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="history-opening-bottom">
+
+        <span>
+            Italian Scooter History
+        </span>
+
+        <span class="history-opening-mark">
+            DV
+        </span>
+
+        <span>
+            Restored in Vietnam
+        </span>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="history-vespa" aria-labelledby="history-vespa-title">
+
+    <div class="history-vespa-topline">
+        <span class="history-vespa-index">02 / Vespa</span>
+        <span>1946 — Pontedera, Italy</span>
+    </div>
+
+    <div class="history-vespa-main">
+
+        <div class="history-vespa-heading">
+            <span class="history-vespa-kicker">
+                A Post-War Icon
+            </span>
+
+            <h2 id="history-vespa-title">
+                Vespa
+                <em>changes the way Italy moves.</em>
+            </h2>
+        </div>
+
+        <div class="history-vespa-copy">
+
+            <p class="history-vespa-lead">
+                The story of the Vespa begins in post-war Italy.
+                In 1946, Piaggio introduced the first Vespa at
+                Pontedera, creating a scooter designed around a
+                simple idea: practical mobility could also be
+                elegant, compact and unmistakably Italian.
+            </p>
+
+            <p>
+                The first Vespa quickly became more than a means
+                of transportation. Its distinctive silhouette,
+                enclosed mechanical layout and accessible riding
+                position gave it an identity unlike the motorcycles
+                of the period. As production expanded, Vespa became
+                closely associated with modern Italian life and
+                eventually spread far beyond Italy.
+            </p>
+
+            <p>
+                Over the following decades, Piaggio developed
+                numerous Vespa models and variations. The 1950s
+                and 1960s established the scooter as a cultural
+                object as well as a practical machine, while later
+                models continued to evolve the original concept.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-vespa-timeline">
+
+        <div class="history-vespa-timeline-item">
+            <span class="history-vespa-timeline-year">1946</span>
+            <div>
+                <h3>The Beginning</h3>
+                <p>
+                    Piaggio presents the Vespa in Pontedera,
+                    Italy, marking the beginning of one of the
+                    world's most recognisable scooter stories.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-vespa-timeline-item">
+            <span class="history-vespa-timeline-year">1950s</span>
+            <div>
+                <h3>A New Way to Travel</h3>
+                <p>
+                    Vespa expands internationally as the scooter
+                    becomes associated with affordable mobility,
+                    Italian design and post-war optimism.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-vespa-timeline-item">
+            <span class="history-vespa-timeline-year">1960s</span>
+            <div>
+                <h3>The Golden Era</h3>
+                <p>
+                    Classic Vespa models become deeply connected
+                    with youth culture, cinema, fashion and the
+                    changing character of European cities.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-vespa-timeline-item">
+            <span class="history-vespa-timeline-year">Today</span>
+            <div>
+                <h3>A Living Heritage</h3>
+                <p>
+                    Vintage Vespa scooters from the classic era
+                    remain sought after by collectors, enthusiasts
+                    and riders who value their design and history.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="history-vespa-bottom">
+
+        <span>Piaggio / Pontedera</span>
+
+        <span class="history-vespa-mark">
+            1946
+        </span>
+
+        <span>
+            Italian Scooter Heritage
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<section class="history-lambretta" aria-labelledby="history-lambretta-title">
+
+    <div class="history-lambretta-topline">
+        <span class="history-lambretta-index">03 / Lambretta</span>
+        <span>1947 — Lambrate, Milan</span>
+    </div>
+
+    <div class="history-lambretta-main">
+
+        <div class="history-lambretta-heading">
+            <span class="history-lambretta-kicker">
+                The Milanese Rival
+            </span>
+
+            <h2 id="history-lambretta-title">
+                Lambretta
+                <em>the other Italian legend.</em>
+            </h2>
+        </div>
+
+        <div class="history-lambretta-copy">
+
+            <p class="history-lambretta-lead">
+                One year after the arrival of the Vespa, another
+                Italian scooter began production in Milan. In 1947,
+                Ferdinando Innocenti's company introduced the first
+                Lambretta at its factory in Lambrate, giving Italy
+                another distinctive answer to the need for practical
+                post-war transportation.
+            </p>
+
+            <p>
+                The Lambretta developed a character of its own.
+                Its tubular-frame construction, mechanical layout
+                and distinctive bodywork created a different
+                engineering philosophy from the Vespa, while its
+                compact proportions and Italian styling made it
+                immediately recognisable.
+            </p>
+
+            <p>
+                During the 1950s and 1960s, Lambretta expanded into
+                international markets and developed a wide range of
+                models. The LI, TV, SX and later GP families are now
+                particularly familiar to collectors of classic
+                Italian scooters.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-lambretta-history">
+
+        <div class="history-lambretta-history-item">
+            <span class="history-lambretta-number">01</span>
+
+            <div>
+                <span class="history-lambretta-year">1947</span>
+                <h3>Born in Milan</h3>
+                <p>
+                    Innocenti begins production of the Lambretta
+                    in Lambrate, Milan, introducing a new Italian
+                    scooter to the post-war market.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-lambretta-history-item">
+            <span class="history-lambretta-number">02</span>
+
+            <div>
+                <span class="history-lambretta-year">1950s</span>
+                <h3>Growing Worldwide</h3>
+                <p>
+                    Lambretta expands beyond Italy as demand grows
+                    for compact, practical and economical personal
+                    transportation.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-lambretta-history-item">
+            <span class="history-lambretta-number">03</span>
+
+            <div>
+                <span class="history-lambretta-year">1960s</span>
+                <h3>The Classic Era</h3>
+                <p>
+                    Models such as the LI, TV and later SX become
+                    defining examples of Italian scooter design
+                    from the period.
+                </p>
+            </div>
+        </div>
+
+        <div class="history-lambretta-history-item">
+            <span class="history-lambretta-number">04</span>
+
+            <div>
+                <span class="history-lambretta-year">Today</span>
+                <h3>A Collector's Machine</h3>
+                <p>
+                    Original and correctly restored Lambrettas
+                    remain highly appreciated by collectors and
+                    riders of historic Italian scooters.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="history-lambretta-bottom">
+
+        <span>Innocenti / Lambrate</span>
+
+        <span class="history-lambretta-mark">
+            1947
+        </span>
+
+        <span>
+            Italian Scooter Heritage
+        </span>
+
+    </div>
+
+</section>
  
 
 
+<section class="history-vietnam" aria-labelledby="history-vietnam-title">
+
+    <div class="history-vietnam-topline">
+        <span class="history-vietnam-index">04 / Vietnam</span>
+        <span>Italian Scooters in Vietnam</span>
+    </div>
+
+    <div class="history-vietnam-intro">
+
+        <div class="history-vietnam-heading">
+            <span class="history-vietnam-kicker">
+                A Second Life
+            </span>
+
+            <h2 id="history-vietnam-title">
+                From
+                <em>Italy</em>
+                to Vietnam.
+            </h2>
+        </div>
+
+        <div class="history-vietnam-intro-copy">
+
+            <p class="history-vietnam-lead">
+                Vintage Italian scooters found in Vietnam often
+                have lived more than one life before arriving at
+                our workshop.
+            </p>
+
+            <p>
+                Vespa and Lambretta became part of Vietnamese urban
+                life during the middle decades of the twentieth
+                century. Their history here is not simply the story
+                of imported machines. It is also the story of owners,
+                families, changing cities, war, economic conditions,
+                repairs and generations of use.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-vietnam-story">
+
+        <article class="history-vietnam-story-item">
+
+            <span class="history-vietnam-story-number">01</span>
+
+            <div class="history-vietnam-story-content">
+
+                <span class="history-vietnam-story-label">
+                    The Arrival
+                </span>
+
+                <h3>
+                    European scooters
+                    <em>reach Vietnam.</em>
+                </h3>
+
+                <p>
+                    Vespa began appearing in Vietnam during the
+                    1950s and 1960s. Contemporary accounts of old
+                    Saigon describe Vespa as a prestigious European
+                    scooter, associated with French residents,
+                    merchants and more affluent owners.
+                </p>
+
+                <p>
+                    Lambretta was also part of this Italian scooter
+                    culture. Alongside Vespa, it became familiar to
+                    generations who remember the streets of southern
+                    Vietnam during the 1960s and 1970s.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="history-vietnam-story-item">
+
+            <span class="history-vietnam-story-number">02</span>
+
+            <div class="history-vietnam-story-content">
+
+                <span class="history-vietnam-story-label">
+                    Saigon
+                </span>
+
+                <h3>
+                    Scooters become
+                    <em>part of city life.</em>
+                </h3>
+
+                <p>
+                    Before 1975, Vespa was closely associated with
+                    the streets of Saigon. The scooter appeared in
+                    everyday scenes involving students, professionals,
+                    families and fashionable city life.
+                </p>
+
+                <p>
+                    Lambretta developed its own place in the same
+                    urban culture. The Lambretta name also became
+                    familiar through Lambro three-wheelers, widely
+                    used for transportation in southern Vietnam.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="history-vietnam-story-item">
+
+            <span class="history-vietnam-story-number">03</span>
+
+            <div class="history-vietnam-story-content">
+
+                <span class="history-vietnam-story-label">
+                    After 1975
+                </span>
+
+                <h3>
+                    The machines
+                    <em>kept working.</em>
+                </h3>
+
+                <p>
+                    After the country changed profoundly in 1975,
+                    many older scooters did not simply disappear.
+                    Some continued to be used as everyday transport,
+                    while others were repaired, adapted, stored or
+                    passed between owners.
+                </p>
+
+                <p>
+                    Years of use, limited access to original parts
+                    and changing economic conditions inevitably
+                    altered some machines. A scooter could be
+                    repaired many times during its lifetime before
+                    eventually becoming a restoration project.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="history-vietnam-story-item">
+
+            <span class="history-vietnam-story-number">04</span>
+
+            <div class="history-vietnam-story-content">
+
+                <span class="history-vietnam-story-label">
+                    Today
+                </span>
+
+                <h3>
+                    Vietnam remains
+                    <em>a source of classics.</em>
+                </h3>
+
+                <p>
+                    Decades later, surviving Vespa and Lambretta
+                    scooters can still be found in Vietnam. Some
+                    retain remarkably original details. Others have
+                    been modified or repaired over several decades.
+                </p>
+
+                <p>
+                    For a restoration workshop, that history is part
+                    of the work. Before restoration begins, the
+                    machine itself must be examined to understand
+                    what remains original, what has been replaced
+                    and what can be faithfully brought back.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="history-vietnam-provenance">
+
+        <div class="history-vietnam-provenance-heading">
+            <span class="history-vietnam-provenance-kicker">
+                Provenance
+            </span>
+
+            <h3>
+                Every scooter
+                <em>has a story.</em>
+            </h3>
+        </div>
+
+        <div class="history-vietnam-provenance-copy">
+
+            <p>
+                Many vintage Italian scooters in Vietnam have
+                complicated histories. Original paperwork may no
+                longer exist, particularly for machines that have
+                passed through several owners and decades of
+                changing administrative systems.
+            </p>
+
+            <p>
+                We do not present an uncertain history as a proven
+                one. Provenance is assessed from the scooter itself,
+                including its frame and engine identification,
+                surviving components, physical details and whatever
+                documentation can be established.
+            </p>
+
+            <p>
+                Where historical information is incomplete, we
+                believe the correct approach is to say so. The age,
+                condition and known history of a vintage scooter
+                should be understood before it becomes part of
+                another owner's collection.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-vietnam-bottom">
+
+        <span>Vespa / Lambretta</span>
+
+        <span class="history-vietnam-mark">
+            VN
+        </span>
+
+        <span>
+            Restored in Vietnam
+        </span>
+
+    </div>
+
+</section>
 
 
 
+<section class="history-provenance" aria-labelledby="history-provenance-title">
+
+    <div class="history-provenance-topline">
+        <span class="history-provenance-index">05 / Provenance</span>
+        <span>History / Identity / Documentation</span>
+    </div>
+
+    <div class="history-provenance-main">
+
+        <div class="history-provenance-heading">
+
+            <span class="history-provenance-kicker">
+                Understanding the Machine
+            </span>
+
+            <h2 id="history-provenance-title">
+                Not every
+                <em>history survives.</em>
+            </h2>
+
+        </div>
+
+        <div class="history-provenance-copy">
+
+            <p class="history-provenance-lead">
+                A vintage scooter is more than its year and model.
+                Its history may include decades of ownership,
+                repairs, replacement parts and changes in
+                documentation.
+            </p>
+
+            <p>
+                In Vietnam, this can make the provenance of an old
+                Vespa or Lambretta particularly difficult to reconstruct.
+                Some machines have passed through several generations
+                of owners, while original paperwork may have been lost,
+                separated from the scooter or no longer available.
+            </p>
+
+            <p>
+                Vietnam's wars and major changes in administration
+                also form part of the historical context surrounding
+                many surviving machines. For a scooter that has existed
+                for sixty or seventy years, the absence of complete
+                original paperwork does not automatically tell us
+                that the machine has no history. It tells us that
+                the history must be assessed carefully.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-provenance-factors">
+
+        <article class="history-provenance-factor">
+
+            <span class="history-provenance-factor-number">
+                01
+            </span>
+
+            <div>
+                <span class="history-provenance-factor-label">
+                    The Machine
+                </span>
+
+                <h3>
+                    Identity begins
+                    <em>with the scooter itself.</em>
+                </h3>
+
+                <p>
+                    Frame and engine identification, model details,
+                    construction features and surviving components
+                    can help establish what the machine is and what
+                    period it belongs to.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-provenance-factor">
+
+            <span class="history-provenance-factor-number">
+                02
+            </span>
+
+            <div>
+                <span class="history-provenance-factor-label">
+                    Previous Repairs
+                </span>
+
+                <h3>
+                    Every repair
+                    <em>leaves evidence.</em>
+                </h3>
+
+                <p>
+                    Decades of use can leave behind replacement parts,
+                    modifications and repairs. These details matter
+                    when evaluating how much of a vintage scooter
+                    remains original.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-provenance-factor">
+
+            <span class="history-provenance-factor-number">
+                03
+            </span>
+
+            <div>
+                <span class="history-provenance-factor-label">
+                    Documentation
+                </span>
+
+                <h3>
+                    Paperwork is
+                    <em>part of the story.</em>
+                </h3>
+
+                <p>
+                    Where documentation survives, it can provide
+                    valuable information about ownership and the
+                    machine's history. Where it does not, we do not
+                    invent a story to fill the gap.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-provenance-factor">
+
+            <span class="history-provenance-factor-number">
+                04
+            </span>
+
+            <div>
+                <span class="history-provenance-factor-label">
+                    Transparency
+                </span>
+
+                <h3>
+                    What is known
+                    <em>should be clear.</em>
+                </h3>
+
+                <p>
+                    We distinguish between documented information,
+                    physical evidence and historical information
+                    that cannot be independently confirmed.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="history-provenance-note">
+
+        <div class="history-provenance-note-mark">
+            DV
+        </div>
+
+        <div class="history-provenance-note-copy">
+
+            <span>
+                Our Approach
+            </span>
+
+            <p>
+                We believe a vintage scooter should be represented
+                honestly. If a part of its history is known, we
+                explain it. If provenance is incomplete, we say so.
+                The goal is not to create a perfect story on paper,
+                but to understand the machine that actually exists.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-provenance-bottom">
+
+        <span>
+            Authenticity / Transparency
+        </span>
+
+        <span>
+            Vintage Italian Scooters
+        </span>
+
+    </div>
+
+</section>
 
 
 
+<section class="history-cost" aria-labelledby="history-cost-title">
 
- 
+    <div class="history-cost-topline">
+        <span class="history-cost-index">06 / Restoration Economics</span>
+        <span>Hand Restoration / Vietnam / Value</span>
+    </div>
+
+    <div class="history-cost-main">
+
+        <div class="history-cost-heading">
+
+            <span class="history-cost-kicker">
+                The Economics of Restoration
+            </span>
+
+            <h2 id="history-cost-title">
+                Hand-restored
+                <em>without the overseas price.</em>
+            </h2>
+
+        </div>
+
+        <div class="history-cost-copy">
+
+            <p class="history-cost-lead">
+                A professionally restored vintage Vespa or Lambretta
+                is a labour-intensive machine. The work involves
+                dismantling, inspection, preparation, mechanical
+                rebuilding, bodywork, paint, assembly and testing.
+            </p>
+
+            <p>
+                At Dolce Vita Scooters, that work is carried out by
+                hand in Vietnam. The important difference is not that
+                the restoration process is skipped. It is that the
+                labour and workshop overhead required to carry out
+                skilled manual work can be significantly lower in
+                Vietnam than in many Western restoration markets.
+            </p>
+
+            <p>
+                This cost structure allows us to offer fully restored
+                classic Italian scooters at prices that can be
+                considerably more accessible than comparable
+                hand-restored machines in Europe or North America.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-cost-breakdown">
+
+        <div class="history-cost-breakdown-intro">
+
+            <span>
+                Where the Cost Goes
+            </span>
+
+            <h3>
+                The price of a
+                <em>restored scooter.</em>
+            </h3>
+
+            <p>
+                The final price is not simply the cost of an old
+                scooter plus paint. A vintage restoration combines
+                the underlying machine with parts, skilled labour,
+                workshop processes and preparation for delivery.
+            </p>
+
+        </div>
+
+        <div class="history-cost-items">
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">01</span>
+
+                <div>
+                    <h4>
+                        The Base Machine
+                    </h4>
+
+                    <p>
+                        The starting point is an authentic vintage
+                        Vespa or Lambretta. Acquisition cost varies
+                        according to model, condition, originality,
+                        rarity and availability.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">02</span>
+
+                <div>
+                    <h4>
+                        Parts &amp; Components
+                    </h4>
+
+                    <p>
+                        Restoration can require replacement or
+                        refurbishment of mechanical, electrical,
+                        suspension, braking and cosmetic components.
+                        Parts availability and specification affect
+                        the final cost.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">03</span>
+
+                <div>
+                    <h4>
+                        Bodywork &amp; Paint
+                    </h4>
+
+                    <p>
+                        Preparing an old scooter for a proper finish
+                        takes time. Stripping, metal preparation,
+                        repairs, primer, colour coats, finishing and
+                        inspection are all part of the process.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">04</span>
+
+                <div>
+                    <h4>
+                        Skilled Hand Labour
+                    </h4>
+
+                    <p>
+                        Much of restoration is manual work. Mechanics
+                        and craftsmen spend many hours disassembling,
+                        rebuilding, fitting, finishing and checking
+                        individual components.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">05</span>
+
+                <div>
+                    <h4>
+                        Workshop Overhead
+                    </h4>
+
+                    <p>
+                        Rent, utilities, equipment, consumables and
+                        other workshop expenses all contribute to the
+                        cost of restoration. These overheads differ
+                        substantially between countries and markets.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="history-cost-item">
+
+                <span class="history-cost-number">06</span>
+
+                <div>
+                    <h4>
+                        Export Preparation
+                    </h4>
+
+                    <p>
+                        Once restoration is complete, the scooter must
+                        be prepared for international delivery, including
+                        final inspection, protective packing and
+                        crating before shipment.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+    <div class="history-cost-comparison">
+
+        <div class="history-cost-comparison-heading">
+
+            <span>
+                Why the Difference?
+            </span>
+
+            <h3>
+                Lower cost
+                <em>does not mean less work.</em>
+            </h3>
+
+        </div>
+
+        <div class="history-cost-comparison-copy">
+
+            <p>
+                A restoration workshop in Europe or North America
+                may face substantially higher skilled-labour rates,
+                workshop rents, operating costs and other overheads.
+                Those costs naturally become part of the price paid
+                by the final customer.
+            </p>
+
+            <p>
+                Vietnam has a different cost structure. Skilled
+                restoration work can therefore be performed with
+                lower labour and workshop overhead while still
+                requiring the same fundamental hands-on processes:
+                preparation, fitting, rebuilding, finishing and
+                inspection.
+            </p>
+
+            <p class="history-cost-comparison-emphasis">
+                The advantage is in the economics of where the work
+                is performed - not in removing the work itself.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-cost-bottom">
+
+        <span>
+            Hand Restored in Vietnam
+        </span>
+
+        <span class="history-cost-mark">
+            DV
+        </span>
+
+        <span>
+            Built for Worldwide Delivery
+        </span>
+
+    </div>
+
+</section>
 
 
 
+<section class="history-craft" aria-labelledby="history-craft-title">
+
+    <div class="history-craft-topline">
+        <span class="history-craft-index">07 / The Work</span>
+        <span>Hand Restoration / Craftsmanship / Value</span>
+    </div>
+
+    <div class="history-craft-main">
+
+        <div class="history-craft-heading">
+
+            <span class="history-craft-kicker">
+                The Dolce Vita Difference
+            </span>
+
+            <h2 id="history-craft-title">
+                Lower price.
+                <em>Not lower craftsmanship.</em>
+            </h2>
+
+        </div>
+
+        <div class="history-craft-copy">
+
+            <p class="history-craft-lead">
+                The economic advantage of restoring vintage scooters
+                in Vietnam should not be confused with a shortcut in
+                the restoration itself.
+            </p>
+
+            <p>
+                Our Vespa and Lambretta scooters are dismantled,
+                inspected, repaired, refinished and assembled by hand.
+                The work requires experienced people, time, patience
+                and attention to the individual condition of each
+                vintage machine.
+            </p>
+
+            <p>
+                What changes is the cost of carrying out that work.
+                Vietnam offers a different labour and workshop cost
+                environment from many established restoration markets
+                overseas. That difference can be reflected in the
+                final price without removing the craftsmanship.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-craft-principles">
+
+        <article class="history-craft-principle">
+
+            <span class="history-craft-number">01</span>
+
+            <div>
+                <span class="history-craft-label">
+                    Hand Work
+                </span>
+
+                <h3>
+                    Restoration is
+                    <em>done by people.</em>
+                </h3>
+
+                <p>
+                    Vintage scooters are not restored through a
+                    production-line process. Disassembly, fitting,
+                    adjustment, finishing and assembly all require
+                    hands-on work.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-craft-principle">
+
+            <span class="history-craft-number">02</span>
+
+            <div>
+                <span class="history-craft-label">
+                    Individual Machines
+                </span>
+
+                <h3>
+                    Every scooter
+                    <em>starts differently.</em>
+                </h3>
+
+                <p>
+                    Age, previous repairs, corrosion, missing parts
+                    and mechanical condition vary from one scooter
+                    to another. Restoration must respond to the
+                    machine in front of us.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-craft-principle">
+
+            <span class="history-craft-number">03</span>
+
+            <div>
+                <span class="history-craft-label">
+                    Cost Structure
+                </span>
+
+                <h3>
+                    Vietnam changes
+                    <em>the economics.</em>
+                </h3>
+
+                <p>
+                    Lower labour and workshop overhead can reduce
+                    the total restoration cost compared with markets
+                    where skilled manual restoration carries much
+                    higher operating costs.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="history-craft-principle">
+
+            <span class="history-craft-number">04</span>
+
+            <div>
+                <span class="history-craft-label">
+                    The Result
+                </span>
+
+                <h3>
+                    More accessible
+                    <em>Italian heritage.</em>
+                </h3>
+
+                <p>
+                    The result is an opportunity to own a properly
+                    restored classic Italian scooter at a price that
+                    can be significantly more accessible than a
+                    comparable restoration overseas.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="history-craft-statement">
+
+        <div class="history-craft-statement-mark">
+            DV
+        </div>
+
+        <div class="history-craft-statement-copy">
+
+            <span>
+                Our Philosophy
+            </span>
+
+            <h3>
+                The savings come from
+                <em>where the work is done,</em>
+                not from avoiding the work.
+            </h3>
+
+            <p>
+                This is the central reason a Dolce Vita scooter can
+                offer strong value to an international buyer. The
+                machine is restored in Vietnam, where skilled manual
+                work and workshop overhead can be more economical,
+                while the restoration itself remains hands-on and
+                focused on the individual scooter.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-craft-value">
+
+        <div class="history-craft-value-heading">
+
+            <span>
+                Value for the Collector
+            </span>
+
+            <h3>
+                A classic scooter
+                <em>at a different cost.</em>
+            </h3>
+
+        </div>
+
+        <div class="history-craft-value-copy">
+
+            <p>
+                When comparing prices internationally, it is useful
+                to look beyond the purchase price of the old machine.
+                A restored scooter also includes the cost of parts,
+                skilled labour, bodywork, paint, mechanical work,
+                workshop overhead and preparation for export.
+            </p>
+
+            <p>
+                Two workshops can perform substantial amounts of
+                hands-on restoration while arriving at very different
+                final prices because their operating environments are
+                different.
+            </p>
+
+            <p class="history-craft-value-emphasis">
+                For Dolce Vita Scooters, Vietnam is part of the value:
+                it allows us to combine authentic vintage machines,
+                detailed hand restoration and international delivery
+                at a competitive price.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="history-craft-bottom">
+
+        <span>
+            Authentic Vintage Scooters
+        </span>
+
+        <span class="history-craft-bottom-mark">
+            DV
+        </span>
+
+        <span>
+            Hand Restored in Vietnam
+        </span>
+
+    </div>
+
+</section>
 
 
+<section class="history-closing" aria-labelledby="history-closing-title">
 
+    <div class="history-closing-topline">
+        <span class="history-closing-index">08 / Carry It Forward</span>
+        <span>Dolce Vita Scooters - Vietnam</span>
+    </div>
 
+    <div class="history-closing-main">
+
+        <div class="history-closing-heading">
+            <span class="history-closing-kicker">
+                Italian Heritage / Vietnamese Craft
+            </span>
+
+            <h2 id="history-closing-title">
+                A history worth
+                <em>carrying forward.</em>
+            </h2>
+        </div>
+
+        <div class="history-closing-copy">
+
+            <p class="history-closing-lead">
+                Vespa and Lambretta were born in post-war Italy,
+                became symbols of a changing Europe, and eventually
+                found another chapter in Vietnam.
+            </p>
+
+            <p>
+                Today, Dolce Vita Scooters gives these vintage Italian
+                scooters another life through careful, hands-on
+                restoration in Vietnam. The work is done by hand,
+                machine by machine, with the aim of preserving the
+                character of the original scooter while preparing it
+                for the road again.
+            </p>
+
+            <p>
+                Vietnam's lower labour and workshop costs allow us to
+                offer this level of hand restoration at a more accessible
+                price than comparable restoration work in many overseas
+                markets. The saving comes from where the work is done,
+                not from avoiding the work.
+            </p>
+
+            <div class="history-closing-actions">
+
+                <a
+                    href="https://www.dolcevitascooters.com/inventory.html"
+                    class="history-closing-link history-closing-link-primary"
+                >
+                    Explore the collection
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                    href="https://www.dolcevitascooters.com/contact.html"
+                    class="history-closing-link"
+                >
+                    Begin an inquiry
+                    <span aria-hidden="true">↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="history-closing-bottom">
+
+        <span>
+            Vintage Vespa / Lambretta
+        </span>
+
+        <span class="history-closing-mark">
+            DV
+        </span>
+
+        <span>
+            Restored in Vietnam / Worldwide Delivery
+        </span>
+
+    </div>
+
+</section>
 
 
 
