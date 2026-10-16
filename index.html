@@ -2622,6 +2622,61 @@ main {
 }
 
 
+/* =====================================================
+   FIGURES — EDITORIAL IMAGES
+   ===================================================== */
+
+.dv-figure {
+    margin: 0 0 clamp(32px, 4vw, 56px);
+}
+
+.dv-figure img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+}
+
+.dv-figure figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 12px;
+
+    font-family: var(--dv-body);
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+
+    color: var(--dv-grey);
+}
+
+.dv-figure figcaption strong {
+    color: var(--dv-red);
+    font-weight: 700;
+}
+
+/* Block nền xanh (The Work) */
+.home-work .dv-figure figcaption {
+    color: rgba(255, 255, 255, .62);
+}
+
+@media (max-width: 600px) {
+    .dv-figure img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .dv-figure figcaption {
+        font-size: 8px;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
+
 /* ---------------------------------------------------------
    MODEL DIRECTORY
    --------------------------------------------------------- */
@@ -3857,6 +3912,18 @@ main {
 
     </div>
 
+<figure class="dv-figure">
+    <img
+        src="https://www.dolcevitascooters.com/img/hero-lambretta.jpg"
+        alt="Restored vintage Vespa by Dolce Vita Scooters"
+        width="1600" height="686"
+    >
+    <figcaption>
+        <strong>Fig. 01</strong>
+        <span>Restored in Vietnam</span>
+    </figcaption>
+</figure>
+
 
     <div class="home-opening-bottom">
 
@@ -3942,6 +4009,20 @@ main {
     </div>
 
 
+    <figure class="dv-figure">
+    <img
+        src="https://www.dolcevitascooters.com/img/original-frame.jpg"
+        alt="Original frame and engine number of a vintage Vespa"
+        width="1600" height="686"
+        loading="lazy"
+    >
+    <figcaption>
+        <strong>Fig. 02</strong>
+        <span>Original frame and engine</span>
+    </figcaption>
+</figure>
+
+
     <div class="home-original-bottom">
 
         <span>Original Frame</span>
@@ -4021,6 +4102,20 @@ main {
         </div>
 
     </div>
+
+
+<figure class="dv-figure">
+    <img
+        src="https://www.dolcevitascooters.com/img/workshop.jpg"
+        alt="Vintage Lambretta restoration in the Dolce Vita workshop"
+        width="1600" height="686"
+        loading="lazy"
+    >
+    <figcaption>
+        <strong>Fig. 03</strong>
+        <span>The workshop, Quy Nhon</span>
+    </figcaption>
+</figure>
 
 
     <div class="home-work-bottom">
@@ -4121,6 +4216,20 @@ main {
         </div>
 
     </div>
+
+
+<figure class="dv-figure">
+    <img
+        src="https://www.dolcevitascooters.com/img/crating.jpg"
+        alt="Vintage scooter secured in a custom wooden shipping crate"
+        width="1600" height="686"
+        loading="lazy"
+    >
+    <figcaption>
+        <strong>Fig. 04</strong>
+        <span>Custom crating for export</span>
+    </figcaption>
+</figure>
 
 
     <div class="home-journey-route">
